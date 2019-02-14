@@ -1,22 +1,39 @@
 {
   "name": "intouch-frontend",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.5"
   },
+  "main": "public/main.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject", 
-    "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js",
+    "electron": "electron .",
+    "react-devtools": "react-devtools",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "build --win --macos -c.extraMetadata.main=build/Main.js"
+  },
+  "build": {
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
   },
   "eslintConfig": {
-    "extends": ["react-app", 
-                "airbnb"]
+    "extends": [
+      "react-app",
+      "airbnb"
+    ]
   },
   "browserslist": [
     ">0.2%",
@@ -25,8 +42,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "electron": "^4.0.4",
+    "electron-builder": "^20.38.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
-    "eslint-config-airbnb": "^17.1.0"
+    "eslint-config-airbnb": "^17.1.0",
+    "foreman": "^3.0.1",
+    "react-devtools": "^3.6.0"
   }
 }
