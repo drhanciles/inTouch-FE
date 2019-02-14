@@ -7,14 +7,14 @@
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.5"
   },
-  "main": "main.js",
+  "main": "public/main.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js",
-    "electron": "electron .", 
+    "electron": "electron .",
     "react-devtools": "react-devtools"
   },
   "eslintConfig": {
@@ -31,6 +31,7 @@
   ],
   "devDependencies": {
     "electron": "^4.0.4",
+    "electron-builder": "^20.38.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "eslint-config-airbnb": "^17.1.0",
