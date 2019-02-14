@@ -1,6 +1,7 @@
 {
   "name": "intouch-frontend",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "react": "^16.8.1",
@@ -15,7 +16,18 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js",
     "electron": "electron .",
-    "react-devtools": "react-devtools"
+    "react-devtools": "react-devtools",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "build --win --macos -c.extraMetadata.main=build/Main.js"
+  },
+  "build": {
+    "files": [
+    "build/**/*",
+    "node_modules/**/*"
+    ],
+    "directories":{
+    "buildResources": "assets"
+    }
   },
   "eslintConfig": {
     "extends": [
