@@ -32,4 +32,14 @@ describe('actions', () => {
     
     expect(result).toEqual(expectedAction)
   })
+  
+  it('should return a type of SIGN_OUT_USER', () => {
+    const expectedAction = {
+      type: 'SIGN_OUT_USER'
+    }
+    
+    const result = actions.signOutUser()
+    
+    expect(result).toEqual(expectedAction)
+  })
 })
