@@ -14,7 +14,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js",
-    "electron": "electron ."
+    "electron": "electron .", 
+    "react-devtools": "react-devtools"
   },
   "eslintConfig": {
     "extends": [
