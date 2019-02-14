@@ -1,4 +1,4 @@
-# inTouch-Front-End
+# inTouch Front-End
 
 ## Intro
 
