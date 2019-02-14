@@ -1,9 +1,10 @@
-const{ app, BrowserWindow } = require('electron');  
+const { app, BrowserWindow } = require('electron');  
 let mainWindow; 
+const path = require('path'); 
 
 function createWindow() {
   mainWindow = new BrowserWindow({width: 1250, height: 1375 }); 
-  mainWindow.loadURL('http://localhost:3000'); 
+  mainWindow.loadURL(`file://${path.join(_dirname, '..build/index.html')}`); 
   mainWindow.webContents.openDevTools(); 
   mainWindow.on('closed', function() {
     mainWindow = null

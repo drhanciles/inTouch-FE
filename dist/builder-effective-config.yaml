@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - node_modules/**/*
+extraMetadata:
+  main: build/Main.js
+extends: react-cra
+electronVersion: 4.0.4
