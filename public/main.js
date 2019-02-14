@@ -1,16 +1,24 @@
 const { app, BrowserWindow } = require('electron');  
-const path = require('path'); 
+const path = require('path');
+const url = require('url'); 
 const net = require('net'); 
 const port = process.env.PORT ? (process.env.PORT - 100) : 3000; 
 const client = new net.Socket();
 let startedElectron = false;  
-let mainWindow; 
+let mainWindow;
+require('events').EventEmitter.prototype._maxListeners = 100 
 
-preocess.ELECTRON_START_URL = `http://localhost:${port}`; 
+process.ELECTRON_START_URL = `http://localhost:${port}`; 
 
-function createWindow() {
-  mainWindow = new BrowserWindow({width: 1250, height: 1375 }); 
-  mainWindow.loadURL(`file://${path.join(_dirname, '..build/index.html')}`); 
+const createWindow = () => {
+  mainWindow = new BrowserWindow({width: 800, height: 600 }); 
+  const startUrl = process.env.ELECTRON_START_URL || url.format({
+    pathname: path.join(__dirname, '/../build/index.html'), 
+    protocol: 'file:', 
+    slashes: true
+  });
+
+  mainWindow.loadURL(startUrl); 
   mainWindow.webContents.openDevTools(); 
   mainWindow.on('closed', function() {
     mainWindow = null
