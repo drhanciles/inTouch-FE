@@ -51,8 +51,6 @@ Overall, this is a simple ... that can be expanded for your purposes.
 
 ## How to Contribute
 To contribute, see the setup instructions.
-* [Open Issues](https://github.com/Kate-v2/Quantified_Self_FE/projects/1)
-* Create a new branch describing the feature. If you close an issue, include it's number in the branch name.
 * Please describe all changes in the Pull Request (to `Master`), and all relative issue cards/actions.
 * Please use the Pull Request Template as the baseline for communication - feel free to add more!
 * Please update the `README` if anything is affected.
