@@ -15,3 +15,9 @@ export const signInUser = (email, password) => {
   }
 }
 
+export const signOutUser = () => {
+  return {
+    type: 'SIGN_OUT_USER'
+  }
+}
+
