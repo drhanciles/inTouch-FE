@@ -22,11 +22,11 @@
   },
   "build": {
     "files": [
-    "build/**/*",
-    "node_modules/**/*"
+      "build/**/*",
+      "node_modules/**/*"
     ],
-    "directories":{
-    "buildResources": "assets"
+    "directories": {
+      "buildResources": "assets"
     }
   },
   "eslintConfig": {
@@ -47,6 +47,7 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "eslint-config-airbnb": "^17.1.0",
+    "foreman": "^3.0.1",
     "react-devtools": "^3.6.0"
   }
 }

@@ -1,6 +1,12 @@
 const { app, BrowserWindow } = require('electron');  
-let mainWindow; 
 const path = require('path'); 
+const net = require('net'); 
+const port = process.env.PORT ? (process.env.PORT - 100) : 3000; 
+const client = new net.Socket();
+let startedElectron = false;  
+let mainWindow; 
+
+preocess.ELECTRON_START_URL = `http://localhost:${port}`; 
 
 function createWindow() {
   mainWindow = new BrowserWindow({width: 1250, height: 1375 }); 
@@ -10,6 +16,22 @@ function createWindow() {
     mainWindow = null
   })
 }
+
+const tryConnection = () => client.connect({port: port}, () => {
+  client.end(); 
+  if(!startedElectron) {
+    console.log('starting electron'); 
+    startedElectron = true; 
+    const exec = require('child_process').exec; 
+    exec('npm run elelctron')
+  }
+}); 
+
+tryConnection(); 
+
+client.on('error', (error) => {
+  setTimeout(tryConnection, 1000)
+}); 
 
 app.on('ready', createWindow); 
 
