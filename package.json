@@ -21,7 +21,8 @@
     "electron": "electron .",
     "react-devtools": "react-devtools",
     "preelectron-pack": "npm run build",
-    "electron-pack": "build --win --macos -c.extraMetadata.main=build/Main.js"
+    "electron-pack": "build --win --macos -c.extraMetadata.main=build/Main.js",
+    "electron-dev": "concurrently \"BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "build": {
     "files": [
