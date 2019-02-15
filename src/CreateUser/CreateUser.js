@@ -13,7 +13,7 @@ export default class CreateUser extends Component {
   }
 
   render() {
-    const {name, email, password, confirmation} = this.state
+    const { name, email, password, confirmation } = this.state
     return (
       <form>
         <fieldset>
