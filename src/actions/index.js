@@ -21,4 +21,3 @@ export const signOutUser = () => {
     type: 'SIGN_OUT_USER'
   }
 }
-
