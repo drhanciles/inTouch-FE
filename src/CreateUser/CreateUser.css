@@ -4,6 +4,7 @@ form {
   justify-content: space-around;
   border: none;  
   padding: 8px; 
+  background-color: #F2F3F9;
 }
 
 input {
