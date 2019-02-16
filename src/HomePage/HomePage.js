@@ -6,13 +6,16 @@ export class HomePage extends Component {
   constructor() {
     super()
     this.state = {
-      messageSelected: false, 
-      settingsSelected: false
+      messageSelected: false
     }
   }
 
   render() {
     const arrowIcon = './icons/down-arrow.svg'
+    const addContactIcon = './icons/add-contact.svg'
+    const allContactsIcon = './icons/all-contacts.svg'
+    const logoutIcon = './icons/logout-gear.svg'
+    const homeIcon = './icons/home.svg'
     return (
       <main>
         <header>
@@ -23,6 +26,22 @@ export class HomePage extends Component {
                 <i>{arrowIcon}</i>
               </span>
             </h3>
+            <nav role="navigation">
+              <ul>
+                <li>Add Contact
+                  <span className="icon"role="add contact icon container">{addContactIcon}</span>
+                </li>
+                <li>All Contacts
+                <span className="icon"role="all contacts icon container">{allContactsIcon}</span>
+                </li>
+                <li>Home
+                <span className="icon"role="home icon container">{homeIcon}</span>
+                </li>
+                <li>Sign Out
+                <span className="icon"role="sign out icon container">{logoutIcon}</span>
+                </li>
+              </ul>
+            </nav>
           </article>
         </header>
         <article className="message-container">
