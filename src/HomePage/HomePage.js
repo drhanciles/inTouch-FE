@@ -12,13 +12,16 @@ export class HomePage extends Component {
   }
 
   render() {
+    const arrowIcon = './icons/down-arrow.svg'
     return (
       <main>
         <header>
           <h1>inTouch.</h1>
           <article>
             <h3>Settings 
-              <span className="arrow-icon-container"></span>
+              <span role="container for settings selection icon" className="arrow-icon-container">
+                <i>{arrowIcon}</i>
+              </span>
             </h3>
           </article>
         </header>
