@@ -1,0 +1,61 @@
+main {
+  background-color: #F2F3F9; 
+  height: 100vh; 
+}
+
+header {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 8px; 
+}
+
+h1 {
+  color: #191C69; 
+  font-family:'Ubuntu', sans-serif;
+  font-style: italic; 
+  font-weight: 800; 
+}
+
+nav {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
+}
+
+li {
+  display: flex; 
+  flex-direction: row; 
+  font-family:'Open Sans', sans-serif;
+  font-size: 10px; 
+  font-weight: 800; 
+  color: #F2F3F9; 
+}
+
+.icon {
+  color: #F2F3F9; 
+  font-size: 10px; 
+}
+
+.message-container {
+}
+
+.message-container:hover {
+  color: #191C69; 
+  cursor: pointer;  
+  text-decoration: underline solid #191C69; 
+}
+
+.reachout-message-intro {
+  color: #5B609F;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300; 
+  font-size: 2rem;
+}
+
+.reachout-message-content {
+  color: #5B609F; 
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300; 
+  font-size: 2rem;
+}
+

@@ -20,25 +20,33 @@ export default class HomePage extends Component {
       <main>
         <header>
           <h1>inTouch.</h1>
-          <article>
+          <article className="dropdown-container">
             <h3>Settings 
-              <span role="container for settings selection icon" className="arrow-icon-container">
-                <i>{arrowIcon}</i>
+              <span role="container for settings selection icon" className="icon-container">
+                <i className="icon">{arrowIcon}</i>
               </span>
             </h3>
             <nav role="navigation">
               <ul>
                 <li>Add Contact
-                  <span className="icon"role="add contact icon container">{addContactIcon}</span>
+                  <span className="icon-container"role="add contact icon container">
+                    <i className="icon">{addContactIcon}</i>
+                  </span>
                 </li>
                 <li>All Contacts
-                <span className="icon"role="all contacts icon container">{allContactsIcon}</span>
+                <span className="icon-container"role="all contacts icon container">
+                  <i className="icon">{allContactsIcon}</i>
+                </span>
                 </li>
                 <li>Home
-                <span className="icon"role="home icon container">{homeIcon}</span>
+                <span className="icon-container"role="home icon container">
+                  <i className="icon">{homeIcon}</i>
+                </span>
                 </li>
                 <li>Sign Out
-                <span className="icon"role="sign out icon container">{logoutIcon}</span>
+                <span className="icon-container"role="sign out icon container">
+                  <i className="icon">{logoutIcon}</i>
+                </span>
                 </li>
               </ul>
             </nav>
