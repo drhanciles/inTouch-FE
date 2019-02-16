@@ -41,4 +41,16 @@ describe('userReducer', () => {
 
     expect(result).toEqual(expected)
   })
+  
+  it('should update state with empty object when SIGN_OUT_USER case', () => {
+    const action = {
+      type: 'SIGN_OUT_USER',
+    }
+    
+    const expected = {}
+
+    const result = userReducer({}, action)
+
+    expect(result).toEqual(expected)
+  })
 })
