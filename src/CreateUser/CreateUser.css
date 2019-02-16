@@ -1,0 +1,45 @@
+form {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  border: none;  
+  padding: 8px; 
+  background-color: #F2F3F9;
+}
+
+input {
+  height: 70px; 
+  width: 200px; 
+  border-bottom: 2px solid #191C69;
+  line-height: 1rem; 
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300; 
+  font-size: 1.5rem;
+  color: #191C69;  
+}
+
+::placeholder {
+  color: #191C69; 
+  font-size: 1.5rem; 
+  margin-bottom: 6px; 
+}
+
+.create-account-button {
+  height: 40px; 
+  width: 150px; 
+  background-color: #191C69; 
+  padding: 5px; 
+  margin-top: 15px; 
+  border-radius: 25px; 
+  cursor: pointer;
+  color: #F2F3F9;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400; 
+  font-size: 1rem; 
+}
+
+.create-account-button:hover {
+  background-color: #ABAECF; 
+  color: #5B609F; 
+  cursor: pointer;
+}

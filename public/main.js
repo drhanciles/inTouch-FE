@@ -1,16 +1,22 @@
 const { app, BrowserWindow } = require('electron');  
+
 const path = require('path');
 const url = require('url'); 
 const net = require('net'); 
+
 const port = process.env.PORT ? (process.env.PORT - 100) : 3000; 
+
 const client = new net.Socket();
+
 let startedElectron = false;  
+
 let mainWindow;
+
 require('events').EventEmitter.prototype._maxListeners = 100 
 
 process.ELECTRON_START_URL = `http://localhost:${port}`; 
 
-const createWindow = () => {
+createWindow = () => {
   mainWindow = new BrowserWindow({width: 800, height: 600 }); 
   const startUrl = process.env.ELECTRON_START_URL || url.format({
     pathname: path.join(__dirname, '/../build/index.html'), 
@@ -25,7 +31,7 @@ const createWindow = () => {
   })
 }
 
-const tryConnection = () => client.connect({port: port}, () => {
+tryConnection = () => client.connect({port: port}, () => {
   client.end(); 
   if(!startedElectron) {
     console.log('starting electron'); 
