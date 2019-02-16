@@ -6,6 +6,7 @@ const user = (state={}, action) => {
       }
     case 'SIGN_IN_USER':
       return {
+        state.id: action.id,
         state.name: action.name, 
         state.email: action.email
       }
