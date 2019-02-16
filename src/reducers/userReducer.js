@@ -12,7 +12,9 @@ const user = (state={}, action) => {
       }
     case 'SIGN_OUT_USER': 
       return {
-        state.id: ''
+        state.id: '', 
+        state.name: '', 
+        state.email: ''
       }
     default: 
       return state
