@@ -44,7 +44,7 @@ describe('userReducer', () => {
   
   it('should update state with empty object when SIGN_OUT_USER case', () => {
     const action = {
-      type: 'SIGN_OUT_USER',
+      type: 'SIGN_OUT_USER'
     }
     
     const expected = {}
