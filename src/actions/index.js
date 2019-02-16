@@ -7,10 +7,9 @@ export const createUser = (name, email, password) => {
   }
 }
 
-export const signInUser = (id, email, password) => {
+export const signInUser = (email, password) => {
   return {
-    type: 'SIGN_IN_USER', 
-    id,
+    type: 'SIGN_IN_USER',
     email, 
     password
   }
