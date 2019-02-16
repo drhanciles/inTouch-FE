@@ -1,0 +1,15 @@
+.app {
+  background-color: #F2F3F9; 
+}
+
+header {
+  padding: 8px; 
+}
+
+h1 {
+  color: #191C69; 
+  font-family:'Ubuntu', sans-serif;
+  font-style: italic; 
+  font-weight: 800; 
+  float: left;
+}
