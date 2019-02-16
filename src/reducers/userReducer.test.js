@@ -27,4 +27,18 @@ describe('userReducer', () => {
 
     expect(result).toEqual(expected)
   })
+  
+  it('should update state with user id and name when SIGN_IN_USER case', () => {
+    const mockData = {email, password}
+    const action = {
+      type: 'SIGN_IN_USER', 
+      data: mockData
+    }
+    
+    const expected = {id: action.id, name: action.name}
+
+    const result = userReducer({}, action)
+
+    expect(result).toEqual(expected)
+  })
 })
