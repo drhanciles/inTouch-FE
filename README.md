@@ -1,3 +1,76 @@
+# inTouch Front-End
+
+## Intro
+
+* [Deployed App]()
+* [Deployed API]()
+* [API Repo](https://github.com/ryan-mcneil/inTouch-BE)
+
+## Setup
+1. Fork or clone this repo: `git clone git@github.com:Dhanciles/inTouch-FE.git <name of your choice>`
+1. Install Dependencies: `npm install`
+1. To see the app in action locally: `npm start`
+1. Go to: `http://localhost:8080/`
+
+## How to Use
+This app obtains/submits data through the [inTouch API] () ([repo](https://github.com/ryan-mcneil/inTouch-BE).
+A user can register/login and will have the ability to ...
+
+Overall, this is a simple ... that can be expanded for your purposes.
+
+## Known Issues
+
+## Running Tests
+
+## Screenshots
+* ### Welcome Page
+  ![Welcome]()
+* ### New User Registration
+  ![New User Registration]()
+* ### Login
+  ![Login]()
+* ### New User Dashboard
+  ![New User Dashboard]()
+* ### Add Contact
+  ![Add Contact]()
+* ### User Dashboard
+  ![User Dashboard]()
+* ### Done Function
+  ![Done Function]()
+* ### Remind Me Tomorrow Function
+  ![Remind Me Tomorrow Function]()
+* ### Update Notes Function
+  ![Update Notes Function]()
+* ### All Contacts Index Page
+  ![All Contacts Page]()
+* ### A Contact Show Page
+  ![A Contact Show Page]()
+* ### Logout
+  ![Logout]()
+
+
+## How to Contribute
+To contribute, see the setup instructions.
+* Please describe all changes in the Pull Request (to `Master`), and all relative issue cards/actions.
+* Please use the Pull Request Template as the baseline for communication - feel free to add more!
+* Please update the `README` if anything is affected.
+* Deployment is not from the Master branch, but rather the `gh-pages` branch.
+
+#### Core Unfinished Features
+
+## Core Contributors
+* [Derek](https://github.com/Dhanciles)
+* [Rajaa](https://github.com/RajaaBoulassouak)
+
+## Technical
+
+* [Electron](https://electronjs.org/)
+
+
+## Turing Project Details:
+* [Assignment](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_spec)
+* [Rubric](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_rubric)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
