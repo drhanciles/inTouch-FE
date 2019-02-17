@@ -10,9 +10,7 @@ class App extends Component {
         <header>
           <h1>inTouch.</h1>
         </header>
-        <body>
           <CreateContact />
-        </body>
       </div>
     );
   }
