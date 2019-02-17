@@ -19,42 +19,40 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <fieldset>
-          <input
-            className="create-user-input"
-            name="name"
-            placeholder="Name"
-            required={true}
-            type="text"
-            value=""
-          />
-          <input
-            className="create-user-input"
-            name="email"
-            placeholder="Email"
-            required={true}
-            type="text"
-            value=""
-          />
-          <input
-            className="create-user-input"
-            name="password"
-            placeholder="Password"
-            required={true}
-            type="password"
-            value=""
-          />
-          <input
-            className="create-user-input"
-            name="confirmation"
-            placeholder="Confirmation"
-            required={true}
-            type="password"
-            value=""
-          />
-        </fieldset>,
+        <input
+          className="new-user-name"
+          name="name"
+          placeholder="Name"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <input
+          className="new-user-email"
+          name="email"
+          placeholder="Email"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <input
+          className="new-user-password"
+          name="password"
+          placeholder="Password"
+          required={true}
+          type="password"
+          value=""
+        />,
+        <input
+          className="new-user-password-confirmation"
+          name="confirmation"
+          placeholder="Confirmation"
+          required={true}
+          type="password"
+          value=""
+        />,
         <button
-          className="create-account-button"
+          className="new-account-button"
         >
           Create Account
         </button>,
@@ -67,109 +65,64 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <input
-              className="create-user-input"
-              name="name"
-              placeholder="Name"
-              required={true}
-              type="text"
-              value=""
-            />,
-            <input
-              className="create-user-input"
-              name="email"
-              placeholder="Email"
-              required={true}
-              type="text"
-              value=""
-            />,
-            <input
-              className="create-user-input"
-              name="password"
-              placeholder="Password"
-              required={true}
-              type="password"
-              value=""
-            />,
-            <input
-              className="create-user-input"
-              name="confirmation"
-              placeholder="Confirmation"
-              required={true}
-              type="password"
-              value=""
-            />,
-          ],
+          "className": "new-user-name",
+          "name": "name",
+          "placeholder": "Name",
+          "required": true,
+          "type": "text",
+          "value": "",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "create-user-input",
-              "name": "name",
-              "placeholder": "Name",
-              "required": true,
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "create-user-input",
-              "name": "email",
-              "placeholder": "Email",
-              "required": true,
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "create-user-input",
-              "name": "password",
-              "placeholder": "Password",
-              "required": true,
-              "type": "password",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "create-user-input",
-              "name": "confirmation",
-              "placeholder": "Confirmation",
-              "required": true,
-              "type": "password",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-        ],
-        "type": "fieldset",
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-user-email",
+          "name": "email",
+          "placeholder": "Email",
+          "required": true,
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-user-password",
+          "name": "password",
+          "placeholder": "Password",
+          "required": true,
+          "type": "password",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-user-password-confirmation",
+          "name": "confirmation",
+          "placeholder": "Confirmation",
+          "required": true,
+          "type": "password",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
       },
       Object {
         "instance": null,
@@ -177,7 +130,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Create Account",
-          "className": "create-account-button",
+          "className": "new-account-button",
         },
         "ref": null,
         "rendered": "Create Account",
@@ -193,42 +146,40 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <fieldset>
-            <input
-              className="create-user-input"
-              name="name"
-              placeholder="Name"
-              required={true}
-              type="text"
-              value=""
-            />
-            <input
-              className="create-user-input"
-              name="email"
-              placeholder="Email"
-              required={true}
-              type="text"
-              value=""
-            />
-            <input
-              className="create-user-input"
-              name="password"
-              placeholder="Password"
-              required={true}
-              type="password"
-              value=""
-            />
-            <input
-              className="create-user-input"
-              name="confirmation"
-              placeholder="Confirmation"
-              required={true}
-              type="password"
-              value=""
-            />
-          </fieldset>,
+          <input
+            className="new-user-name"
+            name="name"
+            placeholder="Name"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <input
+            className="new-user-email"
+            name="email"
+            placeholder="Email"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <input
+            className="new-user-password"
+            name="password"
+            placeholder="Password"
+            required={true}
+            type="password"
+            value=""
+          />,
+          <input
+            className="new-user-password-confirmation"
+            name="confirmation"
+            placeholder="Confirmation"
+            required={true}
+            type="password"
+            value=""
+          />,
           <button
-            className="create-account-button"
+            className="new-account-button"
           >
             Create Account
           </button>,
@@ -241,109 +192,64 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <input
-                className="create-user-input"
-                name="name"
-                placeholder="Name"
-                required={true}
-                type="text"
-                value=""
-              />,
-              <input
-                className="create-user-input"
-                name="email"
-                placeholder="Email"
-                required={true}
-                type="text"
-                value=""
-              />,
-              <input
-                className="create-user-input"
-                name="password"
-                placeholder="Password"
-                required={true}
-                type="password"
-                value=""
-              />,
-              <input
-                className="create-user-input"
-                name="confirmation"
-                placeholder="Confirmation"
-                required={true}
-                type="password"
-                value=""
-              />,
-            ],
+            "className": "new-user-name",
+            "name": "name",
+            "placeholder": "Name",
+            "required": true,
+            "type": "text",
+            "value": "",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "create-user-input",
-                "name": "name",
-                "placeholder": "Name",
-                "required": true,
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "create-user-input",
-                "name": "email",
-                "placeholder": "Email",
-                "required": true,
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "create-user-input",
-                "name": "password",
-                "placeholder": "Password",
-                "required": true,
-                "type": "password",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "create-user-input",
-                "name": "confirmation",
-                "placeholder": "Confirmation",
-                "required": true,
-                "type": "password",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-          ],
-          "type": "fieldset",
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-user-email",
+            "name": "email",
+            "placeholder": "Email",
+            "required": true,
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-user-password",
+            "name": "password",
+            "placeholder": "Password",
+            "required": true,
+            "type": "password",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-user-password-confirmation",
+            "name": "confirmation",
+            "placeholder": "Confirmation",
+            "required": true,
+            "type": "password",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
         },
         Object {
           "instance": null,
@@ -351,7 +257,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Create Account",
-            "className": "create-account-button",
+            "className": "new-account-button",
           },
           "ref": null,
           "rendered": "Create Account",

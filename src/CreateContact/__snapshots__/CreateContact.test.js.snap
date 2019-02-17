@@ -18,894 +18,171 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <article>
-        <form>
-          <input
-            className="new-contact-name"
-            name="name"
-            placeholder="Name"
-            required={true}
-            type="text"
-            value=""
-          />
-          <select
-            className="contact-type"
-            required={true}
-            value=""
+      "children": Array [
+        <div
+          className="new-contact-header"
+        >
+          New Contact
+        </div>,
+        <div
+          className="article"
+        >
+          <div
+            className="name"
           >
-            <option
-              value="email"
-            >
-              Email
-            </option>
-            <option
-              value="call"
-            >
-              Call
-            </option>
-            <option
-              value="text"
-            >
-              Text
-            </option>
-          </select>
-          <select
-            className="priority"
-            required={true}
-            value=""
+            <input
+              className="new-contact-name"
+              name="name"
+              placeholder="Name"
+              required={true}
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className="selections"
           >
-            <option
-              value="prio-1"
+            <select
+              className="contact-type"
+              required={true}
+              value=""
             >
-              1
-            </option>
-            <option
-              value="prio-2"
+              <option
+                value="email"
+              >
+                Email
+              </option>
+              <option
+                value="call"
+              >
+                Call
+              </option>
+              <option
+                value="text"
+              >
+                Text
+              </option>
+            </select>
+            <select
+              className="priority"
+              required={true}
+              value=""
             >
-              2
-            </option>
-            <option
-              value="prio-3"
+              <option
+                value="prio-1"
+              >
+                1
+              </option>
+              <option
+                value="prio-2"
+              >
+                2
+              </option>
+              <option
+                value="prio-3"
+              >
+                3
+              </option>
+              <option
+                value="prio-4"
+              >
+                4
+              </option>
+              <option
+                value="prio-5"
+              >
+                5
+              </option>
+            </select>
+            <select
+              className="frequency"
+              required={true}
+              value=""
             >
-              3
-            </option>
-            <option
-              value="prio-4"
-            >
-              4
-            </option>
-            <option
-              value="prio-5"
-            >
-              5
-            </option>
-          </select>
-          <select
-            className="frequency"
-            required={true}
-            value=""
+              <option
+                value="daily"
+              >
+                Daily
+              </option>
+              <option
+                value="weekly"
+              >
+                Weekly
+              </option>
+              <option
+                value="bi-weekly"
+              >
+                Bi-Weekly
+              </option>
+              <option
+                value="monthly"
+              >
+                Monthly
+              </option>
+            </select>
+          </div>
+          <div
+            className="contact-info"
           >
-            <option
-              value="daily"
-            >
-              Daily
-            </option>
-            <option
-              value="weekly"
-            >
-              Weekly
-            </option>
-            <option
-              value="bi-weekly"
-            >
-              Bi-Weekly
-            </option>
-            <option
-              value="monthly"
-            >
-              Monthly
-            </option>
-          </select>
-          <input
-            className="contact-information"
-            name="contact-information"
-            placeholder="Phone Number"
-            required={true}
-            type="text"
-            value=""
-          />
+            <input
+              className="contact-information"
+              name="contact-information"
+              placeholder="Phone Number"
+              required={true}
+              type="text"
+              value=""
+            />
+          </div>
           <label
-            for="notes"
+            className="notes"
           >
             Notes:
           </label>
-          <text-area
-            name="notes"
-            rows="5"
-            value=""
-          />
-        </form>
-      </article>,
+          <div
+            className="notes"
+          >
+            <text-area
+              className="note-field"
+              placeholder="Take your notes here."
+              rows="5"
+              value=""
+            />
+          </div>
+        </div>,
+        <div
+          className="save-contact"
+        >
+          <button
+            className="save-contact-btn"
+          >
+            Save Contact
+          </button>
+        </div>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <form>
-          <input
-            className="new-contact-name"
-            name="name"
-            placeholder="Name"
-            required={true}
-            type="text"
-            value=""
-          />
-          <select
-            className="contact-type"
-            required={true}
-            value=""
-          >
-            <option
-              value="email"
-            >
-              Email
-            </option>
-            <option
-              value="call"
-            >
-              Call
-            </option>
-            <option
-              value="text"
-            >
-              Text
-            </option>
-          </select>
-          <select
-            className="priority"
-            required={true}
-            value=""
-          >
-            <option
-              value="prio-1"
-            >
-              1
-            </option>
-            <option
-              value="prio-2"
-            >
-              2
-            </option>
-            <option
-              value="prio-3"
-            >
-              3
-            </option>
-            <option
-              value="prio-4"
-            >
-              4
-            </option>
-            <option
-              value="prio-5"
-            >
-              5
-            </option>
-          </select>
-          <select
-            className="frequency"
-            required={true}
-            value=""
-          >
-            <option
-              value="daily"
-            >
-              Daily
-            </option>
-            <option
-              value="weekly"
-            >
-              Weekly
-            </option>
-            <option
-              value="bi-weekly"
-            >
-              Bi-Weekly
-            </option>
-            <option
-              value="monthly"
-            >
-              Monthly
-            </option>
-          </select>
-          <input
-            className="contact-information"
-            name="contact-information"
-            placeholder="Phone Number"
-            required={true}
-            type="text"
-            value=""
-          />
-          <label
-            for="notes"
-          >
-            Notes:
-          </label>
-          <text-area
-            name="notes"
-            rows="5"
-            value=""
-          />
-        </form>,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "New Contact",
+          "className": "new-contact-header",
+        },
+        "ref": null,
+        "rendered": "New Contact",
+        "type": "div",
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <input
-              className="new-contact-name"
-              name="name"
-              placeholder="Name"
-              required={true}
-              type="text"
-              value=""
-            />,
-            <select
-              className="contact-type"
-              required={true}
-              value=""
+            <div
+              className="name"
             >
-              <option
-                value="email"
-              >
-                Email
-              </option>
-              <option
-                value="call"
-              >
-                Call
-              </option>
-              <option
-                value="text"
-              >
-                Text
-              </option>
-            </select>,
-            <select
-              className="priority"
-              required={true}
-              value=""
-            >
-              <option
-                value="prio-1"
-              >
-                1
-              </option>
-              <option
-                value="prio-2"
-              >
-                2
-              </option>
-              <option
-                value="prio-3"
-              >
-                3
-              </option>
-              <option
-                value="prio-4"
-              >
-                4
-              </option>
-              <option
-                value="prio-5"
-              >
-                5
-              </option>
-            </select>,
-            <select
-              className="frequency"
-              required={true}
-              value=""
-            >
-              <option
-                value="daily"
-              >
-                Daily
-              </option>
-              <option
-                value="weekly"
-              >
-                Weekly
-              </option>
-              <option
-                value="bi-weekly"
-              >
-                Bi-Weekly
-              </option>
-              <option
-                value="monthly"
-              >
-                Monthly
-              </option>
-            </select>,
-            <input
-              className="contact-information"
-              name="contact-information"
-              placeholder="Phone Number"
-              required={true}
-              type="text"
-              value=""
-            />,
-            <label
-              for="notes"
-            >
-              Notes:
-            </label>,
-            <text-area
-              name="notes"
-              rows="5"
-              value=""
-            />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "new-contact-name",
-              "name": "name",
-              "placeholder": "Name",
-              "required": true,
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <option
-                  value="email"
-                >
-                  Email
-                </option>,
-                <option
-                  value="call"
-                >
-                  Call
-                </option>,
-                <option
-                  value="text"
-                >
-                  Text
-                </option>,
-              ],
-              "className": "contact-type",
-              "required": true,
-              "value": "",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Email",
-                  "value": "email",
-                },
-                "ref": null,
-                "rendered": "Email",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Call",
-                  "value": "call",
-                },
-                "ref": null,
-                "rendered": "Call",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Text",
-                  "value": "text",
-                },
-                "ref": null,
-                "rendered": "Text",
-                "type": "option",
-              },
-            ],
-            "type": "select",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <option
-                  value="prio-1"
-                >
-                  1
-                </option>,
-                <option
-                  value="prio-2"
-                >
-                  2
-                </option>,
-                <option
-                  value="prio-3"
-                >
-                  3
-                </option>,
-                <option
-                  value="prio-4"
-                >
-                  4
-                </option>,
-                <option
-                  value="prio-5"
-                >
-                  5
-                </option>,
-              ],
-              "className": "priority",
-              "required": true,
-              "value": "",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "1",
-                  "value": "prio-1",
-                },
-                "ref": null,
-                "rendered": "1",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "2",
-                  "value": "prio-2",
-                },
-                "ref": null,
-                "rendered": "2",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "3",
-                  "value": "prio-3",
-                },
-                "ref": null,
-                "rendered": "3",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "4",
-                  "value": "prio-4",
-                },
-                "ref": null,
-                "rendered": "4",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "5",
-                  "value": "prio-5",
-                },
-                "ref": null,
-                "rendered": "5",
-                "type": "option",
-              },
-            ],
-            "type": "select",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <option
-                  value="daily"
-                >
-                  Daily
-                </option>,
-                <option
-                  value="weekly"
-                >
-                  Weekly
-                </option>,
-                <option
-                  value="bi-weekly"
-                >
-                  Bi-Weekly
-                </option>,
-                <option
-                  value="monthly"
-                >
-                  Monthly
-                </option>,
-              ],
-              "className": "frequency",
-              "required": true,
-              "value": "",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Daily",
-                  "value": "daily",
-                },
-                "ref": null,
-                "rendered": "Daily",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Weekly",
-                  "value": "weekly",
-                },
-                "ref": null,
-                "rendered": "Weekly",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Bi-Weekly",
-                  "value": "bi-weekly",
-                },
-                "ref": null,
-                "rendered": "Bi-Weekly",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Monthly",
-                  "value": "monthly",
-                },
-                "ref": null,
-                "rendered": "Monthly",
-                "type": "option",
-              },
-            ],
-            "type": "select",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "contact-information",
-              "name": "contact-information",
-              "placeholder": "Phone Number",
-              "required": true,
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Notes:",
-              "for": "notes",
-            },
-            "ref": null,
-            "rendered": "Notes:",
-            "type": "label",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "name": "notes",
-              "rows": "5",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "text-area",
-          },
-        ],
-        "type": "form",
-      },
-      "type": "article",
-    },
-    "type": "main",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <article>
-          <form>
-            <input
-              className="new-contact-name"
-              name="name"
-              placeholder="Name"
-              required={true}
-              type="text"
-              value=""
-            />
-            <select
-              className="contact-type"
-              required={true}
-              value=""
-            >
-              <option
-                value="email"
-              >
-                Email
-              </option>
-              <option
-                value="call"
-              >
-                Call
-              </option>
-              <option
-                value="text"
-              >
-                Text
-              </option>
-            </select>
-            <select
-              className="priority"
-              required={true}
-              value=""
-            >
-              <option
-                value="prio-1"
-              >
-                1
-              </option>
-              <option
-                value="prio-2"
-              >
-                2
-              </option>
-              <option
-                value="prio-3"
-              >
-                3
-              </option>
-              <option
-                value="prio-4"
-              >
-                4
-              </option>
-              <option
-                value="prio-5"
-              >
-                5
-              </option>
-            </select>
-            <select
-              className="frequency"
-              required={true}
-              value=""
-            >
-              <option
-                value="daily"
-              >
-                Daily
-              </option>
-              <option
-                value="weekly"
-              >
-                Weekly
-              </option>
-              <option
-                value="bi-weekly"
-              >
-                Bi-Weekly
-              </option>
-              <option
-                value="monthly"
-              >
-                Monthly
-              </option>
-            </select>
-            <input
-              className="contact-information"
-              name="contact-information"
-              placeholder="Phone Number"
-              required={true}
-              type="text"
-              value=""
-            />
-            <label
-              for="notes"
-            >
-              Notes:
-            </label>
-            <text-area
-              name="notes"
-              rows="5"
-              value=""
-            />
-          </form>
-        </article>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <form>
-            <input
-              className="new-contact-name"
-              name="name"
-              placeholder="Name"
-              required={true}
-              type="text"
-              value=""
-            />
-            <select
-              className="contact-type"
-              required={true}
-              value=""
-            >
-              <option
-                value="email"
-              >
-                Email
-              </option>
-              <option
-                value="call"
-              >
-                Call
-              </option>
-              <option
-                value="text"
-              >
-                Text
-              </option>
-            </select>
-            <select
-              className="priority"
-              required={true}
-              value=""
-            >
-              <option
-                value="prio-1"
-              >
-                1
-              </option>
-              <option
-                value="prio-2"
-              >
-                2
-              </option>
-              <option
-                value="prio-3"
-              >
-                3
-              </option>
-              <option
-                value="prio-4"
-              >
-                4
-              </option>
-              <option
-                value="prio-5"
-              >
-                5
-              </option>
-            </select>
-            <select
-              className="frequency"
-              required={true}
-              value=""
-            >
-              <option
-                value="daily"
-              >
-                Daily
-              </option>
-              <option
-                value="weekly"
-              >
-                Weekly
-              </option>
-              <option
-                value="bi-weekly"
-              >
-                Bi-Weekly
-              </option>
-              <option
-                value="monthly"
-              >
-                Monthly
-              </option>
-            </select>
-            <input
-              className="contact-information"
-              name="contact-information"
-              placeholder="Phone Number"
-              required={true}
-              type="text"
-              value=""
-            />
-            <label
-              for="notes"
-            >
-              Notes:
-            </label>
-            <text-area
-              name="notes"
-              rows="5"
-              value=""
-            />
-          </form>,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
               <input
                 className="new-contact-name"
                 name="name"
@@ -913,7 +190,11 @@ ShallowWrapper {
                 required={true}
                 type="text"
                 value=""
-              />,
+              />
+            </div>,
+            <div
+              className="selections"
+            >
               <select
                 className="contact-type"
                 required={true}
@@ -934,7 +215,7 @@ ShallowWrapper {
                 >
                   Text
                 </option>
-              </select>,
+              </select>
               <select
                 className="priority"
                 required={true}
@@ -965,7 +246,7 @@ ShallowWrapper {
                 >
                   5
                 </option>
-              </select>,
+              </select>
               <select
                 className="frequency"
                 required={true}
@@ -991,7 +272,11 @@ ShallowWrapper {
                 >
                   Monthly
                 </option>
-              </select>,
+              </select>
+            </div>,
+            <div
+              className="contact-info"
+            >
               <input
                 className="contact-information"
                 name="contact-information"
@@ -999,22 +284,45 @@ ShallowWrapper {
                 required={true}
                 type="text"
                 value=""
-              />,
-              <label
-                for="notes"
-              >
-                Notes:
-              </label>,
+              />
+            </div>,
+            <label
+              className="notes"
+            >
+              Notes:
+            </label>,
+            <div
+              className="notes"
+            >
               <text-area
-                name="notes"
+                className="note-field"
+                placeholder="Take your notes here."
                 rows="5"
                 value=""
+              />
+            </div>,
+          ],
+          "className": "article",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                className="new-contact-name"
+                name="name"
+                placeholder="Name"
+                required={true}
+                type="text"
+                value=""
               />,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
+              "className": "name",
+            },
+            "ref": null,
+            "rendered": Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
@@ -1030,259 +338,369 @@ ShallowWrapper {
               "rendered": null,
               "type": "input",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <select
+                  className="contact-type"
+                  required={true}
+                  value=""
+                >
                   <option
                     value="email"
                   >
                     Email
-                  </option>,
+                  </option>
                   <option
                     value="call"
                   >
                     Call
-                  </option>,
+                  </option>
                   <option
                     value="text"
                   >
                     Text
-                  </option>,
-                ],
-                "className": "contact-type",
-                "required": true,
-                "value": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Email",
-                    "value": "email",
-                  },
-                  "ref": null,
-                  "rendered": "Email",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Call",
-                    "value": "call",
-                  },
-                  "ref": null,
-                  "rendered": "Call",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Text",
-                    "value": "text",
-                  },
-                  "ref": null,
-                  "rendered": "Text",
-                  "type": "option",
-                },
-              ],
-              "type": "select",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
+                  </option>
+                </select>,
+                <select
+                  className="priority"
+                  required={true}
+                  value=""
+                >
                   <option
                     value="prio-1"
                   >
                     1
-                  </option>,
+                  </option>
                   <option
                     value="prio-2"
                   >
                     2
-                  </option>,
+                  </option>
                   <option
                     value="prio-3"
                   >
                     3
-                  </option>,
+                  </option>
                   <option
                     value="prio-4"
                   >
                     4
-                  </option>,
+                  </option>
                   <option
                     value="prio-5"
                   >
                     5
-                  </option>,
-                ],
-                "className": "priority",
-                "required": true,
-                "value": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "1",
-                    "value": "prio-1",
-                  },
-                  "ref": null,
-                  "rendered": "1",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "2",
-                    "value": "prio-2",
-                  },
-                  "ref": null,
-                  "rendered": "2",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "3",
-                    "value": "prio-3",
-                  },
-                  "ref": null,
-                  "rendered": "3",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "4",
-                    "value": "prio-4",
-                  },
-                  "ref": null,
-                  "rendered": "4",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "5",
-                    "value": "prio-5",
-                  },
-                  "ref": null,
-                  "rendered": "5",
-                  "type": "option",
-                },
-              ],
-              "type": "select",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
+                  </option>
+                </select>,
+                <select
+                  className="frequency"
+                  required={true}
+                  value=""
+                >
                   <option
                     value="daily"
                   >
                     Daily
-                  </option>,
+                  </option>
                   <option
                     value="weekly"
                   >
                     Weekly
-                  </option>,
+                  </option>
                   <option
                     value="bi-weekly"
                   >
                     Bi-Weekly
-                  </option>,
+                  </option>
                   <option
                     value="monthly"
                   >
                     Monthly
-                  </option>,
-                ],
-                "className": "frequency",
-                "required": true,
-                "value": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Daily",
-                    "value": "daily",
-                  },
-                  "ref": null,
-                  "rendered": "Daily",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Weekly",
-                    "value": "weekly",
-                  },
-                  "ref": null,
-                  "rendered": "Weekly",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Bi-Weekly",
-                    "value": "bi-weekly",
-                  },
-                  "ref": null,
-                  "rendered": "Bi-Weekly",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Monthly",
-                    "value": "monthly",
-                  },
-                  "ref": null,
-                  "rendered": "Monthly",
-                  "type": "option",
-                },
+                  </option>
+                </select>,
               ],
-              "type": "select",
+              "className": "selections",
             },
-            Object {
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value="email"
+                    >
+                      Email
+                    </option>,
+                    <option
+                      value="call"
+                    >
+                      Call
+                    </option>,
+                    <option
+                      value="text"
+                    >
+                      Text
+                    </option>,
+                  ],
+                  "className": "contact-type",
+                  "required": true,
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Email",
+                      "value": "email",
+                    },
+                    "ref": null,
+                    "rendered": "Email",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Call",
+                      "value": "call",
+                    },
+                    "ref": null,
+                    "rendered": "Call",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Text",
+                      "value": "text",
+                    },
+                    "ref": null,
+                    "rendered": "Text",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value="prio-1"
+                    >
+                      1
+                    </option>,
+                    <option
+                      value="prio-2"
+                    >
+                      2
+                    </option>,
+                    <option
+                      value="prio-3"
+                    >
+                      3
+                    </option>,
+                    <option
+                      value="prio-4"
+                    >
+                      4
+                    </option>,
+                    <option
+                      value="prio-5"
+                    >
+                      5
+                    </option>,
+                  ],
+                  "className": "priority",
+                  "required": true,
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "1",
+                      "value": "prio-1",
+                    },
+                    "ref": null,
+                    "rendered": "1",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "2",
+                      "value": "prio-2",
+                    },
+                    "ref": null,
+                    "rendered": "2",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "3",
+                      "value": "prio-3",
+                    },
+                    "ref": null,
+                    "rendered": "3",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "4",
+                      "value": "prio-4",
+                    },
+                    "ref": null,
+                    "rendered": "4",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "5",
+                      "value": "prio-5",
+                    },
+                    "ref": null,
+                    "rendered": "5",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value="daily"
+                    >
+                      Daily
+                    </option>,
+                    <option
+                      value="weekly"
+                    >
+                      Weekly
+                    </option>,
+                    <option
+                      value="bi-weekly"
+                    >
+                      Bi-Weekly
+                    </option>,
+                    <option
+                      value="monthly"
+                    >
+                      Monthly
+                    </option>,
+                  ],
+                  "className": "frequency",
+                  "required": true,
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Daily",
+                      "value": "daily",
+                    },
+                    "ref": null,
+                    "rendered": "Daily",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Weekly",
+                      "value": "weekly",
+                    },
+                    "ref": null,
+                    "rendered": "Weekly",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Bi-Weekly",
+                      "value": "bi-weekly",
+                    },
+                    "ref": null,
+                    "rendered": "Bi-Weekly",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Monthly",
+                      "value": "monthly",
+                    },
+                    "ref": null,
+                    "rendered": "Monthly",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                className="contact-information"
+                name="contact-information"
+                placeholder="Phone Number"
+                required={true}
+                type="text"
+                value=""
+              />,
+              "className": "contact-info",
+            },
+            "ref": null,
+            "rendered": Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
@@ -1298,13 +716,796 @@ ShallowWrapper {
               "rendered": null,
               "type": "input",
             },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Notes:",
+              "className": "notes",
+            },
+            "ref": null,
+            "rendered": "Notes:",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <text-area
+                className="note-field"
+                placeholder="Take your notes here."
+                rows="5"
+                value=""
+              />,
+              "className": "notes",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "note-field",
+                "placeholder": "Take your notes here.",
+                "rows": "5",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "text-area",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <button
+            className="save-contact-btn"
+          >
+            Save Contact
+          </button>,
+          "className": "save-contact",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Save Contact",
+            "className": "save-contact-btn",
+          },
+          "ref": null,
+          "rendered": "Save Contact",
+          "type": "button",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="new-contact-header"
+          >
+            New Contact
+          </div>,
+          <div
+            className="article"
+          >
+            <div
+              className="name"
+            >
+              <input
+                className="new-contact-name"
+                name="name"
+                placeholder="Name"
+                required={true}
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              className="selections"
+            >
+              <select
+                className="contact-type"
+                required={true}
+                value=""
+              >
+                <option
+                  value="email"
+                >
+                  Email
+                </option>
+                <option
+                  value="call"
+                >
+                  Call
+                </option>
+                <option
+                  value="text"
+                >
+                  Text
+                </option>
+              </select>
+              <select
+                className="priority"
+                required={true}
+                value=""
+              >
+                <option
+                  value="prio-1"
+                >
+                  1
+                </option>
+                <option
+                  value="prio-2"
+                >
+                  2
+                </option>
+                <option
+                  value="prio-3"
+                >
+                  3
+                </option>
+                <option
+                  value="prio-4"
+                >
+                  4
+                </option>
+                <option
+                  value="prio-5"
+                >
+                  5
+                </option>
+              </select>
+              <select
+                className="frequency"
+                required={true}
+                value=""
+              >
+                <option
+                  value="daily"
+                >
+                  Daily
+                </option>
+                <option
+                  value="weekly"
+                >
+                  Weekly
+                </option>
+                <option
+                  value="bi-weekly"
+                >
+                  Bi-Weekly
+                </option>
+                <option
+                  value="monthly"
+                >
+                  Monthly
+                </option>
+              </select>
+            </div>
+            <div
+              className="contact-info"
+            >
+              <input
+                className="contact-information"
+                name="contact-information"
+                placeholder="Phone Number"
+                required={true}
+                type="text"
+                value=""
+              />
+            </div>
+            <label
+              className="notes"
+            >
+              Notes:
+            </label>
+            <div
+              className="notes"
+            >
+              <text-area
+                className="note-field"
+                placeholder="Take your notes here."
+                rows="5"
+                value=""
+              />
+            </div>
+          </div>,
+          <div
+            className="save-contact"
+          >
+            <button
+              className="save-contact-btn"
+            >
+              Save Contact
+            </button>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "New Contact",
+            "className": "new-contact-header",
+          },
+          "ref": null,
+          "rendered": "New Contact",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="name"
+              >
+                <input
+                  className="new-contact-name"
+                  name="name"
+                  placeholder="Name"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>,
+              <div
+                className="selections"
+              >
+                <select
+                  className="contact-type"
+                  required={true}
+                  value=""
+                >
+                  <option
+                    value="email"
+                  >
+                    Email
+                  </option>
+                  <option
+                    value="call"
+                  >
+                    Call
+                  </option>
+                  <option
+                    value="text"
+                  >
+                    Text
+                  </option>
+                </select>
+                <select
+                  className="priority"
+                  required={true}
+                  value=""
+                >
+                  <option
+                    value="prio-1"
+                  >
+                    1
+                  </option>
+                  <option
+                    value="prio-2"
+                  >
+                    2
+                  </option>
+                  <option
+                    value="prio-3"
+                  >
+                    3
+                  </option>
+                  <option
+                    value="prio-4"
+                  >
+                    4
+                  </option>
+                  <option
+                    value="prio-5"
+                  >
+                    5
+                  </option>
+                </select>
+                <select
+                  className="frequency"
+                  required={true}
+                  value=""
+                >
+                  <option
+                    value="daily"
+                  >
+                    Daily
+                  </option>
+                  <option
+                    value="weekly"
+                  >
+                    Weekly
+                  </option>
+                  <option
+                    value="bi-weekly"
+                  >
+                    Bi-Weekly
+                  </option>
+                  <option
+                    value="monthly"
+                  >
+                    Monthly
+                  </option>
+                </select>
+              </div>,
+              <div
+                className="contact-info"
+              >
+                <input
+                  className="contact-information"
+                  name="contact-information"
+                  placeholder="Phone Number"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>,
+              <label
+                className="notes"
+              >
+                Notes:
+              </label>,
+              <div
+                className="notes"
+              >
+                <text-area
+                  className="note-field"
+                  placeholder="Take your notes here."
+                  rows="5"
+                  value=""
+                />
+              </div>,
+            ],
+            "className": "article",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <input
+                  className="new-contact-name"
+                  name="name"
+                  placeholder="Name"
+                  required={true}
+                  type="text"
+                  value=""
+                />,
+                "className": "name",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "new-contact-name",
+                  "name": "name",
+                  "placeholder": "Name",
+                  "required": true,
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <select
+                    className="contact-type"
+                    required={true}
+                    value=""
+                  >
+                    <option
+                      value="email"
+                    >
+                      Email
+                    </option>
+                    <option
+                      value="call"
+                    >
+                      Call
+                    </option>
+                    <option
+                      value="text"
+                    >
+                      Text
+                    </option>
+                  </select>,
+                  <select
+                    className="priority"
+                    required={true}
+                    value=""
+                  >
+                    <option
+                      value="prio-1"
+                    >
+                      1
+                    </option>
+                    <option
+                      value="prio-2"
+                    >
+                      2
+                    </option>
+                    <option
+                      value="prio-3"
+                    >
+                      3
+                    </option>
+                    <option
+                      value="prio-4"
+                    >
+                      4
+                    </option>
+                    <option
+                      value="prio-5"
+                    >
+                      5
+                    </option>
+                  </select>,
+                  <select
+                    className="frequency"
+                    required={true}
+                    value=""
+                  >
+                    <option
+                      value="daily"
+                    >
+                      Daily
+                    </option>
+                    <option
+                      value="weekly"
+                    >
+                      Weekly
+                    </option>
+                    <option
+                      value="bi-weekly"
+                    >
+                      Bi-Weekly
+                    </option>
+                    <option
+                      value="monthly"
+                    >
+                      Monthly
+                    </option>
+                  </select>,
+                ],
+                "className": "selections",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value="email"
+                      >
+                        Email
+                      </option>,
+                      <option
+                        value="call"
+                      >
+                        Call
+                      </option>,
+                      <option
+                        value="text"
+                      >
+                        Text
+                      </option>,
+                    ],
+                    "className": "contact-type",
+                    "required": true,
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Email",
+                        "value": "email",
+                      },
+                      "ref": null,
+                      "rendered": "Email",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Call",
+                        "value": "call",
+                      },
+                      "ref": null,
+                      "rendered": "Call",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Text",
+                        "value": "text",
+                      },
+                      "ref": null,
+                      "rendered": "Text",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value="prio-1"
+                      >
+                        1
+                      </option>,
+                      <option
+                        value="prio-2"
+                      >
+                        2
+                      </option>,
+                      <option
+                        value="prio-3"
+                      >
+                        3
+                      </option>,
+                      <option
+                        value="prio-4"
+                      >
+                        4
+                      </option>,
+                      <option
+                        value="prio-5"
+                      >
+                        5
+                      </option>,
+                    ],
+                    "className": "priority",
+                    "required": true,
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "1",
+                        "value": "prio-1",
+                      },
+                      "ref": null,
+                      "rendered": "1",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "2",
+                        "value": "prio-2",
+                      },
+                      "ref": null,
+                      "rendered": "2",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "3",
+                        "value": "prio-3",
+                      },
+                      "ref": null,
+                      "rendered": "3",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "4",
+                        "value": "prio-4",
+                      },
+                      "ref": null,
+                      "rendered": "4",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "5",
+                        "value": "prio-5",
+                      },
+                      "ref": null,
+                      "rendered": "5",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value="daily"
+                      >
+                        Daily
+                      </option>,
+                      <option
+                        value="weekly"
+                      >
+                        Weekly
+                      </option>,
+                      <option
+                        value="bi-weekly"
+                      >
+                        Bi-Weekly
+                      </option>,
+                      <option
+                        value="monthly"
+                      >
+                        Monthly
+                      </option>,
+                    ],
+                    "className": "frequency",
+                    "required": true,
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Daily",
+                        "value": "daily",
+                      },
+                      "ref": null,
+                      "rendered": "Daily",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Weekly",
+                        "value": "weekly",
+                      },
+                      "ref": null,
+                      "rendered": "Weekly",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Bi-Weekly",
+                        "value": "bi-weekly",
+                      },
+                      "ref": null,
+                      "rendered": "Bi-Weekly",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Monthly",
+                        "value": "monthly",
+                      },
+                      "ref": null,
+                      "rendered": "Monthly",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <input
+                  className="contact-information"
+                  name="contact-information"
+                  placeholder="Phone Number"
+                  required={true}
+                  type="text"
+                  value=""
+                />,
+                "className": "contact-info",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "contact-information",
+                  "name": "contact-information",
+                  "placeholder": "Phone Number",
+                  "required": true,
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": "Notes:",
-                "for": "notes",
+                "className": "notes",
               },
               "ref": null,
               "rendered": "Notes:",
@@ -1315,19 +1516,62 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "name": "notes",
-                "rows": "5",
-                "value": "",
+                "children": <text-area
+                  className="note-field"
+                  placeholder="Take your notes here."
+                  rows="5"
+                  value=""
+                />,
+                "className": "notes",
               },
               "ref": null,
-              "rendered": null,
-              "type": "text-area",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "note-field",
+                  "placeholder": "Take your notes here.",
+                  "rows": "5",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "text-area",
+              },
+              "type": "div",
             },
           ],
-          "type": "form",
+          "type": "div",
         },
-        "type": "article",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              className="save-contact-btn"
+            >
+              Save Contact
+            </button>,
+            "className": "save-contact",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save Contact",
+              "className": "save-contact-btn",
+            },
+            "ref": null,
+            "rendered": "Save Contact",
+            "type": "button",
+          },
+          "type": "div",
+        },
+      ],
       "type": "main",
     },
   ],

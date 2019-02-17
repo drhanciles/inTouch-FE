@@ -7,6 +7,7 @@ describe('CreateUser', () => {
   let mockEmail; 
   let mockPassword; 
   let mockConfirmation; 
+  
   beforeEach(() => {
     mockName = 'Kaytranada'; 
     mockEmail = 'yaboy@ymail.com'; 
@@ -18,5 +19,5 @@ describe('CreateUser', () => {
     const wrapper = shallow(<CreateUser />)
 
     expect(wrapper).toMatchSnapshot()
-  }); 
-}); 
+  });
+});
