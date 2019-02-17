@@ -5,6 +5,7 @@
     "react/forbid-prop-types": "disabled",
     "comma-dangle": ["error", "never"],
     "max-lines-per-function": ["error", 30],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"], 
+    "jsx-a11y/aria-role": ["error", {"ignoreNonDOM": true}]
   }
 }
