@@ -1,0 +1,3010 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HomePage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header>
+          <h1>
+            inTouch.
+          </h1>
+          <article
+            className="dropdown-container"
+          >
+            <h3>
+              Menu
+              <span
+                className="icon-container"
+                role="container for settings selection icon"
+              >
+                <i
+                  className="icon"
+                >
+                  ./icons/down-arrow.svg
+                </i>
+              </span>
+            </h3>
+            <nav
+              role="navigation"
+            >
+              <ul>
+                <li>
+                  Add Contact
+                  <span
+                    className="icon-container"
+                    role="add contact icon container"
+                  >
+                    <i
+                      className="icon"
+                    >
+                      ./icons/add-contact.svg
+                    </i>
+                  </span>
+                </li>
+                <li>
+                  All Contacts
+                  <span
+                    className="icon-container"
+                    role="all contacts icon container"
+                  >
+                    <i
+                      className="icon"
+                    >
+                      ./icons/all-contacts.svg
+                    </i>
+                  </span>
+                </li>
+                <li>
+                  Home
+                  <span
+                    className="icon-container"
+                    role="home icon container"
+                  >
+                    <i
+                      className="icon"
+                    >
+                      ./icons/home.svg
+                    </i>
+                  </span>
+                </li>
+                <li>
+                  Sign Out
+                  <span
+                    className="icon-container"
+                    role="sign out icon container"
+                  >
+                    <i
+                      className="icon"
+                    >
+                      ./icons/logout-gear.svg
+                    </i>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </header>,
+        <article
+          className="message-container"
+        >
+          <h2
+            className="reachout-message-intro"
+          >
+            Hello Ye,
+          </h2>
+          <h2
+            className="reachout-message-content"
+          >
+            Have You Called Mom Today?
+          </h2>
+        </article>,
+        <article
+          className="message-buttons-container"
+        >
+          <button
+            className="done-button"
+          >
+            Done
+          </button>
+          <button
+            className="reminder-button"
+          >
+            Remind Me Tomorrow
+          </button>
+        </article>,
+        <section
+          className="occasions-container"
+        >
+          <h3>
+            Upcoming Occasions:
+          </h3>
+          <section
+            className="occasions-week"
+          >
+            <article
+              className="occasion"
+            >
+              <p
+                className="date-container"
+              >
+                02/16/19
+              </p>
+              <p
+                className="occasaion-reminder-content"
+              >
+                Celebrate Gina's Birthday
+              </p>
+            </article>
+            <article
+              className="occasion"
+            >
+              <p
+                className="date-container"
+              >
+                02/16/19
+              </p>
+              <p
+                className="occasaion-reminder-content"
+              >
+                Celebrate Gina's Birthday
+              </p>
+            </article>
+            <article
+              className="occasion"
+            >
+              <p
+                className="date-container"
+              >
+                02/16/19
+              </p>
+              <p
+                className="occasaion-reminder-content"
+              >
+                Celebrate Gina's Birthday
+              </p>
+            </article>
+            <article
+              className="occasion"
+            >
+              <p
+                className="date-container"
+              >
+                02/16/19
+              </p>
+              <p
+                className="occasaion-reminder-content"
+              >
+                Celebrate Gina's Birthday
+              </p>
+            </article>
+            <article
+              className="occasion"
+            >
+              <p
+                className="date-container"
+              >
+                02/16/19
+              </p>
+              <p
+                className="occasaion-reminder-content"
+              >
+                Celebrate Gina's Birthday
+              </p>
+            </article>
+            <article
+              className="occasion"
+            >
+              <p
+                className="date-container"
+              >
+                02/16/19
+              </p>
+              <p
+                className="occasaion-reminder-content"
+              >
+                Celebrate Gina's Birthday
+              </p>
+            </article>
+            <article
+              className="occasion"
+            >
+              <p
+                className="date-container"
+              >
+                02/16/19
+              </p>
+              <p
+                className="occasaion-reminder-content"
+              >
+                Celebrate Gina's Birthday
+              </p>
+            </article>
+          </section>
+        </section>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              inTouch.
+            </h1>,
+            <article
+              className="dropdown-container"
+            >
+              <h3>
+                Menu
+                <span
+                  className="icon-container"
+                  role="container for settings selection icon"
+                >
+                  <i
+                    className="icon"
+                  >
+                    ./icons/down-arrow.svg
+                  </i>
+                </span>
+              </h3>
+              <nav
+                role="navigation"
+              >
+                <ul>
+                  <li>
+                    Add Contact
+                    <span
+                      className="icon-container"
+                      role="add contact icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/add-contact.svg
+                      </i>
+                    </span>
+                  </li>
+                  <li>
+                    All Contacts
+                    <span
+                      className="icon-container"
+                      role="all contacts icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/all-contacts.svg
+                      </i>
+                    </span>
+                  </li>
+                  <li>
+                    Home
+                    <span
+                      className="icon-container"
+                      role="home icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/home.svg
+                      </i>
+                    </span>
+                  </li>
+                  <li>
+                    Sign Out
+                    <span
+                      className="icon-container"
+                      role="sign out icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/logout-gear.svg
+                      </i>
+                    </span>
+                  </li>
+                </ul>
+              </nav>
+            </article>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "inTouch.",
+            },
+            "ref": null,
+            "rendered": "inTouch.",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3>
+                  Menu
+                  <span
+                    className="icon-container"
+                    role="container for settings selection icon"
+                  >
+                    <i
+                      className="icon"
+                    >
+                      ./icons/down-arrow.svg
+                    </i>
+                  </span>
+                </h3>,
+                <nav
+                  role="navigation"
+                >
+                  <ul>
+                    <li>
+                      Add Contact
+                      <span
+                        className="icon-container"
+                        role="add contact icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/add-contact.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      All Contacts
+                      <span
+                        className="icon-container"
+                        role="all contacts icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/all-contacts.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      Home
+                      <span
+                        className="icon-container"
+                        role="home icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/home.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      Sign Out
+                      <span
+                        className="icon-container"
+                        role="sign out icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/logout-gear.svg
+                        </i>
+                      </span>
+                    </li>
+                  </ul>
+                </nav>,
+              ],
+              "className": "dropdown-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Menu",
+                    <span
+                      className="icon-container"
+                      role="container for settings selection icon"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/down-arrow.svg
+                      </i>
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Menu",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <i
+                        className="icon"
+                      >
+                        ./icons/down-arrow.svg
+                      </i>,
+                      "className": "icon-container",
+                      "role": "container for settings selection icon",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "./icons/down-arrow.svg",
+                        "className": "icon",
+                      },
+                      "ref": null,
+                      "rendered": "./icons/down-arrow.svg",
+                      "type": "i",
+                    },
+                    "type": "span",
+                  },
+                ],
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ul>
+                    <li>
+                      Add Contact
+                      <span
+                        className="icon-container"
+                        role="add contact icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/add-contact.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      All Contacts
+                      <span
+                        className="icon-container"
+                        role="all contacts icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/all-contacts.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      Home
+                      <span
+                        className="icon-container"
+                        role="home icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/home.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      Sign Out
+                      <span
+                        className="icon-container"
+                        role="sign out icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/logout-gear.svg
+                        </i>
+                      </span>
+                    </li>
+                  </ul>,
+                  "role": "navigation",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        Add Contact
+                        <span
+                          className="icon-container"
+                          role="add contact icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/add-contact.svg
+                          </i>
+                        </span>
+                      </li>,
+                      <li>
+                        All Contacts
+                        <span
+                          className="icon-container"
+                          role="all contacts icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/all-contacts.svg
+                          </i>
+                        </span>
+                      </li>,
+                      <li>
+                        Home
+                        <span
+                          className="icon-container"
+                          role="home icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/home.svg
+                          </i>
+                        </span>
+                      </li>,
+                      <li>
+                        Sign Out
+                        <span
+                          className="icon-container"
+                          role="sign out icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/logout-gear.svg
+                          </i>
+                        </span>
+                      </li>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Add Contact",
+                          <span
+                            className="icon-container"
+                            role="add contact icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/add-contact.svg
+                            </i>
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Add Contact",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="icon"
+                            >
+                              ./icons/add-contact.svg
+                            </i>,
+                            "className": "icon-container",
+                            "role": "add contact icon container",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "./icons/add-contact.svg",
+                              "className": "icon",
+                            },
+                            "ref": null,
+                            "rendered": "./icons/add-contact.svg",
+                            "type": "i",
+                          },
+                          "type": "span",
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "All Contacts",
+                          <span
+                            className="icon-container"
+                            role="all contacts icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/all-contacts.svg
+                            </i>
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "All Contacts",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="icon"
+                            >
+                              ./icons/all-contacts.svg
+                            </i>,
+                            "className": "icon-container",
+                            "role": "all contacts icon container",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "./icons/all-contacts.svg",
+                              "className": "icon",
+                            },
+                            "ref": null,
+                            "rendered": "./icons/all-contacts.svg",
+                            "type": "i",
+                          },
+                          "type": "span",
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Home",
+                          <span
+                            className="icon-container"
+                            role="home icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/home.svg
+                            </i>
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Home",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="icon"
+                            >
+                              ./icons/home.svg
+                            </i>,
+                            "className": "icon-container",
+                            "role": "home icon container",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "./icons/home.svg",
+                              "className": "icon",
+                            },
+                            "ref": null,
+                            "rendered": "./icons/home.svg",
+                            "type": "i",
+                          },
+                          "type": "span",
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Sign Out",
+                          <span
+                            className="icon-container"
+                            role="sign out icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/logout-gear.svg
+                            </i>
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Sign Out",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="icon"
+                            >
+                              ./icons/logout-gear.svg
+                            </i>,
+                            "className": "icon-container",
+                            "role": "sign out icon container",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "./icons/logout-gear.svg",
+                              "className": "icon",
+                            },
+                            "ref": null,
+                            "rendered": "./icons/logout-gear.svg",
+                            "type": "i",
+                          },
+                          "type": "span",
+                        },
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                "type": "nav",
+              },
+            ],
+            "type": "article",
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="reachout-message-intro"
+            >
+              Hello Ye,
+            </h2>,
+            <h2
+              className="reachout-message-content"
+            >
+              Have You Called Mom Today?
+            </h2>,
+          ],
+          "className": "message-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Hello Ye,",
+              "className": "reachout-message-intro",
+            },
+            "ref": null,
+            "rendered": "Hello Ye,",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Have You Called Mom Today?",
+              "className": "reachout-message-content",
+            },
+            "ref": null,
+            "rendered": "Have You Called Mom Today?",
+            "type": "h2",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="done-button"
+            >
+              Done
+            </button>,
+            <button
+              className="reminder-button"
+            >
+              Remind Me Tomorrow
+            </button>,
+          ],
+          "className": "message-buttons-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Done",
+              "className": "done-button",
+            },
+            "ref": null,
+            "rendered": "Done",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Remind Me Tomorrow",
+              "className": "reminder-button",
+            },
+            "ref": null,
+            "rendered": "Remind Me Tomorrow",
+            "type": "button",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Upcoming Occasions:
+            </h3>,
+            <section
+              className="occasions-week"
+            >
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+            </section>,
+          ],
+          "className": "occasions-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Upcoming Occasions:",
+            },
+            "ref": null,
+            "rendered": "Upcoming Occasions:",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>,
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>,
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>,
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>,
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>,
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>,
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>,
+              ],
+              "className": "occasions-week",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>,
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>,
+                  ],
+                  "className": "occasion",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "02/16/19",
+                      "className": "date-container",
+                    },
+                    "ref": null,
+                    "rendered": "02/16/19",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Celebrate Gina's Birthday",
+                      "className": "occasaion-reminder-content",
+                    },
+                    "ref": null,
+                    "rendered": "Celebrate Gina's Birthday",
+                    "type": "p",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>,
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>,
+                  ],
+                  "className": "occasion",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "02/16/19",
+                      "className": "date-container",
+                    },
+                    "ref": null,
+                    "rendered": "02/16/19",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Celebrate Gina's Birthday",
+                      "className": "occasaion-reminder-content",
+                    },
+                    "ref": null,
+                    "rendered": "Celebrate Gina's Birthday",
+                    "type": "p",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>,
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>,
+                  ],
+                  "className": "occasion",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "02/16/19",
+                      "className": "date-container",
+                    },
+                    "ref": null,
+                    "rendered": "02/16/19",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Celebrate Gina's Birthday",
+                      "className": "occasaion-reminder-content",
+                    },
+                    "ref": null,
+                    "rendered": "Celebrate Gina's Birthday",
+                    "type": "p",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>,
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>,
+                  ],
+                  "className": "occasion",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "02/16/19",
+                      "className": "date-container",
+                    },
+                    "ref": null,
+                    "rendered": "02/16/19",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Celebrate Gina's Birthday",
+                      "className": "occasaion-reminder-content",
+                    },
+                    "ref": null,
+                    "rendered": "Celebrate Gina's Birthday",
+                    "type": "p",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>,
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>,
+                  ],
+                  "className": "occasion",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "02/16/19",
+                      "className": "date-container",
+                    },
+                    "ref": null,
+                    "rendered": "02/16/19",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Celebrate Gina's Birthday",
+                      "className": "occasaion-reminder-content",
+                    },
+                    "ref": null,
+                    "rendered": "Celebrate Gina's Birthday",
+                    "type": "p",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>,
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>,
+                  ],
+                  "className": "occasion",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "02/16/19",
+                      "className": "date-container",
+                    },
+                    "ref": null,
+                    "rendered": "02/16/19",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Celebrate Gina's Birthday",
+                      "className": "occasaion-reminder-content",
+                    },
+                    "ref": null,
+                    "rendered": "Celebrate Gina's Birthday",
+                    "type": "p",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>,
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>,
+                  ],
+                  "className": "occasion",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "02/16/19",
+                      "className": "date-container",
+                    },
+                    "ref": null,
+                    "rendered": "02/16/19",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Celebrate Gina's Birthday",
+                      "className": "occasaion-reminder-content",
+                    },
+                    "ref": null,
+                    "rendered": "Celebrate Gina's Birthday",
+                    "type": "p",
+                  },
+                ],
+                "type": "article",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header>
+            <h1>
+              inTouch.
+            </h1>
+            <article
+              className="dropdown-container"
+            >
+              <h3>
+                Menu
+                <span
+                  className="icon-container"
+                  role="container for settings selection icon"
+                >
+                  <i
+                    className="icon"
+                  >
+                    ./icons/down-arrow.svg
+                  </i>
+                </span>
+              </h3>
+              <nav
+                role="navigation"
+              >
+                <ul>
+                  <li>
+                    Add Contact
+                    <span
+                      className="icon-container"
+                      role="add contact icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/add-contact.svg
+                      </i>
+                    </span>
+                  </li>
+                  <li>
+                    All Contacts
+                    <span
+                      className="icon-container"
+                      role="all contacts icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/all-contacts.svg
+                      </i>
+                    </span>
+                  </li>
+                  <li>
+                    Home
+                    <span
+                      className="icon-container"
+                      role="home icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/home.svg
+                      </i>
+                    </span>
+                  </li>
+                  <li>
+                    Sign Out
+                    <span
+                      className="icon-container"
+                      role="sign out icon container"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/logout-gear.svg
+                      </i>
+                    </span>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+          </header>,
+          <article
+            className="message-container"
+          >
+            <h2
+              className="reachout-message-intro"
+            >
+              Hello Ye,
+            </h2>
+            <h2
+              className="reachout-message-content"
+            >
+              Have You Called Mom Today?
+            </h2>
+          </article>,
+          <article
+            className="message-buttons-container"
+          >
+            <button
+              className="done-button"
+            >
+              Done
+            </button>
+            <button
+              className="reminder-button"
+            >
+              Remind Me Tomorrow
+            </button>
+          </article>,
+          <section
+            className="occasions-container"
+          >
+            <h3>
+              Upcoming Occasions:
+            </h3>
+            <section
+              className="occasions-week"
+            >
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+              <article
+                className="occasion"
+              >
+                <p
+                  className="date-container"
+                >
+                  02/16/19
+                </p>
+                <p
+                  className="occasaion-reminder-content"
+                >
+                  Celebrate Gina's Birthday
+                </p>
+              </article>
+            </section>
+          </section>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                inTouch.
+              </h1>,
+              <article
+                className="dropdown-container"
+              >
+                <h3>
+                  Menu
+                  <span
+                    className="icon-container"
+                    role="container for settings selection icon"
+                  >
+                    <i
+                      className="icon"
+                    >
+                      ./icons/down-arrow.svg
+                    </i>
+                  </span>
+                </h3>
+                <nav
+                  role="navigation"
+                >
+                  <ul>
+                    <li>
+                      Add Contact
+                      <span
+                        className="icon-container"
+                        role="add contact icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/add-contact.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      All Contacts
+                      <span
+                        className="icon-container"
+                        role="all contacts icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/all-contacts.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      Home
+                      <span
+                        className="icon-container"
+                        role="home icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/home.svg
+                        </i>
+                      </span>
+                    </li>
+                    <li>
+                      Sign Out
+                      <span
+                        className="icon-container"
+                        role="sign out icon container"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/logout-gear.svg
+                        </i>
+                      </span>
+                    </li>
+                  </ul>
+                </nav>
+              </article>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "inTouch.",
+              },
+              "ref": null,
+              "rendered": "inTouch.",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3>
+                    Menu
+                    <span
+                      className="icon-container"
+                      role="container for settings selection icon"
+                    >
+                      <i
+                        className="icon"
+                      >
+                        ./icons/down-arrow.svg
+                      </i>
+                    </span>
+                  </h3>,
+                  <nav
+                    role="navigation"
+                  >
+                    <ul>
+                      <li>
+                        Add Contact
+                        <span
+                          className="icon-container"
+                          role="add contact icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/add-contact.svg
+                          </i>
+                        </span>
+                      </li>
+                      <li>
+                        All Contacts
+                        <span
+                          className="icon-container"
+                          role="all contacts icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/all-contacts.svg
+                          </i>
+                        </span>
+                      </li>
+                      <li>
+                        Home
+                        <span
+                          className="icon-container"
+                          role="home icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/home.svg
+                          </i>
+                        </span>
+                      </li>
+                      <li>
+                        Sign Out
+                        <span
+                          className="icon-container"
+                          role="sign out icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/logout-gear.svg
+                          </i>
+                        </span>
+                      </li>
+                    </ul>
+                  </nav>,
+                ],
+                "className": "dropdown-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Menu",
+                      <span
+                        className="icon-container"
+                        role="container for settings selection icon"
+                      >
+                        <i
+                          className="icon"
+                        >
+                          ./icons/down-arrow.svg
+                        </i>
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Menu",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <i
+                          className="icon"
+                        >
+                          ./icons/down-arrow.svg
+                        </i>,
+                        "className": "icon-container",
+                        "role": "container for settings selection icon",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "./icons/down-arrow.svg",
+                          "className": "icon",
+                        },
+                        "ref": null,
+                        "rendered": "./icons/down-arrow.svg",
+                        "type": "i",
+                      },
+                      "type": "span",
+                    },
+                  ],
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <ul>
+                      <li>
+                        Add Contact
+                        <span
+                          className="icon-container"
+                          role="add contact icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/add-contact.svg
+                          </i>
+                        </span>
+                      </li>
+                      <li>
+                        All Contacts
+                        <span
+                          className="icon-container"
+                          role="all contacts icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/all-contacts.svg
+                          </i>
+                        </span>
+                      </li>
+                      <li>
+                        Home
+                        <span
+                          className="icon-container"
+                          role="home icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/home.svg
+                          </i>
+                        </span>
+                      </li>
+                      <li>
+                        Sign Out
+                        <span
+                          className="icon-container"
+                          role="sign out icon container"
+                        >
+                          <i
+                            className="icon"
+                          >
+                            ./icons/logout-gear.svg
+                          </i>
+                        </span>
+                      </li>
+                    </ul>,
+                    "role": "navigation",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <li>
+                          Add Contact
+                          <span
+                            className="icon-container"
+                            role="add contact icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/add-contact.svg
+                            </i>
+                          </span>
+                        </li>,
+                        <li>
+                          All Contacts
+                          <span
+                            className="icon-container"
+                            role="all contacts icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/all-contacts.svg
+                            </i>
+                          </span>
+                        </li>,
+                        <li>
+                          Home
+                          <span
+                            className="icon-container"
+                            role="home icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/home.svg
+                            </i>
+                          </span>
+                        </li>,
+                        <li>
+                          Sign Out
+                          <span
+                            className="icon-container"
+                            role="sign out icon container"
+                          >
+                            <i
+                              className="icon"
+                            >
+                              ./icons/logout-gear.svg
+                            </i>
+                          </span>
+                        </li>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Add Contact",
+                            <span
+                              className="icon-container"
+                              role="add contact icon container"
+                            >
+                              <i
+                                className="icon"
+                              >
+                                ./icons/add-contact.svg
+                              </i>
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Add Contact",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <i
+                                className="icon"
+                              >
+                                ./icons/add-contact.svg
+                              </i>,
+                              "className": "icon-container",
+                              "role": "add contact icon container",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "./icons/add-contact.svg",
+                                "className": "icon",
+                              },
+                              "ref": null,
+                              "rendered": "./icons/add-contact.svg",
+                              "type": "i",
+                            },
+                            "type": "span",
+                          },
+                        ],
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "All Contacts",
+                            <span
+                              className="icon-container"
+                              role="all contacts icon container"
+                            >
+                              <i
+                                className="icon"
+                              >
+                                ./icons/all-contacts.svg
+                              </i>
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "All Contacts",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <i
+                                className="icon"
+                              >
+                                ./icons/all-contacts.svg
+                              </i>,
+                              "className": "icon-container",
+                              "role": "all contacts icon container",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "./icons/all-contacts.svg",
+                                "className": "icon",
+                              },
+                              "ref": null,
+                              "rendered": "./icons/all-contacts.svg",
+                              "type": "i",
+                            },
+                            "type": "span",
+                          },
+                        ],
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Home",
+                            <span
+                              className="icon-container"
+                              role="home icon container"
+                            >
+                              <i
+                                className="icon"
+                              >
+                                ./icons/home.svg
+                              </i>
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Home",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <i
+                                className="icon"
+                              >
+                                ./icons/home.svg
+                              </i>,
+                              "className": "icon-container",
+                              "role": "home icon container",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "./icons/home.svg",
+                                "className": "icon",
+                              },
+                              "ref": null,
+                              "rendered": "./icons/home.svg",
+                              "type": "i",
+                            },
+                            "type": "span",
+                          },
+                        ],
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Sign Out",
+                            <span
+                              className="icon-container"
+                              role="sign out icon container"
+                            >
+                              <i
+                                className="icon"
+                              >
+                                ./icons/logout-gear.svg
+                              </i>
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Sign Out",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <i
+                                className="icon"
+                              >
+                                ./icons/logout-gear.svg
+                              </i>,
+                              "className": "icon-container",
+                              "role": "sign out icon container",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "./icons/logout-gear.svg",
+                                "className": "icon",
+                              },
+                              "ref": null,
+                              "rendered": "./icons/logout-gear.svg",
+                              "type": "i",
+                            },
+                            "type": "span",
+                          },
+                        ],
+                        "type": "li",
+                      },
+                    ],
+                    "type": "ul",
+                  },
+                  "type": "nav",
+                },
+              ],
+              "type": "article",
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="reachout-message-intro"
+              >
+                Hello Ye,
+              </h2>,
+              <h2
+                className="reachout-message-content"
+              >
+                Have You Called Mom Today?
+              </h2>,
+            ],
+            "className": "message-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Hello Ye,",
+                "className": "reachout-message-intro",
+              },
+              "ref": null,
+              "rendered": "Hello Ye,",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Have You Called Mom Today?",
+                "className": "reachout-message-content",
+              },
+              "ref": null,
+              "rendered": "Have You Called Mom Today?",
+              "type": "h2",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="done-button"
+              >
+                Done
+              </button>,
+              <button
+                className="reminder-button"
+              >
+                Remind Me Tomorrow
+              </button>,
+            ],
+            "className": "message-buttons-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Done",
+                "className": "done-button",
+              },
+              "ref": null,
+              "rendered": "Done",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Remind Me Tomorrow",
+                "className": "reminder-button",
+              },
+              "ref": null,
+              "rendered": "Remind Me Tomorrow",
+              "type": "button",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Upcoming Occasions:
+              </h3>,
+              <section
+                className="occasions-week"
+              >
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>
+                <article
+                  className="occasion"
+                >
+                  <p
+                    className="date-container"
+                  >
+                    02/16/19
+                  </p>
+                  <p
+                    className="occasaion-reminder-content"
+                  >
+                    Celebrate Gina's Birthday
+                  </p>
+                </article>
+              </section>,
+            ],
+            "className": "occasions-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Upcoming Occasions:",
+              },
+              "ref": null,
+              "rendered": "Upcoming Occasions:",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <article
+                    className="occasion"
+                  >
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>
+                  </article>,
+                  <article
+                    className="occasion"
+                  >
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>
+                  </article>,
+                  <article
+                    className="occasion"
+                  >
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>
+                  </article>,
+                  <article
+                    className="occasion"
+                  >
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>
+                  </article>,
+                  <article
+                    className="occasion"
+                  >
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>
+                  </article>,
+                  <article
+                    className="occasion"
+                  >
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>
+                  </article>,
+                  <article
+                    className="occasion"
+                  >
+                    <p
+                      className="date-container"
+                    >
+                      02/16/19
+                    </p>
+                    <p
+                      className="occasaion-reminder-content"
+                    >
+                      Celebrate Gina's Birthday
+                    </p>
+                  </article>,
+                ],
+                "className": "occasions-week",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="date-container"
+                      >
+                        02/16/19
+                      </p>,
+                      <p
+                        className="occasaion-reminder-content"
+                      >
+                        Celebrate Gina's Birthday
+                      </p>,
+                    ],
+                    "className": "occasion",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "02/16/19",
+                        "className": "date-container",
+                      },
+                      "ref": null,
+                      "rendered": "02/16/19",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Celebrate Gina's Birthday",
+                        "className": "occasaion-reminder-content",
+                      },
+                      "ref": null,
+                      "rendered": "Celebrate Gina's Birthday",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="date-container"
+                      >
+                        02/16/19
+                      </p>,
+                      <p
+                        className="occasaion-reminder-content"
+                      >
+                        Celebrate Gina's Birthday
+                      </p>,
+                    ],
+                    "className": "occasion",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "02/16/19",
+                        "className": "date-container",
+                      },
+                      "ref": null,
+                      "rendered": "02/16/19",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Celebrate Gina's Birthday",
+                        "className": "occasaion-reminder-content",
+                      },
+                      "ref": null,
+                      "rendered": "Celebrate Gina's Birthday",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="date-container"
+                      >
+                        02/16/19
+                      </p>,
+                      <p
+                        className="occasaion-reminder-content"
+                      >
+                        Celebrate Gina's Birthday
+                      </p>,
+                    ],
+                    "className": "occasion",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "02/16/19",
+                        "className": "date-container",
+                      },
+                      "ref": null,
+                      "rendered": "02/16/19",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Celebrate Gina's Birthday",
+                        "className": "occasaion-reminder-content",
+                      },
+                      "ref": null,
+                      "rendered": "Celebrate Gina's Birthday",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="date-container"
+                      >
+                        02/16/19
+                      </p>,
+                      <p
+                        className="occasaion-reminder-content"
+                      >
+                        Celebrate Gina's Birthday
+                      </p>,
+                    ],
+                    "className": "occasion",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "02/16/19",
+                        "className": "date-container",
+                      },
+                      "ref": null,
+                      "rendered": "02/16/19",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Celebrate Gina's Birthday",
+                        "className": "occasaion-reminder-content",
+                      },
+                      "ref": null,
+                      "rendered": "Celebrate Gina's Birthday",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="date-container"
+                      >
+                        02/16/19
+                      </p>,
+                      <p
+                        className="occasaion-reminder-content"
+                      >
+                        Celebrate Gina's Birthday
+                      </p>,
+                    ],
+                    "className": "occasion",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "02/16/19",
+                        "className": "date-container",
+                      },
+                      "ref": null,
+                      "rendered": "02/16/19",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Celebrate Gina's Birthday",
+                        "className": "occasaion-reminder-content",
+                      },
+                      "ref": null,
+                      "rendered": "Celebrate Gina's Birthday",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="date-container"
+                      >
+                        02/16/19
+                      </p>,
+                      <p
+                        className="occasaion-reminder-content"
+                      >
+                        Celebrate Gina's Birthday
+                      </p>,
+                    ],
+                    "className": "occasion",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "02/16/19",
+                        "className": "date-container",
+                      },
+                      "ref": null,
+                      "rendered": "02/16/19",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Celebrate Gina's Birthday",
+                        "className": "occasaion-reminder-content",
+                      },
+                      "ref": null,
+                      "rendered": "Celebrate Gina's Birthday",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p
+                        className="date-container"
+                      >
+                        02/16/19
+                      </p>,
+                      <p
+                        className="occasaion-reminder-content"
+                      >
+                        Celebrate Gina's Birthday
+                      </p>,
+                    ],
+                    "className": "occasion",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "02/16/19",
+                        "className": "date-container",
+                      },
+                      "ref": null,
+                      "rendered": "02/16/19",
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Celebrate Gina's Birthday",
+                        "className": "occasaion-reminder-content",
+                      },
+                      "ref": null,
+                      "rendered": "Celebrate Gina's Birthday",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "article",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
