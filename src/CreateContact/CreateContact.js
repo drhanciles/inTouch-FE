@@ -46,7 +46,7 @@ export default class CreateContact extends Component {
           <div className="contact-info">
             <input className="contact-information" name="contact-information" value={contactInformation} type="text" required placeholder="Phone Number"/>
           </div>
-          <label className="notes">Notes:</label>
+          <label className="notes-label">Notes:</label>
           <div className="notes">
             <text-area value={notes} rows="5" className="note-field" placeholder="Take your notes here."/>  
           </div>          

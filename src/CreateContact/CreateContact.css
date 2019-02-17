@@ -67,10 +67,12 @@ label {
   color: black;
 }
 
-.note-field {
-  width: 500;
-  height: 200px;
-  font-size: 1em;
+.notes {
+  width: 500px;
+  height: 100px;
+  margin-left: 10%;
+  margin-bottom: 2em;
+  border-radius: 20px;
   background-color: #ABAECF;
 }
 
