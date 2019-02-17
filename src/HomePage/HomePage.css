@@ -17,6 +17,7 @@ h1 {
 }
 
 nav {
+  display: none; 
   display: flex; 
   flex-direction: column; 
   justify-content: space-around; 
@@ -37,6 +38,9 @@ li {
 }
 
 .message-container {
+  display: flex; 
+  flex-direction: column; 
+  text-align: left; 
 }
 
 .message-container:hover {
@@ -57,5 +61,91 @@ li {
   font-family: 'Oswald', sans-serif;
   font-weight: 300; 
   font-size: 2rem;
+}
+
+.message-buttons-container {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 5px; 
+}
+
+.done-button {
+  height: 40px; 
+  width: 150px; 
+  background-color: #191C69; 
+  padding: 5px; 
+  margin-top: 15px; 
+  border-radius: 25px; 
+  cursor: pointer;
+  color: #F2F3F9;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400; 
+  font-size: 1rem; 
+}
+
+.done-button:hover {
+  background-color: #ABAECF; 
+  color: #5B609F; 
+  cursor: pointer;
+}
+
+.reminder-button {
+  height: 40px; 
+  width: 175px; 
+  background-color: #191C69; 
+  padding: 5px; 
+  margin-top: 15px; 
+  border-radius: 25px; 
+  cursor: pointer;
+  color: #F2F3F9;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400; 
+  font-size: 1rem; 
+}
+
+.reminder-button:hover {
+  background-color: #ABAECF; 
+  color: #5B609F; 
+  cursor: pointer;
+}
+
+.occasions-container {
+  height: 300px; 
+  width: 600px; 
+  background-color: #ABAECF; 
+  border-radius: 25px; 
+  border: 3px solid #191C69;  
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400; 
+  font-size: 1rem; 
+}
+
+.occasion-week {
+  display: flex; 
+  flex-direction: column;
+}
+
+.occasion {
+  display: flex;
+  flex-direction: row; 
+  padding: 4px; 
+}
+
+.date-container {
+  border-right: 2px solid #F2F3F9; 
+  font-family:'Open Sans', sans-serif;
+  font-weight: 900; 
+  font-size: 1rem; 
+  color: #F2F3F9; 
+}
+
+.occasion-reminder-content {
+  font-family:'Open Sans', sans-serif;
+  font-weight: 800; 
+  font-size: 1rem;
+  color: #F2F3F9; 
 }
 

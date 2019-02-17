@@ -21,7 +21,7 @@ export default class HomePage extends Component {
         <header>
           <h1>inTouch.</h1>
           <article className="dropdown-container">
-            <h3>Settings 
+            <h3>Menu 
               <span role="container for settings selection icon" className="icon-container">
                 <i className="icon">{arrowIcon}</i>
               </span>
@@ -55,6 +55,10 @@ export default class HomePage extends Component {
         <article className="message-container">
           <h2 className="reachout-message-intro">Hello Ye,</h2>
           <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
+        </article>
+        <article className="message-buttons-container">
+          <button className="done-button">Done</button>
+          <button className="reminder-button">Remind Me Tomorrow</button>
         </article>
         <section className="occasions-container"> 
         <h3>Upcoming Occasions:</h3>
