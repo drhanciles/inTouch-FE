@@ -1,16 +1,17 @@
 import * as actions from './index.js'
 
 describe('actions', () => {
+  const id = 1
+  const name = 'Derek'
+  const email = 'derek@email'
+  const password = 'password'
+  
   it('should return a type of CREATE_USER', () => {
-    const name = 'Derek'
-    const email = 'derek@email'
-    const password = 'password'
-    
     const expectedAction = {
       type: 'CREATE_USER',
-      name: 'Derek',
-      email: 'derek@email',
-      password: 'password'
+      name,
+      email,
+      password
     }
     
     const result = actions.createUser(name, email, password)
@@ -19,13 +20,10 @@ describe('actions', () => {
   })
 
   it('should return a type of SIGN_IN_USER', () => {
-    const email = 'derek@email'
-    const password = 'password'
-    
     const expectedAction = {
       type: 'SIGN_IN_USER',
-      email: 'derek@email',
-      password: 'password'
+      email,
+      password
     }
     
     const result = actions.signInUser(email, password)
