@@ -56,5 +56,15 @@ describe('actions', () => {
     expect(result).toEqual(expectedAction)
   })
   
-  
+  it('should return a type of HAS_ERRORED', () => {
+    const hasErrored = true
+    const expectedAction = {
+      type: 'HAS_ERRORED',
+      hasErrored
+    }
+    
+    const result = actions.hasErrored(hasErrored)
+    
+    expect(result).toEqual(expectedAction)
+  })
 })
