@@ -12,7 +12,7 @@ class App extends Component {
         <header>
           <h1>inTouch.</h1>
         </header>
-          <CreateContact />
+          {/* <CreateContact /> */}
       {/* <header>
         <h1>inTouch.</h1>
       </header>
