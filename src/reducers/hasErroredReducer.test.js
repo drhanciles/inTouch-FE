@@ -9,7 +9,7 @@ describe('hasErroredReducer', () => {
     expect(result).toEqual(expected)
   })
   
-  it('should update the state when Has Errored case', () => {
+  it('should update the state when HAS ERRORED case', () => {
     const action = {
       type: 'HAS_ERRORED',
       hasErrored: true
