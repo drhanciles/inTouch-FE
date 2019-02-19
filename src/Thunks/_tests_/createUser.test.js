@@ -30,4 +30,17 @@ describe('createUser', () => {
     
     expect(mockDispatch).toHaveBeenCalledWith(isLoading(true))
   })
+  
+  it('should dispatch hasErrored(true) if response not ok', async () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: false, 
+      statusText: 'Unable to create account.'
+    }))
+    
+    const thunk = createUser(mockUrl)
+    
+    await thunk(mockDispatch)
+    
+    expect(mockDispatch).toHaveBeenCalledWith(hasErrored(true))
+  })
 })
