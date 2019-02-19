@@ -49,11 +49,11 @@ export default class CreateUser extends Component {
   render() {
     const { userName, email, password, confirmation, disabled } = this.state
     return (
-      <form>
-          <input className="new-user-name" name="userName" value={userName} type="text" required placeholder="Username"/>
-          <input className="new-user-email" name="email" value={email} type="text" required placeholder="Email"/>
-          <input className="new-user-password" name="password" value={password} type="password" required placeholder="Password"/>
-          <input className="new-user-password-confirmation" name="confirmation" value={confirmation} type="password" required placeholder="Confirmation"/>
+      <form onSubmit={ this.handleSubmit }>
+          <input onChange={ this.handleChange } className="new-user-name" name="userName" value={userName} type="text" required placeholder="Username"/>
+          <input onChange={ this.handleChange } className="new-user-email" name="email" value={email} type="text" required placeholder="Email"/>
+          <input onChange={ this.handleChange } className="new-user-password" name="password" value={password} type="password" required placeholder="Password"/>
+          <input onChange={ this.handleChange } className="new-user-password-confirmation" name="confirmation" value={confirmation} type="password" required placeholder="Confirmation"/>
         <button className="new-account-button" disabled={disabled}>Create Account</button>
       </form>
     )
