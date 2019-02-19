@@ -51,4 +51,13 @@ describe('CreateUser', () => {
     
     expect(wrapper.state()).toEqual(expected)
   })
+  
+  it('should invoke enableButton', () => {
+    const mockFunction = jest.fn()
+    wrapper.enableButton = mockFunction
+    
+    wrapper.instance().handleChange(mockEvent)
+    
+    expect(mockFunction).toHaveBeenCalled
+  })
 })
