@@ -82,4 +82,19 @@ describe('CreateUser', () => {
     
     expect(wrapper.state()).toEqual(expected)
   })
+  
+  it('should invoke handleSubmit on click of the Create Account button', () => {
+    const mockSubmitEvent = {
+      target: {},
+      preventDefault: () => {}
+    }
+    
+    wrapper.setState({
+      disabled: false
+    })
+    
+    wrapper.find('.new-account-button').simulate('click', mockEvent)
+    
+    expect(wrapper.handleSubmit).toHaveBeenCalled
+  })
 })
