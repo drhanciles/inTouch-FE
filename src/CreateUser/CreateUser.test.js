@@ -60,4 +60,26 @@ describe('CreateUser', () => {
     
     expect(mockFunction).toHaveBeenCalled
   })
+  
+  it('should toggle disabled if all values are present in input fields', () => {
+    const mockState = {
+      userName: 'Derek', 
+      email: 'derek@email.com', 
+      password: 'password',
+      confirmation: 'password', 
+      disabled: false
+    }    
+    const expected = {
+      userName: 'Derek', 
+      email: 'derek@email.com', 
+      password: 'password',
+      confirmation: 'password', 
+      disabled: false
+    }
+    
+    wrapper.setState(mockState)
+    wrapper.instance().enableButton()
+    
+    expect(wrapper.state()).toEqual(expected)
+  })
 })
