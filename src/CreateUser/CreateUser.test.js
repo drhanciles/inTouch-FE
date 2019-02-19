@@ -97,4 +97,26 @@ describe('CreateUser', () => {
     
     expect(wrapper.handleSubmit).toHaveBeenCalled
   })
+  
+  describe('mapDispatchToProps', () => {
+    let mockDispatch
+    let mappedProps
+    let mockUserName; 
+    let mockEmail; 
+    let mockPassword; 
+    
+    beforeEach(() => {
+      mockDispatch = jest.fn()
+      mappedProps = mapDispatchToProps(mockDispatch)
+      mockUserName = 'Derek'
+      mockEmail = 'derek@email'
+      mockPassword = 'password'
+    })
+    
+    it('should dispatch the createUser action when handleSubmit is called', () => {
+      mappedProps.createNewUser(mockUserName, mockEmail, mockPassword)
+      
+      expect(mockDispatch).toHaveBeenCalledWith(expect.any(Function))
+    })
+  })
 })
