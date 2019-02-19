@@ -32,6 +32,20 @@ export default class CreateUser extends Component {
     }
   }
   
+  handleSubmit = (e) => {
+    e.preventDefault()
+    const { userName, email, password, confirmation } = this.state
+    if (password === confirmation) {
+      this.props.createNewUser(userName, email, password)
+    } else {
+      return (
+        <div>
+          <h3>Passwords do not match. Please try again.</h3>
+        </div>
+      )
+    }
+  }
+  
   render() {
     const { userName, email, password, confirmation, disabled } = this.state
     return (
