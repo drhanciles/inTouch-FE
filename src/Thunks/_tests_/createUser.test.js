@@ -9,7 +9,6 @@ describe('createUser', () => {
   let mockPassword
   let mockToken
   let mockDispatch
-  
   beforeEach( () => {
     mockUrl = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
     mockUserName = 'Derek'
@@ -55,4 +54,21 @@ describe('createUser', () => {
     
     expect(mockDispatch).toHaveBeenCalledWith(isLoading(false))
   })
+  
+  it.skip('should dispatch signInUser if response is ok', async () => {
+    const mockUser = {
+      username: 'Derek'
+    }
+    
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve(mockUser)
+    }))
+    
+    const thunk = createUser(mockUserName, mockEmail, mockPassword)
+    
+    await thunk(mockDispatch)
+    
+    expect(mockDispatch).toHaveBeenCalledWith(signInUser(mockUserName, mockToken))
+  })  
 })
