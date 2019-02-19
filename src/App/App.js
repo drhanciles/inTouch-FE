@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CreateUser from '../CreateUser/CreateUser.js'
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="app">
@@ -15,4 +15,3 @@ class App extends Component {
   }
 }
 
-export default App;

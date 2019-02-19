@@ -49,7 +49,7 @@ export default class CreateContact extends Component {
         <div className="save-contact">
           <button className='save-contact-btn'>Save Contact</button>
         </div>
-      </main>
+      </form>
     )
   }
 }

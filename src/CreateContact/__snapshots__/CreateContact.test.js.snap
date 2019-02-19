@@ -32,7 +32,7 @@ ShallowWrapper {
           >
             <input
               className="new-contact-name"
-              name="name"
+              name="contactName"
               placeholder="Name"
               required={true}
               type="text"
@@ -94,40 +94,22 @@ ShallowWrapper {
                 5
               </option>
             </select>
-            <select
+            <input
               className="frequency"
+              name="contactFrequency"
+              placeholder="7"
               required={true}
+              type="text"
               value=""
-            >
-              <option
-                value="daily"
-              >
-                Daily
-              </option>
-              <option
-                value="weekly"
-              >
-                Weekly
-              </option>
-              <option
-                value="bi-weekly"
-              >
-                Bi-Weekly
-              </option>
-              <option
-                value="monthly"
-              >
-                Monthly
-              </option>
-            </select>
+            />
           </div>
           <div
             className="contact-info"
           >
             <input
               className="contact-information"
-              name="contact-information"
-              placeholder="Phone Number"
+              name="contactInformation"
+              placeholder="Phone Number / Email"
               required={true}
               type="text"
               value=""
@@ -185,7 +167,7 @@ ShallowWrapper {
             >
               <input
                 className="new-contact-name"
-                name="name"
+                name="contactName"
                 placeholder="Name"
                 required={true}
                 type="text"
@@ -247,40 +229,22 @@ ShallowWrapper {
                   5
                 </option>
               </select>
-              <select
+              <input
                 className="frequency"
+                name="contactFrequency"
+                placeholder="7"
                 required={true}
+                type="text"
                 value=""
-              >
-                <option
-                  value="daily"
-                >
-                  Daily
-                </option>
-                <option
-                  value="weekly"
-                >
-                  Weekly
-                </option>
-                <option
-                  value="bi-weekly"
-                >
-                  Bi-Weekly
-                </option>
-                <option
-                  value="monthly"
-                >
-                  Monthly
-                </option>
-              </select>
+              />
             </div>,
             <div
               className="contact-info"
             >
               <input
                 className="contact-information"
-                name="contact-information"
-                placeholder="Phone Number"
+                name="contactInformation"
+                placeholder="Phone Number / Email"
                 required={true}
                 type="text"
                 value=""
@@ -313,7 +277,7 @@ ShallowWrapper {
             "props": Object {
               "children": <input
                 className="new-contact-name"
-                name="name"
+                name="contactName"
                 placeholder="Name"
                 required={true}
                 type="text"
@@ -328,7 +292,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": "new-contact-name",
-                "name": "name",
+                "name": "contactName",
                 "placeholder": "Name",
                 "required": true,
                 "type": "text",
@@ -398,32 +362,14 @@ ShallowWrapper {
                     5
                   </option>
                 </select>,
-                <select
+                <input
                   className="frequency"
+                  name="contactFrequency"
+                  placeholder="7"
                   required={true}
+                  type="text"
                   value=""
-                >
-                  <option
-                    value="daily"
-                  >
-                    Daily
-                  </option>
-                  <option
-                    value="weekly"
-                  >
-                    Weekly
-                  </option>
-                  <option
-                    value="bi-weekly"
-                  >
-                    Bi-Weekly
-                  </option>
-                  <option
-                    value="monthly"
-                  >
-                    Monthly
-                  </option>
-                </select>,
+                />,
               ],
               "className": "selections",
             },
@@ -602,84 +548,16 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <option
-                      value="daily"
-                    >
-                      Daily
-                    </option>,
-                    <option
-                      value="weekly"
-                    >
-                      Weekly
-                    </option>,
-                    <option
-                      value="bi-weekly"
-                    >
-                      Bi-Weekly
-                    </option>,
-                    <option
-                      value="monthly"
-                    >
-                      Monthly
-                    </option>,
-                  ],
                   "className": "frequency",
+                  "name": "contactFrequency",
+                  "placeholder": "7",
                   "required": true,
+                  "type": "text",
                   "value": "",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Daily",
-                      "value": "daily",
-                    },
-                    "ref": null,
-                    "rendered": "Daily",
-                    "type": "option",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Weekly",
-                      "value": "weekly",
-                    },
-                    "ref": null,
-                    "rendered": "Weekly",
-                    "type": "option",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Bi-Weekly",
-                      "value": "bi-weekly",
-                    },
-                    "ref": null,
-                    "rendered": "Bi-Weekly",
-                    "type": "option",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Monthly",
-                      "value": "monthly",
-                    },
-                    "ref": null,
-                    "rendered": "Monthly",
-                    "type": "option",
-                  },
-                ],
-                "type": "select",
+                "rendered": null,
+                "type": "input",
               },
             ],
             "type": "div",
@@ -691,8 +569,8 @@ ShallowWrapper {
             "props": Object {
               "children": <input
                 className="contact-information"
-                name="contact-information"
-                placeholder="Phone Number"
+                name="contactInformation"
+                placeholder="Phone Number / Email"
                 required={true}
                 type="text"
                 value=""
@@ -706,8 +584,8 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": "contact-information",
-                "name": "contact-information",
-                "placeholder": "Phone Number",
+                "name": "contactInformation",
+                "placeholder": "Phone Number / Email",
                 "required": true,
                 "type": "text",
                 "value": "",
@@ -791,7 +669,7 @@ ShallowWrapper {
         "type": "div",
       },
     ],
-    "type": "main",
+    "type": "form",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -813,7 +691,7 @@ ShallowWrapper {
             >
               <input
                 className="new-contact-name"
-                name="name"
+                name="contactName"
                 placeholder="Name"
                 required={true}
                 type="text"
@@ -875,40 +753,22 @@ ShallowWrapper {
                   5
                 </option>
               </select>
-              <select
+              <input
                 className="frequency"
+                name="contactFrequency"
+                placeholder="7"
                 required={true}
+                type="text"
                 value=""
-              >
-                <option
-                  value="daily"
-                >
-                  Daily
-                </option>
-                <option
-                  value="weekly"
-                >
-                  Weekly
-                </option>
-                <option
-                  value="bi-weekly"
-                >
-                  Bi-Weekly
-                </option>
-                <option
-                  value="monthly"
-                >
-                  Monthly
-                </option>
-              </select>
+              />
             </div>
             <div
               className="contact-info"
             >
               <input
                 className="contact-information"
-                name="contact-information"
-                placeholder="Phone Number"
+                name="contactInformation"
+                placeholder="Phone Number / Email"
                 required={true}
                 type="text"
                 value=""
@@ -966,7 +826,7 @@ ShallowWrapper {
               >
                 <input
                   className="new-contact-name"
-                  name="name"
+                  name="contactName"
                   placeholder="Name"
                   required={true}
                   type="text"
@@ -1028,40 +888,22 @@ ShallowWrapper {
                     5
                   </option>
                 </select>
-                <select
+                <input
                   className="frequency"
+                  name="contactFrequency"
+                  placeholder="7"
                   required={true}
+                  type="text"
                   value=""
-                >
-                  <option
-                    value="daily"
-                  >
-                    Daily
-                  </option>
-                  <option
-                    value="weekly"
-                  >
-                    Weekly
-                  </option>
-                  <option
-                    value="bi-weekly"
-                  >
-                    Bi-Weekly
-                  </option>
-                  <option
-                    value="monthly"
-                  >
-                    Monthly
-                  </option>
-                </select>
+                />
               </div>,
               <div
                 className="contact-info"
               >
                 <input
                   className="contact-information"
-                  name="contact-information"
-                  placeholder="Phone Number"
+                  name="contactInformation"
+                  placeholder="Phone Number / Email"
                   required={true}
                   type="text"
                   value=""
@@ -1094,7 +936,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <input
                   className="new-contact-name"
-                  name="name"
+                  name="contactName"
                   placeholder="Name"
                   required={true}
                   type="text"
@@ -1109,7 +951,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "className": "new-contact-name",
-                  "name": "name",
+                  "name": "contactName",
                   "placeholder": "Name",
                   "required": true,
                   "type": "text",
@@ -1179,32 +1021,14 @@ ShallowWrapper {
                       5
                     </option>
                   </select>,
-                  <select
+                  <input
                     className="frequency"
+                    name="contactFrequency"
+                    placeholder="7"
                     required={true}
+                    type="text"
                     value=""
-                  >
-                    <option
-                      value="daily"
-                    >
-                      Daily
-                    </option>
-                    <option
-                      value="weekly"
-                    >
-                      Weekly
-                    </option>
-                    <option
-                      value="bi-weekly"
-                    >
-                      Bi-Weekly
-                    </option>
-                    <option
-                      value="monthly"
-                    >
-                      Monthly
-                    </option>
-                  </select>,
+                  />,
                 ],
                 "className": "selections",
               },
@@ -1383,84 +1207,16 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <option
-                        value="daily"
-                      >
-                        Daily
-                      </option>,
-                      <option
-                        value="weekly"
-                      >
-                        Weekly
-                      </option>,
-                      <option
-                        value="bi-weekly"
-                      >
-                        Bi-Weekly
-                      </option>,
-                      <option
-                        value="monthly"
-                      >
-                        Monthly
-                      </option>,
-                    ],
                     "className": "frequency",
+                    "name": "contactFrequency",
+                    "placeholder": "7",
                     "required": true,
+                    "type": "text",
                     "value": "",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Daily",
-                        "value": "daily",
-                      },
-                      "ref": null,
-                      "rendered": "Daily",
-                      "type": "option",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Weekly",
-                        "value": "weekly",
-                      },
-                      "ref": null,
-                      "rendered": "Weekly",
-                      "type": "option",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Bi-Weekly",
-                        "value": "bi-weekly",
-                      },
-                      "ref": null,
-                      "rendered": "Bi-Weekly",
-                      "type": "option",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Monthly",
-                        "value": "monthly",
-                      },
-                      "ref": null,
-                      "rendered": "Monthly",
-                      "type": "option",
-                    },
-                  ],
-                  "type": "select",
+                  "rendered": null,
+                  "type": "input",
                 },
               ],
               "type": "div",
@@ -1472,8 +1228,8 @@ ShallowWrapper {
               "props": Object {
                 "children": <input
                   className="contact-information"
-                  name="contact-information"
-                  placeholder="Phone Number"
+                  name="contactInformation"
+                  placeholder="Phone Number / Email"
                   required={true}
                   type="text"
                   value=""
@@ -1487,8 +1243,8 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "className": "contact-information",
-                  "name": "contact-information",
-                  "placeholder": "Phone Number",
+                  "name": "contactInformation",
+                  "placeholder": "Phone Number / Email",
                   "required": true,
                   "type": "text",
                   "value": "",
@@ -1572,7 +1328,7 @@ ShallowWrapper {
           "type": "div",
         },
       ],
-      "type": "main",
+      "type": "form",
     },
   ],
   Symbol(enzyme.__options__): Object {
