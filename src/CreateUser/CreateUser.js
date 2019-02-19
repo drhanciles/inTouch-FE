@@ -4,7 +4,7 @@ import { createUser } from '../Thunks/createUser.js'
 import { hasErrored } from '../Actions/index.js'
 import { connect } from 'react-redux'
 
-export default class CreateUser extends Component {
+export class CreateUser extends Component {
   constructor() {
     super()
     this.state = {
@@ -27,7 +27,7 @@ export default class CreateUser extends Component {
     const { userName, email, password, confirmation } = this.state
     if (userName !== '' && email !== '' && password  !== '' && confirmation  !== '') {
       this.setState({
-        disabled = false
+        disabled: false
       })
     }
   }
