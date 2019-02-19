@@ -1,4 +1,4 @@
-import userReducer from './userReducer'
+import {userReducer} from './userReducer'
 
 describe('userReducer', () => {
   
@@ -9,33 +9,17 @@ describe('userReducer', () => {
     expect(result).toEqual(expected)
   })
   
-  const id = 1
-  const name = 'Derek'
-  const email = 'derek@email'
-  const password = 'password'
+  const userName = 'Derek'
+  const token = 'token12345'
   
-  it('should update state with user id and name when CREATE_USER case', () => {
-    const mockData = {name, email, password}
-    const action = {
-      type: 'CREATE_USER', 
-      data: mockData
-    }
-    
-    const expected = {id: action.id, name: action.name}
-
-    const result = userReducer({}, action)
-
-    expect(result).toEqual(expected)
-  })
-  
-  it('should update state with user id and name when SIGN_IN_USER case', () => {
-    const mockData = {email, password}
+  it('should update state with username and token when SIGN_IN_USER case', () => {
+    const mockData = {userName, token}
     const action = {
       type: 'SIGN_IN_USER', 
       data: mockData
     }
     
-    const expected = {id: action.id, name: action.name}
+    const expected = {userName: action.userName, token: action.token}
 
     const result = userReducer({}, action)
 
