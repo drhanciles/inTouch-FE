@@ -3,7 +3,9 @@
 exports[`CreateUser should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CreateUser />,
+  Symbol(enzyme.__unrendered__): <CreateUser
+    createNewUser={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -21,8 +23,9 @@ ShallowWrapper {
       "children": Array [
         <input
           className="new-user-name"
-          name="name"
-          placeholder="Name"
+          name="userName"
+          onChange={[Function]}
+          placeholder="Username"
           required={true}
           type="text"
           value=""
@@ -30,6 +33,7 @@ ShallowWrapper {
         <input
           className="new-user-email"
           name="email"
+          onChange={[Function]}
           placeholder="Email"
           required={true}
           type="text"
@@ -38,6 +42,7 @@ ShallowWrapper {
         <input
           className="new-user-password"
           name="password"
+          onChange={[Function]}
           placeholder="Password"
           required={true}
           type="password"
@@ -46,6 +51,7 @@ ShallowWrapper {
         <input
           className="new-user-password-confirmation"
           name="confirmation"
+          onChange={[Function]}
           placeholder="Confirmation"
           required={true}
           type="password"
@@ -53,10 +59,12 @@ ShallowWrapper {
         />,
         <button
           className="new-account-button"
+          disabled={true}
         >
           Create Account
         </button>,
       ],
+      "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -66,8 +74,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "className": "new-user-name",
-          "name": "name",
-          "placeholder": "Name",
+          "name": "userName",
+          "onChange": [Function],
+          "placeholder": "Username",
           "required": true,
           "type": "text",
           "value": "",
@@ -83,6 +92,7 @@ ShallowWrapper {
         "props": Object {
           "className": "new-user-email",
           "name": "email",
+          "onChange": [Function],
           "placeholder": "Email",
           "required": true,
           "type": "text",
@@ -99,6 +109,7 @@ ShallowWrapper {
         "props": Object {
           "className": "new-user-password",
           "name": "password",
+          "onChange": [Function],
           "placeholder": "Password",
           "required": true,
           "type": "password",
@@ -115,6 +126,7 @@ ShallowWrapper {
         "props": Object {
           "className": "new-user-password-confirmation",
           "name": "confirmation",
+          "onChange": [Function],
           "placeholder": "Confirmation",
           "required": true,
           "type": "password",
@@ -131,6 +143,7 @@ ShallowWrapper {
         "props": Object {
           "children": "Create Account",
           "className": "new-account-button",
+          "disabled": true,
         },
         "ref": null,
         "rendered": "Create Account",
@@ -148,8 +161,9 @@ ShallowWrapper {
         "children": Array [
           <input
             className="new-user-name"
-            name="name"
-            placeholder="Name"
+            name="userName"
+            onChange={[Function]}
+            placeholder="Username"
             required={true}
             type="text"
             value=""
@@ -157,6 +171,7 @@ ShallowWrapper {
           <input
             className="new-user-email"
             name="email"
+            onChange={[Function]}
             placeholder="Email"
             required={true}
             type="text"
@@ -165,6 +180,7 @@ ShallowWrapper {
           <input
             className="new-user-password"
             name="password"
+            onChange={[Function]}
             placeholder="Password"
             required={true}
             type="password"
@@ -173,6 +189,7 @@ ShallowWrapper {
           <input
             className="new-user-password-confirmation"
             name="confirmation"
+            onChange={[Function]}
             placeholder="Confirmation"
             required={true}
             type="password"
@@ -180,10 +197,12 @@ ShallowWrapper {
           />,
           <button
             className="new-account-button"
+            disabled={true}
           >
             Create Account
           </button>,
         ],
+        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -193,8 +212,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "new-user-name",
-            "name": "name",
-            "placeholder": "Name",
+            "name": "userName",
+            "onChange": [Function],
+            "placeholder": "Username",
             "required": true,
             "type": "text",
             "value": "",
@@ -210,6 +230,7 @@ ShallowWrapper {
           "props": Object {
             "className": "new-user-email",
             "name": "email",
+            "onChange": [Function],
             "placeholder": "Email",
             "required": true,
             "type": "text",
@@ -226,6 +247,7 @@ ShallowWrapper {
           "props": Object {
             "className": "new-user-password",
             "name": "password",
+            "onChange": [Function],
             "placeholder": "Password",
             "required": true,
             "type": "password",
@@ -242,6 +264,7 @@ ShallowWrapper {
           "props": Object {
             "className": "new-user-password-confirmation",
             "name": "confirmation",
+            "onChange": [Function],
             "placeholder": "Confirmation",
             "required": true,
             "type": "password",
@@ -258,6 +281,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Create Account",
             "className": "new-account-button",
+            "disabled": true,
           },
           "ref": null,
           "rendered": "Create Account",
