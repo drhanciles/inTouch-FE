@@ -23,23 +23,17 @@ export default class CreateContact extends Component {
           <div className="name">
             <input className="new-contact-name" name="contactName" value={name} type="text" required placeholder="Name"/>
           </div>
-          <div className="selections">
-            <select className="contact-type" value={contactType} required> 
-              <option value="email">Email</option>
-              <option value="call">Call</option>
-              <option value="text">Text</option>
-            </select>
-            <select className="priority" value={priority} required> 
-              <option value="prio-1">1</option>
+          <div className="priority">
+            <select className="priority-selection" value={priority} required> 
+              <option value="prio-1">1 - least important</option>
               <option value="prio-2">2</option>
               <option value="prio-3">3</option>
               <option value="prio-4">4</option>
-              <option value="prio-5">5</option>
+              <option value="prio-5">5 - most important</option>
             </select>
-            <input className="frequency" name="contactFrequency" value={priority} type="text" required required placeholder="7"/> 
           </div>
-          <div className="contact-info">
-            <input className="contact-information" name="contactInformation" value={contactInformation} type="text" required placeholder="Phone Number / Email"/>
+          <div className="frequency"> 
+            <input className="frequency-input" name="contactFrequency" value={priority} type="text" required required placeholder="7"/> 
           </div>
           <label className="notes-label">Notes:</label>
           <div className="notes">

@@ -16,44 +16,44 @@
   border: 2px solid #191C69;
 }
 
-.new-contact-name,
-.contact-info {
+.name {
+  height: 200;
+  width: 20px;
+  margin-top: 1em;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+.priority {
+  height: 200;
+  width: 20px;
+  margin-top: 1em;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+.frequency {
+  height: 150;
+  width: 5;
   margin-top: 1em;
   margin-left: 20px;
   margin-bottom: 1em;
 }
 
 input {
-  width: 200px; 
-  height: 35px; 
   border-bottom: 1px solid #191C69;
   text-align: left;
   margin-left: 10px;
   font-family: 'Oswald', sans-serif;
   font-weight: 200; 
-  font-size: 2rem;
-  color: black;  
+  font-size: 1.5rem;
+  color: black; 
 }
 
 ::placeholder {
   color: #A3A5B4; 
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-left: 10px;
-}
-
-.selections {
-  margin-top: 1em;
-  margin-left: 9px;
-  margin-bottom: 1em;
-}
-
-.contact-type,
-.priority,
-.frequency {
-  width: 200px; 
-  height: 30px; 
-  margin-right: 1em;
-  margin-left: 2em;
 }
 
 label {
