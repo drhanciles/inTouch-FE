@@ -8,7 +8,7 @@ export const authenticateUser = (userName, password) => {
       dispatch(isLoading(true))
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: mutation {tokenAuth(userName, password){token}}}),
+        body: JSON.stringify({query: "mutation {tokenAuth(userName, password){token}}"}),
         headers: {
           'Content-Type': 'application/json'
         }

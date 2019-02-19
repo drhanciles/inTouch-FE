@@ -8,7 +8,7 @@ export const createUser = (userName, email, password) => {
       dispatch(isLoading(true))
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: mutation {createUser(email, userName, password){user {userName}}}}),
+        body: JSON.stringify({query: "mutation { createUser(email, userName, password){user {userName}}}"}),
         headers: {
           'Content-Type': 'application/json'
         }

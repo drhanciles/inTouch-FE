@@ -12,8 +12,8 @@ describe('userReducer', () => {
   const userName = 'Derek'
   const token = 'token12345'
   
-  it('should update state with user id and name when SIGN_IN_USER case', () => {
-    const mockData = {id, userName, token}
+  it('should update state with username and token when SIGN_IN_USER case', () => {
+    const mockData = {userName, token}
     const action = {
       type: 'SIGN_IN_USER', 
       data: mockData
