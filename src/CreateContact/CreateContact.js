@@ -33,7 +33,9 @@ export default class CreateContact extends Component {
             </select>
           </div>
           <div className="frequency"> 
+            <p>Contact every</p>
             <input className="frequency-input" name="contactFrequency" value={priority} type="text" required required placeholder="7"/> 
+            <p>days</p>
           </div>
           <label className="notes-label">Notes:</label>
           <div className="notes">

@@ -24,7 +24,7 @@ ShallowWrapper {
             inTouch.
           </h1>
         </header>,
-        <Connect(CreateUser) />,
+        <CreateContact />,
       ],
       "className": "app",
     },
@@ -77,7 +77,7 @@ ShallowWrapper {
               inTouch.
             </h1>
           </header>,
-          <Connect(CreateUser) />,
+          <CreateContact />,
         ],
         "className": "app",
       },
