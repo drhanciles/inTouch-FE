@@ -31,71 +31,103 @@ describe('CreateUser', () => {
     expect(wrapper).toMatchSnapshot()
   })
   
-  it('should invoke handleChange when event occurs on an input', () => {
-    wrapper.handleChange = jest.fn()
-    wrapper.find('.new-user-name').simulate('change', mockEvent)
+  describe('handleChange', () => {
+    let mockEvent
+    let wrapper
     
-    expect(wrapper.handleChange).toHaveBeenCalled
-  })
-    
-  it('should update state when handleChange is invoked on an input', () => {
-    const expected = {
-      userName: 'Derek', 
-      email: '', 
-      password: '',
-      confirmation: '', 
-      disabled: true
-    }
-    
-    wrapper.instance().handleChange(mockEvent)
-    
-    expect(wrapper.state()).toEqual(expected)
-  })
-  
-  it('should invoke enableButton', () => {
-    const mockFunction = jest.fn()
-    wrapper.enableButton = mockFunction
-    
-    wrapper.instance().handleChange(mockEvent)
-    
-    expect(mockFunction).toHaveBeenCalled
-  })
-  
-  it('should toggle disabled if all values are present in input fields', () => {
-    const mockState = {
-      userName: 'Derek', 
-      email: 'derek@email.com', 
-      password: 'password',
-      confirmation: 'password', 
-      disabled: false
-    }    
-    const expected = {
-      userName: 'Derek', 
-      email: 'derek@email.com', 
-      password: 'password',
-      confirmation: 'password', 
-      disabled: false
-    }
-    
-    wrapper.setState(mockState)
-    wrapper.instance().enableButton()
-    
-    expect(wrapper.state()).toEqual(expected)
-  })
-  
-  it('should invoke handleSubmit on click of the Create Account button', () => {
-    const mockSubmitEvent = {
-      target: {},
-      preventDefault: () => {}
-    }
-    
-    wrapper.setState({
-      disabled: false
+    beforeEach(() => {
+      wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
+      mockEvent = {
+       target: {
+         name: 'userName',
+         value: 'Derek'
+        }
+      }
     })
     
-    wrapper.find('.new-account-button').simulate('click', mockEvent)
+    it('should invoke handleChange when event occurs on an input', () => {
+      wrapper.handleChange = jest.fn()
+      wrapper.find('.new-user-name').simulate('change', mockEvent)
+      
+      expect(wrapper.handleChange).toHaveBeenCalled
+    })
+      
+    it('should update state when handleChange is invoked on an input', () => {
+      const expected = {
+        userName: 'Derek', 
+        email: '', 
+        password: '',
+        confirmation: '', 
+        disabled: true
+      }
+      
+      wrapper.instance().handleChange(mockEvent)
+      
+      expect(wrapper.state()).toEqual(expected)
+    })
     
-    expect(wrapper.handleSubmit).toHaveBeenCalled
+    it('should invoke enableButton', () => {
+      const mockFunction = jest.fn()
+      wrapper.enableButton = mockFunction
+      
+      wrapper.instance().handleChange(mockEvent)
+      
+      expect(mockFunction).toHaveBeenCalled
+    })
+  })
+
+  describe('enableButton', () => {
+    let wrapper
+    
+    beforeEach(() => {
+      wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
+    })
+
+    it('should toggle disabled if all values are present in input fields', () => {
+      const mockState = {
+        userName: 'Derek', 
+        email: 'derek@email.com', 
+        password: 'password',
+        confirmation: 'password', 
+        disabled: false
+      }    
+      const expected = {
+        userName: 'Derek', 
+        email: 'derek@email.com', 
+        password: 'password',
+        confirmation: 'password', 
+        disabled: false
+      }
+      
+      wrapper.setState(mockState)
+      wrapper.instance().enableButton()
+      
+      expect(wrapper.state()).toEqual(expected)
+    })
+  })
+  
+  describe('handleSubmit', () => {
+    let wrapper
+    let mockSubmitEvent
+    
+    beforeEach(() => {
+      wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
+    })
+    
+    it('should invoke handleSubmit on click of the Create Account button', () => {
+      mockSubmitEvent = {
+        target: {},
+        preventDefault: () => {}
+      }
+      
+      wrapper.setState({
+        disabled: false
+      })
+      
+      wrapper.find('.new-account-button').simulate('click', mockSubmitEvent)
+      
+      expect(wrapper.handleSubmit).toHaveBeenCalled
+    })
   })
   
   describe('mapDispatchToProps', () => {
