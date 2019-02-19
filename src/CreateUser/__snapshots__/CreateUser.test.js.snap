@@ -3,7 +3,7 @@
 exports[`CreateUser should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(CreateUser)
+  Symbol(enzyme.__unrendered__): <CreateUser
     createNewUser={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -18,59 +18,277 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <input
+          className="new-user-name"
+          name="userName"
+          onChange={[Function]}
+          placeholder="Username"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <input
+          className="new-user-email"
+          name="email"
+          onChange={[Function]}
+          placeholder="Email"
+          required={true}
+          type="text"
+          value=""
+        />,
+        <input
+          className="new-user-password"
+          name="password"
+          onChange={[Function]}
+          placeholder="Password"
+          required={true}
+          type="password"
+          value=""
+        />,
+        <input
+          className="new-user-password-confirmation"
+          name="confirmation"
+          onChange={[Function]}
+          placeholder="Confirmation"
+          required={true}
+          type="password"
+          value=""
+        />,
+        <button
+          className="new-account-button"
+          disabled={true}
+        >
+          Create Account
+        </button>,
+      ],
+      "onSubmit": [Function],
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-user-name",
+          "name": "userName",
+          "onChange": [Function],
+          "placeholder": "Username",
+          "required": true,
+          "type": "text",
+          "value": "",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": null,
+        "type": "input",
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-user-email",
+          "name": "email",
+          "onChange": [Function],
+          "placeholder": "Email",
+          "required": true,
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-user-password",
+          "name": "password",
+          "onChange": [Function],
+          "placeholder": "Password",
+          "required": true,
+          "type": "password",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-user-password-confirmation",
+          "name": "confirmation",
+          "onChange": [Function],
+          "placeholder": "Confirmation",
+          "required": true,
+          "type": "password",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Create Account",
+          "className": "new-account-button",
+          "disabled": true,
+        },
+        "ref": null,
+        "rendered": "Create Account",
+        "type": "button",
+      },
+    ],
+    "type": "form",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <input
+            className="new-user-name"
+            name="userName"
+            onChange={[Function]}
+            placeholder="Username"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <input
+            className="new-user-email"
+            name="email"
+            onChange={[Function]}
+            placeholder="Email"
+            required={true}
+            type="text"
+            value=""
+          />,
+          <input
+            className="new-user-password"
+            name="password"
+            onChange={[Function]}
+            placeholder="Password"
+            required={true}
+            type="password"
+            value=""
+          />,
+          <input
+            className="new-user-password-confirmation"
+            name="confirmation"
+            onChange={[Function]}
+            placeholder="Confirmation"
+            required={true}
+            type="password"
+            value=""
+          />,
+          <button
+            className="new-account-button"
+            disabled={true}
+          >
+            Create Account
+          </button>,
+        ],
+        "onSubmit": [Function],
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-user-name",
+            "name": "userName",
+            "onChange": [Function],
+            "placeholder": "Username",
+            "required": true,
+            "type": "text",
+            "value": "",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": null,
+          "type": "input",
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-user-email",
+            "name": "email",
+            "onChange": [Function],
+            "placeholder": "Email",
+            "required": true,
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-user-password",
+            "name": "password",
+            "onChange": [Function],
+            "placeholder": "Password",
+            "required": true,
+            "type": "password",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-user-password-confirmation",
+            "name": "confirmation",
+            "onChange": [Function],
+            "placeholder": "Confirmation",
+            "required": true,
+            "type": "password",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Create Account",
+            "className": "new-account-button",
+            "disabled": true,
+          },
+          "ref": null,
+          "rendered": "Create Account",
+          "type": "button",
+        },
+      ],
+      "type": "form",
     },
   ],
   Symbol(enzyme.__options__): Object {
