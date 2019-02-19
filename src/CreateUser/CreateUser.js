@@ -1,5 +1,8 @@
-import React, {Component} from 'react'; 
+import React, { Component } from 'react'; 
 import './CreateUser.css'
+import { createUser } from '../Thunks/createUser.js'
+import { hasErrored } from '../Actions/index.js'
+import { connect } from 'react-redux'
 
 export default class CreateUser extends Component {
   constructor() {
@@ -11,7 +14,6 @@ export default class CreateUser extends Component {
       confirmation: ''
     }
   }
-
   render() {
     const { name, email, password, confirmation } = this.state
     return (
@@ -25,3 +27,9 @@ export default class CreateUser extends Component {
     )
   }
 }
+
+export const mapDispatchToProps = (dispatch) => ({
+  createNewUser: (userName, email, password) => dispatch(createUser(userName, email, password))
+})
+
+export default connect(null, mapDispatchToProps)(CreateUser)
