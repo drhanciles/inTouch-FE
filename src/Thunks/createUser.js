@@ -17,6 +17,7 @@ export const createUser = (userName, email, password) => {
         dispatch(isLoading(false))
         throw Error(response.statusText)
       }
+        dispatch(isLoading(false))
       const data = await response.json()
       const name = data.data.createUser.user.username
       const token = await authenticateUser(name, password)
