@@ -15,6 +15,14 @@ export default class CreateUser extends Component {
       disabled: true
     }
   }
+  
+  handleChange = (e) => {
+    const { name, value } = e.target
+    this.setState({
+      [name]: value
+    }, () => this.enableButton())
+  }
+  
   render() {
     const { userName, email, password, confirmation, disabled } = this.state
     return (
