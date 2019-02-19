@@ -31,10 +31,24 @@ describe('CreateUser', () => {
     expect(wrapper).toMatchSnapshot()
   })
   
-  it('should update state when handleChange occures on an input', () => {
+  it('should invoke handleChange when event occurs on an input', () => {
     wrapper.handleChange = jest.fn()
     wrapper.find('.new-user-name').simulate('change', mockEvent)
     
     expect(wrapper.handleChange).toHaveBeenCalled
+  })
+    
+  it('should update state when handleChange is invoked on an input', () => {
+    const expected = {
+      userName: 'Derek', 
+      email: '', 
+      password: '',
+      confirmation: '', 
+      disabled: true
+    }
+    
+    wrapper.instance().handleChange(mockEvent)
+    
+    expect(wrapper.state()).toEqual(expected)
   })
 })
