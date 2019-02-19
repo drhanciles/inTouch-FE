@@ -23,6 +23,15 @@ export default class CreateUser extends Component {
     }, () => this.enableButton())
   }
   
+  enableButton = () => {
+    const { userName, email, password, confirmation } = this.state
+    if (userName !== '' && email !== '' && password  !== '' && confirmation  !== '') {
+      this.setState({
+        disabled = false
+      })
+    }
+  }
+  
   render() {
     const { userName, email, password, confirmation, disabled } = this.state
     return (
