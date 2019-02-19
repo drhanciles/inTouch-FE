@@ -20,3 +20,15 @@ export const signOutUser = () => {
     type: 'SIGN_OUT_USER'
   }
 }
+
+export const createContact = (name, contactType, contactInformation, frequency, priority, notes) => {
+  return {
+    type: 'CREATE_CONTACT', 
+    name, 
+    contactType, 
+    contactInformation, 
+    frequency, 
+    priority, 
+    notes
+  }
+}

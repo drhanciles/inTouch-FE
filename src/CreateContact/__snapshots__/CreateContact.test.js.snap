@@ -134,7 +134,7 @@ ShallowWrapper {
             />
           </div>
           <label
-            className="notes"
+            className="notes-label"
           >
             Notes:
           </label>
@@ -287,7 +287,7 @@ ShallowWrapper {
               />
             </div>,
             <label
-              className="notes"
+              className="notes-label"
             >
               Notes:
             </label>,
@@ -724,7 +724,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Notes:",
-              "className": "notes",
+              "className": "notes-label",
             },
             "ref": null,
             "rendered": "Notes:",
@@ -915,7 +915,7 @@ ShallowWrapper {
               />
             </div>
             <label
-              className="notes"
+              className="notes-label"
             >
               Notes:
             </label>
@@ -1068,7 +1068,7 @@ ShallowWrapper {
                 />
               </div>,
               <label
-                className="notes"
+                className="notes-label"
               >
                 Notes:
               </label>,
@@ -1505,7 +1505,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Notes:",
-                "className": "notes",
+                "className": "notes-label",
               },
               "ref": null,
               "rendered": "Notes:",
