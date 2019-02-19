@@ -1,4 +1,4 @@
-import { isLoading, hasErrored } from '../Actions/index.js'
+import { isLoading, hasErrored } from '../actions/index.js'
 require('isomorphic-fetch');
 
 export const authenticateUser = (userName, password) => {
@@ -8,7 +8,7 @@ export const authenticateUser = (userName, password) => {
       dispatch(isLoading(true))
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: "mutation {tokenAuth(userName, password){token}}"}),
+        body: JSON.stringify({query: `mutation {tokenAuth(username: "${userName}", password: "${password}"){token}}`}),
         headers: {
           'Content-Type': 'application/json'
         }

@@ -24,10 +24,12 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js",
     "electron": "electron .",
+    "electron-start": "node public/main",
     "react-devtools": "react-devtools",
     "preelectron-pack": "npm run build",
     "electron-pack": "build --win --macos -c.extraMetadata.main=build/Main.js",
-    "electron-dev": "concurrently \"BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\""
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .", 
+    "dev": "nf start"
   },
   "build": {
     "files": [
