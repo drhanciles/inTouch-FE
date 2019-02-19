@@ -4,9 +4,9 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
-    "apollo-fetch": "^0.7.0",
     "concurrently": "^4.1.0",
     "electron-is-dev": "^1.0.1",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-redux": "^6.0.0",

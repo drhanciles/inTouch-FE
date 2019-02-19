@@ -1,13 +1,5 @@
-// export const createUser = (userName, email, password) => ({
-//   type: 'CREATE_USER',
-//   userName, 
-//   email, 
-//   password
-// })
-
-export const signInUser = (id, userName, token) => ({
+export const signInUser = (userName, token) => ({
   type: 'SIGN_IN_USER',
-  id,
   userName, 
   token
 })
