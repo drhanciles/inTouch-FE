@@ -17,11 +17,11 @@ export default class CreateContact extends Component {
   render() {
     const { name, contactType, contactInformation, frequency, priority, notes } = this.state
     return (
-      <main>
+      <form>
         <div className="new-contact-header">New Contact</div>
         <div className="article">
           <div className="name">
-            <input className="new-contact-name" name="name" value={name} type="text" required placeholder="Name"/>
+            <input className="new-contact-name" name="contactName" value={name} type="text" required placeholder="Name"/>
           </div>
           <div className="selections">
             <select className="contact-type" value={contactType} required> 
@@ -36,15 +36,10 @@ export default class CreateContact extends Component {
               <option value="prio-4">4</option>
               <option value="prio-5">5</option>
             </select>
-            <select className="frequency" value={priority} required> 
-              <option value="daily">Daily</option>
-              <option value="weekly">Weekly</option>
-              <option value="bi-weekly">Bi-Weekly</option>
-              <option value="monthly">Monthly</option>
-            </select>
+            <input className="frequency" name="contactFrequency" value={priority} type="text" required required placeholder="7"/> 
           </div>
           <div className="contact-info">
-            <input className="contact-information" name="contact-information" value={contactInformation} type="text" required placeholder="Phone Number"/>
+            <input className="contact-information" name="contactInformation" value={contactInformation} type="text" required placeholder="Phone Number / Email"/>
           </div>
           <label className="notes-label">Notes:</label>
           <div className="notes">
