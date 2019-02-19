@@ -1,4 +1,4 @@
-import { isLoading, hasErrored, signInUser } from '../Actions/index.js'
+import { isLoading, hasErrored, signInUser } from '../actions/index.js'
 import { authenticateUser } from './authenticateUser'
 require('isomorphic-fetch');
 
@@ -9,7 +9,7 @@ export const createUser = (userName, email, password) => {
       dispatch(isLoading(true))
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: "mutation { createUser(email, userName, password){user {userName}}}"}),
+        body: JSON.stringify({query: `mutation { createUser(email:"${email}", username:"${userName}", password:"${password}"){user {username}}}`}),
         headers: {
           'Content-Type': 'application/json'
         }
