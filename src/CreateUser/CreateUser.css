@@ -24,7 +24,7 @@ input {
   margin-bottom: 6px; 
 }
 
-.create-account-button {
+.new-account-button {
   height: 40px; 
   width: 150px; 
   background-color: #191C69; 
@@ -38,7 +38,7 @@ input {
   font-size: 1rem; 
 }
 
-.create-account-button:hover {
+.new-account-button:hover {
   background-color: #ABAECF; 
   color: #5B609F; 
   cursor: pointer;

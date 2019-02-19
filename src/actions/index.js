@@ -1,25 +1,22 @@
-export const createUser = (name, email, password) => {
-  return {
-    type: 'CREATE_USER',
-    name, 
-    email, 
-    password
-  }
-}
+export const signInUser = (userName, token) => ({
+  type: 'SIGN_IN_USER',
+  userName, 
+  token
+})
 
-export const signInUser = (email, password) => {
-  return {
-    type: 'SIGN_IN_USER',
-    email, 
-    password
-  }
-}
+export const signOutUser = () => ({
+  type: 'SIGN_OUT_USER'
+})
 
-export const signOutUser = () => {
-  return {
-    type: 'SIGN_OUT_USER'
-  }
-}
+export const isLoading = (check) => ({
+  type: 'IS_LOADING',
+  isLoading: check
+})
+
+export const hasErrored = (check) => ({
+  type: 'HAS_ERRORED',
+  hasErrored: check
+})
 
 export const createContact = (name, contactType, contactInformation, frequency, priority, notes) => {
   return {
