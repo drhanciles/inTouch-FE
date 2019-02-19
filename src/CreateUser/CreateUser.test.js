@@ -16,7 +16,7 @@ describe('CreateUser', () => {
   })
   
   it('should match snapshot', () => {
-    const wrapper = shallow(<CreateUser />)
+    const wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
 
     expect(wrapper).toMatchSnapshot()
   });
