@@ -1,0 +1,794 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllContacts should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AllContacts />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="all-contacts-header"
+        >
+          Contacts
+        </div>,
+        <div
+          className="contacts-container"
+        >
+          <div
+            className="contacts"
+          >
+             
+            <div
+              className="contact"
+            >
+              <p
+                className="contact-name"
+              >
+                Derek
+              </p>
+              <p
+                className="last-contacted"
+              >
+                Last Contacted: 
+                2019-01-17
+              </p>
+            </div>
+            <div
+              className="contact"
+            >
+              <p
+                className="contact-name"
+              >
+                Rajaa
+              </p>
+              <p
+                className="last-contacted"
+              >
+                Last Contacted: 
+                2019-01-18
+              </p>
+            </div>
+            <div
+              className="contact"
+            >
+              <p
+                className="contact-name"
+              >
+                Will
+              </p>
+              <p
+                className="last-contacted"
+              >
+                Last Contacted: 
+                2019-01-19
+              </p>
+            </div>
+             
+          </div>
+        </div>,
+      ],
+      "className": "all-contacts",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Contacts",
+          "className": "all-contacts-header",
+        },
+        "ref": null,
+        "rendered": "Contacts",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="contacts"
+          >
+             
+            <div
+              className="contact"
+            >
+              <p
+                className="contact-name"
+              >
+                Derek
+              </p>
+              <p
+                className="last-contacted"
+              >
+                Last Contacted: 
+                2019-01-17
+              </p>
+            </div>
+            <div
+              className="contact"
+            >
+              <p
+                className="contact-name"
+              >
+                Rajaa
+              </p>
+              <p
+                className="last-contacted"
+              >
+                Last Contacted: 
+                2019-01-18
+              </p>
+            </div>
+            <div
+              className="contact"
+            >
+              <p
+                className="contact-name"
+              >
+                Will
+              </p>
+              <p
+                className="last-contacted"
+              >
+                Last Contacted: 
+                2019-01-19
+              </p>
+            </div>
+             
+          </div>,
+          "className": "contacts-container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              Array [
+                <div
+                  className="contact"
+                >
+                  <p
+                    className="contact-name"
+                  >
+                    Derek
+                  </p>
+                  <p
+                    className="last-contacted"
+                  >
+                    Last Contacted: 
+                    2019-01-17
+                  </p>
+                </div>,
+                <div
+                  className="contact"
+                >
+                  <p
+                    className="contact-name"
+                  >
+                    Rajaa
+                  </p>
+                  <p
+                    className="last-contacted"
+                  >
+                    Last Contacted: 
+                    2019-01-18
+                  </p>
+                </div>,
+                <div
+                  className="contact"
+                >
+                  <p
+                    className="contact-name"
+                  >
+                    Will
+                  </p>
+                  <p
+                    className="last-contacted"
+                  >
+                    Last Contacted: 
+                    2019-01-19
+                  </p>
+                </div>,
+              ],
+              " ",
+            ],
+            "className": "contacts",
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="contact-name"
+                  >
+                    Derek
+                  </p>,
+                  <p
+                    className="last-contacted"
+                  >
+                    Last Contacted: 
+                    2019-01-17
+                  </p>,
+                ],
+                "className": "contact",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Derek",
+                    "className": "contact-name",
+                  },
+                  "ref": null,
+                  "rendered": "Derek",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Last Contacted: ",
+                      "2019-01-17",
+                    ],
+                    "className": "last-contacted",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Last Contacted: ",
+                    "2019-01-17",
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="contact-name"
+                  >
+                    Rajaa
+                  </p>,
+                  <p
+                    className="last-contacted"
+                  >
+                    Last Contacted: 
+                    2019-01-18
+                  </p>,
+                ],
+                "className": "contact",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Rajaa",
+                    "className": "contact-name",
+                  },
+                  "ref": null,
+                  "rendered": "Rajaa",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Last Contacted: ",
+                      "2019-01-18",
+                    ],
+                    "className": "last-contacted",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Last Contacted: ",
+                    "2019-01-18",
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="contact-name"
+                  >
+                    Will
+                  </p>,
+                  <p
+                    className="last-contacted"
+                  >
+                    Last Contacted: 
+                    2019-01-19
+                  </p>,
+                ],
+                "className": "contact",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Will",
+                    "className": "contact-name",
+                  },
+                  "ref": null,
+                  "rendered": "Will",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Last Contacted: ",
+                      "2019-01-19",
+                    ],
+                    "className": "last-contacted",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Last Contacted: ",
+                    "2019-01-19",
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            " ",
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="all-contacts-header"
+          >
+            Contacts
+          </div>,
+          <div
+            className="contacts-container"
+          >
+            <div
+              className="contacts"
+            >
+               
+              <div
+                className="contact"
+              >
+                <p
+                  className="contact-name"
+                >
+                  Derek
+                </p>
+                <p
+                  className="last-contacted"
+                >
+                  Last Contacted: 
+                  2019-01-17
+                </p>
+              </div>
+              <div
+                className="contact"
+              >
+                <p
+                  className="contact-name"
+                >
+                  Rajaa
+                </p>
+                <p
+                  className="last-contacted"
+                >
+                  Last Contacted: 
+                  2019-01-18
+                </p>
+              </div>
+              <div
+                className="contact"
+              >
+                <p
+                  className="contact-name"
+                >
+                  Will
+                </p>
+                <p
+                  className="last-contacted"
+                >
+                  Last Contacted: 
+                  2019-01-19
+                </p>
+              </div>
+               
+            </div>
+          </div>,
+        ],
+        "className": "all-contacts",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Contacts",
+            "className": "all-contacts-header",
+          },
+          "ref": null,
+          "rendered": "Contacts",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="contacts"
+            >
+               
+              <div
+                className="contact"
+              >
+                <p
+                  className="contact-name"
+                >
+                  Derek
+                </p>
+                <p
+                  className="last-contacted"
+                >
+                  Last Contacted: 
+                  2019-01-17
+                </p>
+              </div>
+              <div
+                className="contact"
+              >
+                <p
+                  className="contact-name"
+                >
+                  Rajaa
+                </p>
+                <p
+                  className="last-contacted"
+                >
+                  Last Contacted: 
+                  2019-01-18
+                </p>
+              </div>
+              <div
+                className="contact"
+              >
+                <p
+                  className="contact-name"
+                >
+                  Will
+                </p>
+                <p
+                  className="last-contacted"
+                >
+                  Last Contacted: 
+                  2019-01-19
+                </p>
+              </div>
+               
+            </div>,
+            "className": "contacts-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " ",
+                Array [
+                  <div
+                    className="contact"
+                  >
+                    <p
+                      className="contact-name"
+                    >
+                      Derek
+                    </p>
+                    <p
+                      className="last-contacted"
+                    >
+                      Last Contacted: 
+                      2019-01-17
+                    </p>
+                  </div>,
+                  <div
+                    className="contact"
+                  >
+                    <p
+                      className="contact-name"
+                    >
+                      Rajaa
+                    </p>
+                    <p
+                      className="last-contacted"
+                    >
+                      Last Contacted: 
+                      2019-01-18
+                    </p>
+                  </div>,
+                  <div
+                    className="contact"
+                  >
+                    <p
+                      className="contact-name"
+                    >
+                      Will
+                    </p>
+                    <p
+                      className="last-contacted"
+                    >
+                      Last Contacted: 
+                      2019-01-19
+                    </p>
+                  </div>,
+                ],
+                " ",
+              ],
+              "className": "contacts",
+            },
+            "ref": null,
+            "rendered": Array [
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="contact-name"
+                    >
+                      Derek
+                    </p>,
+                    <p
+                      className="last-contacted"
+                    >
+                      Last Contacted: 
+                      2019-01-17
+                    </p>,
+                  ],
+                  "className": "contact",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Derek",
+                      "className": "contact-name",
+                    },
+                    "ref": null,
+                    "rendered": "Derek",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Last Contacted: ",
+                        "2019-01-17",
+                      ],
+                      "className": "last-contacted",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Last Contacted: ",
+                      "2019-01-17",
+                    ],
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="contact-name"
+                    >
+                      Rajaa
+                    </p>,
+                    <p
+                      className="last-contacted"
+                    >
+                      Last Contacted: 
+                      2019-01-18
+                    </p>,
+                  ],
+                  "className": "contact",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Rajaa",
+                      "className": "contact-name",
+                    },
+                    "ref": null,
+                    "rendered": "Rajaa",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Last Contacted: ",
+                        "2019-01-18",
+                      ],
+                      "className": "last-contacted",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Last Contacted: ",
+                      "2019-01-18",
+                    ],
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="contact-name"
+                    >
+                      Will
+                    </p>,
+                    <p
+                      className="last-contacted"
+                    >
+                      Last Contacted: 
+                      2019-01-19
+                    </p>,
+                  ],
+                  "className": "contact",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Will",
+                      "className": "contact-name",
+                    },
+                    "ref": null,
+                    "rendered": "Will",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Last Contacted: ",
+                        "2019-01-19",
+                      ],
+                      "className": "last-contacted",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Last Contacted: ",
+                      "2019-01-19",
+                    ],
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              " ",
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
