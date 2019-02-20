@@ -18,14 +18,28 @@ export const hasErrored = (check) => ({
   hasErrored: check
 })
 
-export const createContact = (name, contactType, contactInformation, frequency, priority, notes) => {
-  return {
+export const createContact = (id, name) => ({
     type: 'CREATE_CONTACT', 
+    id,
     name, 
-    contactType, 
-    contactInformation, 
-    frequency, 
-    priority, 
-    notes
-  }
-}
+})
+
+export const updateContact = (contact) => ({
+  type: 'UPDATE_CONTACT', 
+  contact
+})
+
+export const setSelection = (selection) => ({
+  type: 'SET_SELECTION', 
+  selection
+})
+
+export const updateOccasions = (occasion) => ({
+  type: 'UPDATE_OCCASIONS', 
+  occasion
+})
+
+export const updateReminders = (reminder) => ({
+  type: 'UPDATE_REMINDERS', 
+  reminder
+})
