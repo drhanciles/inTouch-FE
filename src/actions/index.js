@@ -18,10 +18,13 @@ export const hasErrored = (check) => ({
   hasErrored: check
 })
 
-export const createContact = (id, name) => {
-  return {
+export const createContact = (id, name) => ({
     type: 'CREATE_CONTACT', 
     id,
     name, 
-  }
-}
+})
+
+export const setSelection = (selection) => ({
+  type: 'SET_SELECTION', 
+  selection
+})
