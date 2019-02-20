@@ -5,7 +5,7 @@ import './SignInUser.css'
 // import { isLoading, hasErrored, signInUser } from '../actions/index.js'
 // import { connect } from 'react-redux'
 
-export class SignInUser extends Component {
+export default class SignInUser extends Component {
   constructor() {
     super()
     this.state = {

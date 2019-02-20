@@ -11,7 +11,7 @@ describe('SignInUser', () => {
     mockPassword = 'password'; 
   })
 
-  it.skip('should match snapshot', () => {
+  it('should match snapshot', () => {
     const wrapper = shallow(<SignInUser />)
 
     expect(wrapper).toMatchSnapshot()
