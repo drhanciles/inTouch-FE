@@ -24,7 +24,22 @@ export const createContact = (id, name) => ({
     name, 
 })
 
+export const updateContact = (contact) => ({
+  type: 'UPDATE_CONTACT', 
+  contact
+})
+
 export const setSelection = (selection) => ({
   type: 'SET_SELECTION', 
   selection
+})
+
+export const updateOccasions = (occasion) => ({
+  type: 'UPDATE_OCCASIONS', 
+  occasion
+})
+
+export const updateReminders = (reminder) => ({
+  type: 'UPDATE_REMINDERS', 
+  reminder
 })
