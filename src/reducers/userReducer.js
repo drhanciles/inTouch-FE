@@ -9,7 +9,7 @@ export const userReducer = (state={}, action) => {
         return {}
       case 'CREATE_CONTACT': 
         return {
-          contacts:[...contacts, {name: action.name}]
+          contacts:[...state.contacts, {id: action.id, name: action.name}]
         }
       default: 
         return state
