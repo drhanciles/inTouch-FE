@@ -52,20 +52,21 @@ describe('actions', () => {
   })
   
   it('should return a type of CREATE_CONTACT', () => {
-    const name = 'Rajaa'
-    const id = 5
+    const contact = {
+      name: 'Rajaa',
+      id: 5
+    }
    
-    
     const expectedAction = {
       type: 'CREATE_CONTACT',
-      id,
-      name
+      contact
     }
     
-    const result = actions.createContact(id, name)
+    const result = actions.createContact(contact)
     
     expect(result).toEqual(expectedAction)
   })
+  
   it('should return a type of UPDATE_CONTACT', () => {
     const contact = {
       name: 'Goku', 
@@ -83,6 +84,29 @@ describe('actions', () => {
 
     expect(result).toEqual(expectedAction)
   })
+  
+  it('should return a type of GET_ALL_CONTACTS', () => {
+    const contacts = [
+                        {
+                          name: 'Derek', 
+                          lastContacted: '2019-01-17'
+                        }, 
+                        {
+                          name: 'Rajaa', 
+                          lastContacted: '2019-01-18'
+                        }
+                      ]
+                      
+    const expectedAction = {
+      type: 'GET_ALL_CONTACTS', 
+      contacts
+    }
+
+    const result = actions.getAllContacts(contacts)
+
+    expect(result).toEqual(expectedAction)
+  })
+  
   it('should return a type of SET_SELECTION', () => {
     const selection = 'add contact'
 
