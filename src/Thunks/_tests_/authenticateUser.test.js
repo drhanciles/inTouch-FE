@@ -1,4 +1,3 @@
-import  authenticateUser  from '../authenticateUser'
 import { authenticateUser } from '../authenticateUser'
 import { isLoading, hasErrored } from '../../actions/index.js'
 
