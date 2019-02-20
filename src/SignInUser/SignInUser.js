@@ -1,5 +1,8 @@
 import React, { Component } from 'react'; 
 import './SignInUser.css'
+import { authenticateUser } from '../Thunks/authenticateUser.js'
+import { isLoading, hasErrored, signInUser } from '../actions/index.js'
+import { connect } from 'react-redux'
 
 export default class SignInUser extends Component {
   constructor() {
@@ -9,6 +12,13 @@ export default class SignInUser extends Component {
       password: '',
       disabled: true
     }
+  }
+  
+  handleChange = (e) => {
+    const { name, value } = e.target
+    this.setState({
+      [name]: value
+    }, () => this.enableButton())
   }
   
   render() {
