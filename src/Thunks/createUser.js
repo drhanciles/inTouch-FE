@@ -1,8 +1,8 @@
 import { isLoading, hasErrored, signInUser } from '../actions/index.js'
-import { authenticateUser } from './authenticateUser'
+import { authenticateUser }  from './authenticateUser'
 require('isomorphic-fetch');
-
 export const createUser = (userName, email, password) => {
+  debugger;
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {
@@ -21,7 +21,9 @@ export const createUser = (userName, email, password) => {
         dispatch(isLoading(false))
       const data = await response.json()
       const name = data.data.createUser.user.username
-      const token = await authenticateUser(name, password)
+      debugger;
+      const token = await dispatch(authenticateUser(name, password))
+      debugger; 
         dispatch(signInUser(name, token))
     } catch (error) {
         dispatch(hasErrored(true))

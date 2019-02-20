@@ -1,3 +1,4 @@
+import  authenticateUser  from '../authenticateUser'
 import { authenticateUser } from '../authenticateUser'
 import { isLoading, hasErrored } from '../../actions/index.js'
 
@@ -8,7 +9,7 @@ describe('authenticateUser', () => {
   let mockPassword
   let mockDispatch
   beforeEach( () => {
-    mockUrl = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
+    mockUrl = 'www.mockurl.com'
     mockUserName = 'Derek'
     mockPassword = 'password'
     mockToken = 'token12345'
@@ -47,7 +48,8 @@ describe('authenticateUser', () => {
     
     const thunk = authenticateUser(mockUrl)
     
-    await thunk(mockDispatch)
+    const result = await thunk(mockDispatch)
+    console.log(result)
     
     expect(mockDispatch).toHaveBeenCalledWith(isLoading(false))
   })

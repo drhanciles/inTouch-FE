@@ -10,7 +10,7 @@ describe('createUser', () => {
   let mockToken
   let mockDispatch
   beforeEach( () => {
-    mockUrl = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
+    mockUrl = 'www.mockurl.com'
     mockUserName = 'Derek'
     mockEmail = 'derek@email.com'
     mockPassword = 'password'
