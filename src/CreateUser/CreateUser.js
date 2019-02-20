@@ -1,6 +1,8 @@
 import React, { Component } from 'react'; 
 import './CreateUser.css'
 import { createUser } from '../Thunks/createUser.js'
+import  authenticateUser  from '../Thunks/authenticateUser.js'
+import { isLoading, hasErrored, signInUser } from '../actions/index.js'
 import { connect } from 'react-redux'
 
 export class CreateUser extends Component {

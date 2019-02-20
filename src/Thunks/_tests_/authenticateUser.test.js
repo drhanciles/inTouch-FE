@@ -1,4 +1,4 @@
-import { authenticateUser } from '../authenticateUser'
+import  authenticateUser  from '../authenticateUser'
 import { isLoading, hasErrored } from '../../Actions/index.js'
 
 describe('authenticateUser', () => {
@@ -47,7 +47,8 @@ describe('authenticateUser', () => {
     
     const thunk = authenticateUser(mockUrl)
     
-    await thunk(mockDispatch)
+    const result = await thunk(mockDispatch)
+    console.log(result)
     
     expect(mockDispatch).toHaveBeenCalledWith(isLoading(false))
   })
