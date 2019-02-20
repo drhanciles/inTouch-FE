@@ -68,4 +68,30 @@ describe('SignInUser', () => {
       expect(mockFunction).toHaveBeenCalled
     })
   })
+  
+  describe('enableButton', () => {
+    let wrapper
+    
+    beforeEach(() => {
+      wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
+    })
+
+    it('should toggle disabled if all values are present in input fields', () => {
+      const mockState = {
+        userName: 'Derek', 
+        password: 'password',
+        disabled: false
+      }    
+      const expected = {
+        userName: 'Derek', 
+        password: 'password',
+        disabled: false
+      }
+      
+      wrapper.setState(mockState)
+      wrapper.instance().enableButton()
+      
+      expect(wrapper.state()).toEqual(expected)
+    })
+  })
 });
