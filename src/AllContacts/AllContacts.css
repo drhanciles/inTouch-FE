@@ -1,0 +1,43 @@
+.all-contacts-header {
+  margin-top: 3em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #191C69;
+  text-align: center;
+}
+
+.contacts-container {
+  margin-top: 1em;
+  margin-left: 5%;
+  width: 90%;
+  height: 800;
+  border-radius: 20px;
+  border: 2px solid #191C69;
+}
+
+.contact {
+  display: flex;
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #191C69;
+  border-radius: 30px;
+  border: 1px solid #191C69;
+  background-color: #ABAECF;
+}
+
+.contact-name {
+  margin-left: 20px;
+  margin-right: 50px;
+  text-align: left;
+}
+
+.last-contacted {
+  margin-left: 50px;
+  text-align: right;
+}

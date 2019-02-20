@@ -51,11 +51,6 @@ input {
   
 }
 
-/* select {
-  height: 200;
-  width: 200px;
-} */
-
 .frequency {
   display: flex;
   margin-top: 1em;
