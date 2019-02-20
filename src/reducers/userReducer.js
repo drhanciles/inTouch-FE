@@ -1,4 +1,4 @@
-export const userReducer = (state={contacts: []}, action) => {
+export const userReducer = (state={}, action) => {
   switch (action.type) {
       case 'SIGN_IN_USER':
         return {
@@ -9,10 +9,10 @@ export const userReducer = (state={contacts: []}, action) => {
         return {}
       case 'CREATE_CONTACT': 
         return {
-          contacts:[...state.contacts, {id: action.id, name: action.name}]
+          contacts:[...contacts, {id: action.id, name: action.name}]
         }
       case 'UPDATE_CONTACT': 
-        return state.contacts.map(contact => {
+        return contacts.map(contact => {
           if (contact.id !== action.id) {
             return contact
           }
