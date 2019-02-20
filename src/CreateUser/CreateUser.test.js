@@ -5,7 +5,7 @@ import { createUser } from '../Thunks/createUser.js'
 
 
 describe('CreateUser', () => {
-  let mockName; 
+  let mockUserName; 
   let mockEmail; 
   let mockPassword; 
   let mockConfirmation; 
@@ -14,7 +14,7 @@ describe('CreateUser', () => {
   
   beforeEach(() => {
     wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
-    mockName = 'Kaytranada'; 
+    mockUserName = 'Kaytranada'; 
     mockEmail = 'yaboy@ymail.com'; 
     mockPassword = 'password'; 
     mockConfirmation = 'password';
