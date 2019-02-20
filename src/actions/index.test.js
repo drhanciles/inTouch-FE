@@ -53,23 +53,14 @@ describe('actions', () => {
   
   it('should return a type of CREATE_CONTACT', () => {
     const name = 'Rajaa'
-    const contactType = 'Email'
-    const contactInformation = 'rajaa@email'
-    const frequency = 'weekly' 
-    const priority = 3
-    const notes = ''
+   
     
     const expectedAction = {
       type: 'CREATE_CONTACT',
-      name: 'Rajaa',
-      contactType: 'Email',
-      contactInformation: 'rajaa@email',
-      frequency: 'weekly',
-      priority: 3,
-      notes: ''
+      name: 'Rajaa'
     }
     
-    const result = actions.createContact(name, contactType, contactInformation, frequency, priority, notes)
+    const result = actions.createContact(name)
     
     expect(result).toEqual(expectedAction)
   })
