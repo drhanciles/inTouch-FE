@@ -1,23 +1,18 @@
 import React from 'react'; 
 import { shallow } from 'enzyme'; 
-import { CreateUser, mapDispatchToProps } from './CreateUser.js'; 
-import { createUser } from '../Thunks/createUser.js'
+import { SignInUser, mapDispatchToProps } from './SignInUser.js'; 
+import { authenticateUser } from '../Thunks/authenticateUser.js'
 
-
-describe('CreateUser', () => {
+describe('SignInUser', () => {
   let mockUserName; 
-  let mockEmail; 
-  let mockPassword; 
-  let mockConfirmation; 
+  let mockPassword;
   let mockEvent
   let wrapper
-  
+
   beforeEach(() => {
-    wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
-    mockUserName = 'Kaytranada'; 
-    mockEmail = 'yaboy@ymail.com'; 
+    wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
+    mockUserName = 'Rajaa'; 
     mockPassword = 'password'; 
-    mockConfirmation = 'password';
     mockEvent = {
      target: {
        name: 'userName',
@@ -25,18 +20,17 @@ describe('CreateUser', () => {
       }
     }
   })
-  
+
   it('should match snapshot', () => {
-    
     expect(wrapper).toMatchSnapshot()
-  })
+  });
   
   describe('handleChange', () => {
     let mockEvent
     let wrapper
     
     beforeEach(() => {
-      wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
+      wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
       mockEvent = {
        target: {
          name: 'userName',
@@ -47,17 +41,15 @@ describe('CreateUser', () => {
     
     it('should invoke handleChange when event occurs on an input', () => {
       wrapper.handleChange = jest.fn()
-      wrapper.find('.new-user-name').simulate('change', mockEvent)
+      wrapper.find('.user-name').simulate('change', mockEvent)
       
       expect(wrapper.handleChange).toHaveBeenCalled
     })
       
     it('should update state when handleChange is invoked on an input', () => {
       const expected = {
-        userName: 'Derek', 
-        email: '', 
+        userName: 'Derek',  
         password: '',
-        confirmation: '', 
         disabled: true
       }
       
@@ -75,27 +67,23 @@ describe('CreateUser', () => {
       expect(mockFunction).toHaveBeenCalled
     })
   })
-
+  
   describe('enableButton', () => {
     let wrapper
     
     beforeEach(() => {
-      wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
+      wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
     })
 
     it('should toggle disabled if all values are present in input fields', () => {
       const mockState = {
         userName: 'Derek', 
-        email: 'derek@email.com', 
         password: 'password',
-        confirmation: 'password', 
         disabled: false
       }    
       const expected = {
         userName: 'Derek', 
-        email: 'derek@email.com', 
         password: 'password',
-        confirmation: 'password', 
         disabled: false
       }
       
@@ -111,10 +99,10 @@ describe('CreateUser', () => {
     let mockSubmitEvent
     
     beforeEach(() => {
-      wrapper = shallow(<CreateUser createNewUser={jest.fn()}/>)
+      wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
     })
     
-    it('should invoke handleSubmit on click of the Create Account button', () => {
+    it('should invoke handleSubmit on click of the Sign In button', () => {
       mockSubmitEvent = {
         target: {},
         preventDefault: () => {}
@@ -124,7 +112,7 @@ describe('CreateUser', () => {
         disabled: false
       })
       
-      wrapper.find('.new-account-button').simulate('click', mockSubmitEvent)
+      wrapper.find('.sign-in-button').simulate('click', mockSubmitEvent)
       
       expect(wrapper.handleSubmit).toHaveBeenCalled
     })
@@ -134,21 +122,19 @@ describe('CreateUser', () => {
     let mockDispatch
     let mappedProps
     let mockUserName; 
-    let mockEmail; 
     let mockPassword; 
     
     beforeEach(() => {
       mockDispatch = jest.fn()
       mappedProps = mapDispatchToProps(mockDispatch)
       mockUserName = 'Derek'
-      mockEmail = 'derek@email'
       mockPassword = 'password'
     })
     
-    it('should dispatch the createUser action when handleSubmit is called', () => {
-      mappedProps.createNewUser(mockUserName, mockEmail, mockPassword)
+    it('should dispatch the signInUser action when handleSubmit is called', () => {
+      mappedProps.signIn(mockUserName, mockPassword)
       
       expect(mockDispatch).toHaveBeenCalledWith(expect.any(Function))
     })
   })
-})
+});

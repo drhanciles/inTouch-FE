@@ -25,6 +25,7 @@ ShallowWrapper {
           </h1>
         </header>,
         <AllContacts />,
+        <Connect(SignInUser) />,
       ],
       "className": "app",
     },
@@ -78,6 +79,8 @@ ShallowWrapper {
             </h1>
           </header>,
           <AllContacts />,
+
+          <Connect(SignInUser) />,
         ],
         "className": "app",
       },
