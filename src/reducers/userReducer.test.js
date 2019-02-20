@@ -72,6 +72,10 @@ describe('userReducer', () => {
     }
 
     const expected = { contacts: action.contacts }
+    
+    const result = userReducer({}, action)
+
+    expect(result).toEqual(expected)
   })
 
   it('should update state with changes to a contact when the action type is UPDATE_CONTACT', () => {
@@ -90,7 +94,7 @@ describe('userReducer', () => {
       contact: updatedContact
     }
 
-    const expected = [updatedContact]
+    const expected = updatedContact
 
     const result = userReducer({}, action)
 
