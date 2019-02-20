@@ -66,4 +66,21 @@ describe('actions', () => {
     
     expect(result).toEqual(expectedAction)
   })
+  it('should return a type of UPDATE_CONTACT', () => {
+    const contact = {
+      name: 'Goku', 
+      frequency: '5', 
+      priority: '3', 
+      notes: 'eats lots of food'
+    }
+
+    const expectedAction = {
+      type: 'UPDATE_CONTACT', 
+      contact
+    }
+
+    const result = actions.updateContact(contact)
+
+    expect(result).toEqual(expectedAction)
+  })
 })
