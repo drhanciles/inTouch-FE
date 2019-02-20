@@ -1,4 +1,4 @@
-import { isLoading, hasErrored } from '../actions/index.js'
+import { isLoading, hasErrored, signInUser } from '../actions/index.js'
 require('isomorphic-fetch');
 
 export const authenticateUser = (userName, password) => {
@@ -19,7 +19,8 @@ export const authenticateUser = (userName, password) => {
       }
         dispatch(isLoading(false))
       const data = await response.json()
-      return data.data.tokenAuth.token
+      const token = data.data.tokenAuth.token
+        dispatch(signInUser(userName, token))
     } catch (error) {
         dispatch(hasErrored(true))
     }

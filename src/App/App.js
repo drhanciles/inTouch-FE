@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import CreateContact from '../CreateContact/CreateContact.js'
+import SignInUser from '../SignInUser/SignInUser.js'
+
 
 export class App extends Component {
   render() {
@@ -9,7 +10,7 @@ export class App extends Component {
         <header>
           <h1>inTouch.</h1>
         </header>
-        <CreateContact /> 
+        <SignInUser /> 
       </div>
     );
   }
