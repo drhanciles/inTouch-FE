@@ -45,6 +45,13 @@ export class CreateUser extends Component {
         </div>
       )
     }
+    this.setState({
+      userName: '', 
+      email: '', 
+      password: '',
+      confirmation: '', 
+      disabled: true
+    })
   }
   
   render() {
