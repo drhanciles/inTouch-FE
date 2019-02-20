@@ -20,7 +20,7 @@ export const authenticateUser = (userName, password) => {
         dispatch(isLoading(false))
       const data = await response.json()
       const token = data.data.tokenAuth.token
-        dispatch(signInUser(userName, token))
+        await dispatch(signInUser(userName, token))
     } catch (error) {
         dispatch(hasErrored(true))
     }

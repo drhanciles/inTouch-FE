@@ -33,6 +33,7 @@ export class SignInUser extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const { userName, password } = this.state
+    this.props.signIn(userName, password)
     this.setState({
       userName: '', 
       password: '',
@@ -47,7 +48,6 @@ export class SignInUser extends Component {
           <input onChange={ this.handleChange } className="user-name" name="userName" value={userName} type="text" required placeholder="Username"/>
           <input onChange={ this.handleChange } className="user-password" name="password" value={password} type="password" required placeholder="Password"/>
         <button className="sign-in-button" disabled={disabled}>Sign In</button>
-        <p>New User?</p> 
       </form>
     )
   }
