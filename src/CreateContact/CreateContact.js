@@ -32,6 +32,12 @@ export default class CreateContact extends Component {
       })
     }
   }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    const { name, frequency, priority } = this.state
+    this.props.addContact(name, frequency, priority)
+  }
   
   render() {
     const { name, contactType, contactInformation, frequency, priority, notes } = this.state
