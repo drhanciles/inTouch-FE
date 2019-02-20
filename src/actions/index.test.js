@@ -95,4 +95,25 @@ describe('actions', () => {
 
     expect(result).toEqual(expectedAction)
   })
+
+  it('should return a type of UPDATE_OCCASIONS', () => {
+    const occasion = {
+      id: 2, 
+      description: 'Graduation', 
+      date: '02-28-2019'
+    }
+
+    const expectedAction = {
+      type: 'UPDATE_OCCASIONS',
+      occasion: {
+        id: 2, 
+        description: 'Graduation', 
+        date: '02-28-2019'
+      }
+    }
+
+    const result = actions.updateOccasions(occasion)
+
+    expect(result).toEqual(expectedAction)
+  })
 })
