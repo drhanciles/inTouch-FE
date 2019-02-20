@@ -41,3 +41,9 @@ export default class SignInUser extends Component {
     )
   }
 }
+
+export const mapDispatchToProps = (dispatch) => ({
+  signIn: (userName, password) => dispatch(signInUser(userName, password))
+})
+
+export default connect(null, mapDispatchToProps)(SignInUser)
