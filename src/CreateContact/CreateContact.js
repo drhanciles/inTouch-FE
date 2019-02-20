@@ -14,9 +14,19 @@ export default class CreateContact extends Component {
      contactInformation: '',
      frequency: '',
      priority: '',
-     notes: ''
+     notes: '', 
+     disabled: true
     }
   }
+
+  handleChange = (e) => {
+    const { name, value } = e.target
+    this.setState({
+      [name]: value
+    }, () => this.enableButton())
+  }
+
+  
   
   render() {
     const { name, contactType, contactInformation, frequency, priority, notes } = this.state
