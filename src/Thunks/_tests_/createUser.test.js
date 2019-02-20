@@ -1,6 +1,6 @@
 import { createUser } from '../createUser'
 import { authenticateUser } from '../authenticateUser'
-import { isLoading, hasErrored, signInUser } from '../../Actions/index.js'
+import { isLoading, hasErrored, signInUser } from '../../actions/index.js'
 
 describe('createUser', () => {
   let mockUrl
