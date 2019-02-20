@@ -53,24 +53,67 @@ describe('actions', () => {
   
   it('should return a type of CREATE_CONTACT', () => {
     const name = 'Rajaa'
-    const contactType = 'Email'
-    const contactInformation = 'rajaa@email'
-    const frequency = 'weekly' 
-    const priority = 3
-    const notes = ''
+    const id = 5
+   
     
     const expectedAction = {
       type: 'CREATE_CONTACT',
-      name: 'Rajaa',
-      contactType: 'Email',
-      contactInformation: 'rajaa@email',
-      frequency: 'weekly',
-      priority: 3,
-      notes: ''
+      id,
+      name
     }
     
-    const result = actions.createContact(name, contactType, contactInformation, frequency, priority, notes)
+    const result = actions.createContact(id, name)
     
+    expect(result).toEqual(expectedAction)
+  })
+  it('should return a type of UPDATE_CONTACT', () => {
+    const contact = {
+      name: 'Goku', 
+      frequency: '5', 
+      priority: '3', 
+      notes: 'eats lots of food'
+    }
+
+    const expectedAction = {
+      type: 'UPDATE_CONTACT', 
+      contact
+    }
+
+    const result = actions.updateContact(contact)
+
+    expect(result).toEqual(expectedAction)
+  })
+  it('should return a type of SET_SELECTION', () => {
+    const selection = 'add contact'
+
+    const expectedAction = {
+      type: 'SET_SELECTION', 
+      selection: 'add contact'
+    }
+
+    const result = actions.setSelection(selection)
+
+    expect(result).toEqual(expectedAction)
+  })
+
+  it('should return a type of UPDATE_OCCASIONS', () => {
+    const occasion = {
+      id: 2, 
+      description: 'Graduation', 
+      date: '02-28-2019'
+    }
+
+    const expectedAction = {
+      type: 'UPDATE_OCCASIONS',
+      occasion: {
+        id: 2, 
+        description: 'Graduation', 
+        date: '02-28-2019'
+      }
+    }
+
+    const result = actions.updateOccasions(occasion)
+
     expect(result).toEqual(expectedAction)
   })
 })

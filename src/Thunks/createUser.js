@@ -21,7 +21,8 @@ export const createUser = (userName, email, password) => {
         dispatch(isLoading(false))
       const data = await response.json()
       const name = data.data.createUser.user.username
-        await dispatch(authenticateUser(name, password))
+      const token = await dispatch(authenticateUser(name, password))
+      dispatch(signInUser(name, token))
     } catch (error) {
         dispatch(hasErrored(true))
     }
