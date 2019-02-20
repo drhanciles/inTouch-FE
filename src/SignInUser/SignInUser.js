@@ -21,6 +21,15 @@ export default class SignInUser extends Component {
     }, () => this.enableButton())
   }
   
+  enableButton = () => {
+    const { userName, password } = this.state
+    if (userName !== '' && password  !== '') {
+      this.setState({
+        disabled: false
+      })
+    }
+  }
+  
   render() {
     const { userName, password, disabled } = this.state
     return (
