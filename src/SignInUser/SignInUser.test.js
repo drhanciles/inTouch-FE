@@ -3,14 +3,14 @@ import { shallow } from 'enzyme';
 import SignInUser from './SignInUser.js'; 
 
 describe('SignInUser', () => {
-  let mockName; 
+  let mockUserName; 
   let mockPassword;
   let mockEvent
   let wrapper
 
   beforeEach(() => {
     wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
-    mockName = 'Rajaa'; 
+    mockUserName = 'Rajaa'; 
     mockPassword = 'password'; 
     mockEvent = {
      target: {
@@ -116,6 +116,26 @@ describe('SignInUser', () => {
       wrapper.find('.sign-in-button').simulate('click', mockSubmitEvent)
       
       expect(wrapper.handleSubmit).toHaveBeenCalled
+    })
+  })
+  
+  describe('mapDispatchToProps', () => {
+    let mockDispatch
+    let mappedProps
+    let mockUserName; 
+    let mockPassword; 
+    
+    beforeEach(() => {
+      mockDispatch = jest.fn()
+      mappedProps = mapDispatchToProps(mockDispatch)
+      mockUserName = 'Derek'
+      mockPassword = 'password'
+    })
+    
+    it('should dispatch the signInUser action when handleSubmit is called', () => {
+      mappedProps.signIn(mockUserName, mockPassword)
+      
+      expect(mockDispatch).toHaveBeenCalledWith(expect.any(Function))
     })
   })
 });
