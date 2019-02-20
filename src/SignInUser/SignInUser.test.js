@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { shallow } from 'enzyme'; 
-import SignInUser from './SignInUser.js'; 
+import { SignInUser, mapDispatchToProps } from './SignInUser.js'; 
+import { authenticateUser } from '../Thunks/authenticateUser.js'
 
 describe('SignInUser', () => {
   let mockUserName; 
@@ -14,8 +15,8 @@ describe('SignInUser', () => {
     mockPassword = 'password'; 
     mockEvent = {
      target: {
-       name: 'token',
-       value: 'token12345'
+       name: 'userName',
+       value: 'Derek'
       }
     }
   })
@@ -34,8 +35,8 @@ describe('SignInUser', () => {
       wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
       mockEvent = {
        target: {
-         name: 'token',
-         value: 'token12345'
+         name: 'userName',
+         value: 'Derek'
         }
       }
     })

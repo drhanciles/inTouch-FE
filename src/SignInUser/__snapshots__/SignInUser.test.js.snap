@@ -22,6 +22,7 @@ ShallowWrapper {
         <input
           className="user-name"
           name="userName"
+          onChange={[Function]}
           placeholder="Username"
           required={true}
           type="text"
@@ -30,6 +31,7 @@ ShallowWrapper {
         <input
           className="user-password"
           name="password"
+          onChange={[Function]}
           placeholder="Password"
           required={true}
           type="password"
@@ -39,10 +41,13 @@ ShallowWrapper {
           className="sign-in-button"
           disabled={true}
         >
-          SignIn Account
+          Sign In
         </button>,
+        <p>
+          New User?
+        </p>,
       ],
-      "onSubmit": undefined,
+      "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -53,7 +58,7 @@ ShallowWrapper {
         "props": Object {
           "className": "user-name",
           "name": "userName",
-          "onChange": undefined,
+          "onChange": [Function],
           "placeholder": "Username",
           "required": true,
           "type": "text",
@@ -70,7 +75,7 @@ ShallowWrapper {
         "props": Object {
           "className": "user-password",
           "name": "password",
-          "onChange": undefined,
+          "onChange": [Function],
           "placeholder": "Password",
           "required": true,
           "type": "password",
@@ -85,13 +90,24 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "SignIn Account",
+          "children": "Sign In",
           "className": "sign-in-button",
           "disabled": true,
         },
         "ref": null,
-        "rendered": "SignIn Account",
+        "rendered": "Sign In",
         "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "New User?",
+        },
+        "ref": null,
+        "rendered": "New User?",
+        "type": "p",
       },
     ],
     "type": "form",
@@ -106,6 +122,7 @@ ShallowWrapper {
           <input
             className="user-name"
             name="userName"
+            onChange={[Function]}
             placeholder="Username"
             required={true}
             type="text"
@@ -114,6 +131,7 @@ ShallowWrapper {
           <input
             className="user-password"
             name="password"
+            onChange={[Function]}
             placeholder="Password"
             required={true}
             type="password"
@@ -123,10 +141,13 @@ ShallowWrapper {
             className="sign-in-button"
             disabled={true}
           >
-            SignIn Account
+            Sign In
           </button>,
+          <p>
+            New User?
+          </p>,
         ],
-        "onSubmit": undefined,
+        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -137,7 +158,7 @@ ShallowWrapper {
           "props": Object {
             "className": "user-name",
             "name": "userName",
-            "onChange": undefined,
+            "onChange": [Function],
             "placeholder": "Username",
             "required": true,
             "type": "text",
@@ -154,7 +175,7 @@ ShallowWrapper {
           "props": Object {
             "className": "user-password",
             "name": "password",
-            "onChange": undefined,
+            "onChange": [Function],
             "placeholder": "Password",
             "required": true,
             "type": "password",
@@ -169,13 +190,24 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "SignIn Account",
+            "children": "Sign In",
             "className": "sign-in-button",
             "disabled": true,
           },
           "ref": null,
-          "rendered": "SignIn Account",
+          "rendered": "Sign In",
           "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "New User?",
+          },
+          "ref": null,
+          "rendered": "New User?",
+          "type": "p",
         },
       ],
       "type": "form",

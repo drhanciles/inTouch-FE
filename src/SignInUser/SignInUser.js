@@ -47,6 +47,7 @@ export class SignInUser extends Component {
           <input onChange={ this.handleChange } className="user-name" name="userName" value={userName} type="text" required placeholder="Username"/>
           <input onChange={ this.handleChange } className="user-password" name="password" value={password} type="password" required placeholder="Password"/>
         <button className="sign-in-button" disabled={disabled}>Sign In</button>
+        <p>New User?</p> 
       </form>
     )
   }
@@ -57,4 +58,3 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(null, mapDispatchToProps)(SignInUser)
-

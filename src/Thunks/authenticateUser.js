@@ -1,4 +1,4 @@
-import { isLoading, hasErrored } from '../actions/index.js'
+import { isLoading, hasErrored, signInUser } from '../actions/index.js'
 require('isomorphic-fetch');
 
 export const authenticateUser = (userName, password) => {
