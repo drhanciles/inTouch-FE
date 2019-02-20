@@ -12,12 +12,17 @@ export default class AllContacts extends Component {
       return (
         <div className="contact"> 
           <p className="contact-name">{contact.name}</p>
-          <p className="last-contacted">Last contacted: {contact.lastContacted}</p>
+          <p className="last-contacted">Last Contacted: {contact.lastContacted}</p>
         </div>
       )
     })
     return(
-      <section> {renderedContacts} </section>
+      <div className="all-contacts">
+        <div className="all-contacts-header">Contacts</div>
+        <div className="contacts-container">
+          <div className="contacts"> {renderedContacts} </div>
+        </div>
+      </div>
     )
   }
 }
