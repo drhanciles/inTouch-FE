@@ -1,16 +1,17 @@
-import { hasErrored, isLoading } from '../actions/index.js'
+import { hasErrored, isLoading, getAllContacts } from '../actions/index.js'
 require('isomorphic-fetch');
 
-export const addContact = (name, frequency, priority, token) => {
+
+export const getContacts = () => {
+  const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlJhamFhIiwiZXhwIjoxNTUwNjk5NDQzLCJvcmlnSWF0IjoxNTUwNjk5MTQzfQ.znAlaQbTXs8-Y5vU7HlVaoiVsSwLDsc-VkNwhLRtDxY"
+
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {
       dispatch(isLoading(true))
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: `mutation CreateContact($contactInput: CreateContactInput!){ createContact(input: $contactInput){ ok contact { id, name } } }`,
-        variables: `{"contactInput": {"name": "${name}", "frequency": "${frequency}", "priority": "${priority}"}}`
-        }),
+        body: JSON.stringify({query: `query { contacts { id name lastContacted} }`}),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `JWT ${token}`

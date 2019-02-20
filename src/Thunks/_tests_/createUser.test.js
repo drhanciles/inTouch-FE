@@ -30,7 +30,7 @@ describe('createUser', () => {
     expect(mockDispatch).toHaveBeenCalledWith(isLoading(true))
   })
   
-  it('should dispatch hasErrored(true) if response not ok', async () => {
+  it('should dispatch hasErrored(true) if response is not ok', async () => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       ok: false, 
       statusText: 'Unable to create account.'

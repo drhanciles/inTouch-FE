@@ -1,7 +1,6 @@
 import {userReducer} from './userReducer'
 
 describe('userReducer', () => {
-  
   it('should return the initial state', () => {
     const expected = {}
     const result = userReducer(undefined, {})
@@ -37,40 +36,65 @@ describe('userReducer', () => {
 
     expect(result).toEqual(expected)
   })
+  
   it('should update state with a contact when the action type is CREATE_CONTACT', () => {
-    const name = 'Jim'
+    const contact = {
+      id: 1, 
+      name: 'Jim'
+    }
     const action = {
       type: 'CREATE_CONTACT', 
-      name
+      contact
     }
 
-    const expected = [
-      {name: action.name}
+    const expexted = [
+      {
+        id: action.id,
+        name: action.name
+      }
     ]
 
     const result = userReducer({}, action)
 
     expect(result).toEqual(expected)
   })
+  
+  it('should update state with a all contacts when the action type is GET_ALL_CONTACTS', () => {
+    const contact =   {
+        name: 'Derek', 
+        lastContacted: '2019-01-17'
+      }
+    const mockData = [ contact, contact ]
+                 
+    const action = {
+      type: 'GET_ALL_CONTACTS', 
+      contacts: mockData
+    }
+
+    const expected = { contacts: action.contacts }
+    
+    const result = userReducer({}, action)
+
+    expect(result).toEqual(expected)
+  })
+
   it('should update state with changes to a contact when the action type is UPDATE_CONTACT', () => {
     const contact = {
       name: 'Dave', 
       frequency: 5, 
       priority: 3
     }
-
     const updatedContact = {
       name: 'Dave', 
       frequency: 3, 
       priority: 1
     }
-
     const action = {
       type: 'UPDATE_CONTACT', 
       contact: updatedContact
     }
 
-    const expected = [updatedContact]
+    const expected = updatedContact
 
     const result = userReducer({}, action)
 

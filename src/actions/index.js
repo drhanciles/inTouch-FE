@@ -18,15 +18,19 @@ export const hasErrored = (check) => ({
   hasErrored: check
 })
 
-export const createContact = (id, name) => ({
+export const createContact = (contact) => ({
     type: 'CREATE_CONTACT', 
-    id,
-    name, 
+    contact 
 })
 
 export const updateContact = (contact) => ({
   type: 'UPDATE_CONTACT', 
   contact
+})
+
+export const getAllContacts = (contacts) => ({
+  type: 'GET_ALL_CONTACTS', 
+  contacts
 })
 
 export const setSelection = (selection) => ({
