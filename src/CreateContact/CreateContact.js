@@ -36,11 +36,11 @@ export default class CreateContact extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const { name, frequency, priority } = this.state
-    this.props.addContact(name, frequency, priority)
+    this.props.addContact(name, frequency, priority, this.props.token)
   }
   
   render() {
-    const { name, contactType, contactInformation, frequency, priority, notes } = this.state
+    const { name, frequency, priority } = this.state
     return (
       <form>
         <div className="new-contact-header">New Contact</div>
