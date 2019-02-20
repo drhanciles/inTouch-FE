@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import CreateUser from '../CreateUser/CreateUser.js'
 import CreateContact from '../CreateContact/CreateContact.js'
 
 export class App extends Component {

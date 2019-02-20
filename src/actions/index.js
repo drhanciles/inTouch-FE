@@ -18,14 +18,9 @@ export const hasErrored = (check) => ({
   hasErrored: check
 })
 
-export const createContact = (name, contactType, contactInformation, frequency, priority, notes) => {
+export const createContact = (name) => {
   return {
     type: 'CREATE_CONTACT', 
     name, 
-    contactType, 
-    contactInformation, 
-    frequency, 
-    priority, 
-    notes
   }
 }

@@ -7,6 +7,10 @@ export const userReducer = (state={}, action) => {
         }
       case 'SIGN_OUT_USER': 
         return {}
+      case 'CREATE_CONTACT': 
+        return {
+          contacts:[...contacts, {name: action.name}]
+        }
       default: 
         return state
   }
