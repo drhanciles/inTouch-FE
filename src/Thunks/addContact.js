@@ -1,4 +1,4 @@
-import { hasErrored, isLoading, createContact } from '../actions/index.js'
+import { hasErrored, isLoading } from '../actions/index.js'
 require('isomorphic-fetch');
 
 export const addContact = (name, frequency, priority, token) => {
@@ -22,10 +22,9 @@ export const addContact = (name, frequency, priority, token) => {
       }
       dispatch(isLoading(false))
       const data = await response.json()
-      dispatch(createContact(id, name))
+      console.log(data)
     } catch(error) {
       dispatch(hasErrored(true))
-
     } 
   }
 }

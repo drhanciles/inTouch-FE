@@ -1,5 +1,9 @@
-import React, {Component} from 'react'; 
+import React, { Component } from 'react'; 
 import './CreateContact.css'
+import { addContact } from '../Thunks/addContact.js'
+import { isLoading, hasErrored } from '../actions/index.js'
+import { connect } from 'react-redux'
+
 
 export default class CreateContact extends Component {
   constructor() {
@@ -49,3 +53,15 @@ export default class CreateContact extends Component {
     )
   }
 }
+
+export const mapStateToProps = (state) => ({
+  token: state.user.token, 
+  error: state.errored, 
+  loading: state.loading
+})
+
+export const mapDispatchToProps = (dispatch) => ({
+  addContact: (name, frequency, priority, token) => dispatch(addContact(name, frequency, priority, token))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CreateContact)
