@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import './signInUser.css'
+import './SignInUser.css'
 // import { createUser } from '../Thunks/createUser.js'
 // import  authenticateUser  from '../Thunks/authenticateUser.js'
 // import { isLoading, hasErrored, signInUser } from '../actions/index.js'
@@ -61,7 +61,6 @@ export class SignInUser extends Component {
     )
   }
 }
-
 // export const mapDispatchToProps = (dispatch) => ({
 //   createNewUser: (userName, email, password) => dispatch(createUser(userName, email, password))
 // })
