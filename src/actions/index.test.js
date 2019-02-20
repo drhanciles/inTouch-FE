@@ -83,4 +83,16 @@ describe('actions', () => {
 
     expect(result).toEqual(expectedAction)
   })
+  it('should return a type of SET_SELECTION', () => {
+    const selection = 'add contact'
+
+    const expectedAction = {
+      type: 'SET_SELECTION', 
+      selection: 'add contact'
+    }
+
+    const result = actions.setSelection(selection)
+
+    expect(result).toEqual(expectedAction)
+  })
 })
