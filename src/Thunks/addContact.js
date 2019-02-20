@@ -1,7 +1,7 @@
 import { hasErrored, isLoading, createContact } from '../actions/index.js'
 require('isomorphic-fetch');
 
-export const createContact = (name, frequency, priority, token) => {
+export const addContact = (name, frequency, priority, token) => {
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {
