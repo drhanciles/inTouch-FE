@@ -52,16 +52,17 @@ describe('actions', () => {
   })
   
   it('should return a type of CREATE_CONTACT', () => {
-    const name = 'Rajaa'
-    const id = 5
+    const contact = {
+      name: 'Rajaa',
+      id: 5
+    }
    
     const expectedAction = {
       type: 'CREATE_CONTACT',
-      id,
-      name
+      contact
     }
     
-    const result = actions.createContact(id, name)
+    const result = actions.createContact(contact)
     
     expect(result).toEqual(expectedAction)
   })
@@ -93,10 +94,6 @@ describe('actions', () => {
                         {
                           name: 'Rajaa', 
                           lastContacted: '2019-01-18'
-                        }, 
-                        {
-                          name: 'Will', 
-                          lastContacted: '2019-01-19'
                         }
                       ]
                       
