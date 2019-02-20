@@ -5,7 +5,7 @@ import { isLoading, hasErrored } from '../actions/index.js'
 import { connect } from 'react-redux'
 
 
-export default class CreateContact extends Component {
+export class CreateContact extends Component {
   constructor() {
     super()
     this.state = {
@@ -40,7 +40,7 @@ export default class CreateContact extends Component {
   }
   
   render() {
-    const { name, frequency, priority } = this.state
+    const { name, frequency, priority, notes } = this.state
     return (
       <form>
         <div className="new-contact-header">New Contact</div>

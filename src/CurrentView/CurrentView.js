@@ -1,20 +1,20 @@
 import React from 'react'; 
-import { setSelection } from '../actions/index.js'
+import CreateContact from '../CreateContact/CreateContact'
+import { FormContainer } from '../FormContainer/FormContainer'
+import { connect } from 'react-redux'
 
-const contentToRender = (data) => {
+export const CurrentView = (props) => {
 
-}
-
-export const CurrentView = () => {
+  let renderedContent = props.token ? <CreateContact /> : <FormContainer />
   return (
     <main>
-      { contentToRender }
+      {renderedContent}
     </main>
   )
 }
 
 export const mapStateToProps = (state) => ({
-  user: state.user,
+  token: state.user.token,
   selection: state.selection
 })
 

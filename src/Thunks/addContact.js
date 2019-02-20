@@ -9,7 +9,7 @@ export const addContact = (name, frequency, priority, token) => {
       const response = await fetch(url, {
         method: 'POST',
         body: JSON.stringify({query: `mutation CreateContact($contactInput: CreateContactInput!){ createContact(input: $contactInput){ ok contact { id, name } } }`,
-        variables: `{"contactInput": {"name": "${name}", "frequency": "${frequecny}", "priority": "${priority}"}}`
+        variables: `{"contactInput": {"name": "${name}", "frequency": "${frequency}", "priority": "${priority}"}}`
         }),
         headers: {
           'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ export const addContact = (name, frequency, priority, token) => {
       })
       if(!response.ok) {
         dispatch(isLoading(false))
-        throw Error(reponse.statusText)
+        throw Error(response.statusText)
       }
       dispatch(isLoading(false))
       const data = await response.json()
