@@ -1,5 +1,5 @@
 import { authenticateUser } from '../authenticateUser'
-import { isLoading, hasErrored } from '../../Actions/index.js'
+import { isLoading, hasErrored } from '../../actions/index.js'
 
 describe('authenticateUser', () => {
   let mockUrl
