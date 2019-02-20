@@ -44,7 +44,7 @@ describe('userReducer', () => {
       name
     }
 
-    const expexted = [
+    const expected = [
       {name: action.name}
     ]
 
