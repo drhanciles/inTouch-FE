@@ -10,8 +10,6 @@ export default class CreateContact extends Component {
     super()
     this.state = {
      name: '',
-     contactType: '',
-     contactInformation: '',
      frequency: '',
      priority: '',
      notes: '', 
@@ -26,7 +24,14 @@ export default class CreateContact extends Component {
     }, () => this.enableButton())
   }
 
-  
+  enableButton = () => {
+    const { name, frequency, priority } = this.state
+    if (name !== '' && frequency !== '' && priority !== '') {
+      this.setState({
+        disabled: false
+      })
+    }
+  }
   
   render() {
     const { name, contactType, contactInformation, frequency, priority, notes } = this.state
