@@ -94,4 +94,28 @@ describe('SignInUser', () => {
       expect(wrapper.state()).toEqual(expected)
     })
   })
+  
+  describe('handleSubmit', () => {
+    let wrapper
+    let mockSubmitEvent
+    
+    beforeEach(() => {
+      wrapper = shallow(<SignInUser signIn={jest.fn()}/>)
+    })
+    
+    it('should invoke handleSubmit on click of the Sign In button', () => {
+      mockSubmitEvent = {
+        target: {},
+        preventDefault: () => {}
+      }
+      
+      wrapper.setState({
+        disabled: false
+      })
+      
+      wrapper.find('.sign-in-button').simulate('click', mockSubmitEvent)
+      
+      expect(wrapper.handleSubmit).toHaveBeenCalled
+    })
+  })
 });
