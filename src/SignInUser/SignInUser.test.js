@@ -22,8 +22,6 @@ describe('SignInUser', () => {
   })
 
   it('should match snapshot', () => {
-    const wrapper = shallow(<SignInUser />)
-
     expect(wrapper).toMatchSnapshot()
   });
   
