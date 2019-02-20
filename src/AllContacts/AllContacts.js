@@ -1,9 +1,16 @@
 import React, { Component } from 'react'; 
 import './AllContacts.css'; 
+import { getContacts } from '../Thunks/getContacts.js'
+import { isLoading, hasErrored, getAllContacts } from '../actions/index.js'
+import { connect } from 'react-redux'
 
-export default class AllContacts extends Component {
+export class AllContacts extends Component {
   constructor() {
     super()
+  }
+  
+  componentDidMount() {
+    this.props.getContactsList()
   }
   
   render() {
@@ -26,3 +33,13 @@ export default class AllContacts extends Component {
     )
   }
 }
+
+// export const mapStateToProps = (state) => ({
+//   token: (userName, password) => dispatch(authenticateUser(userName, password))
+// })
+
+export const mapDispatchToProps = (dispatch) => ({
+  getContactsList: () => dispatch(getContacts())
+})
+
+export default connect(null, mapDispatchToProps)(AllContacts)
