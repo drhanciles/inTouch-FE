@@ -1,21 +1,46 @@
-import React, {Component} from 'react'; 
+import React, { Component } from 'react'; 
 import './CreateContact.css'
+import { addContact } from '../Thunks/addContact.js'
+import { isLoading, hasErrored } from '../actions/index.js'
+import { connect } from 'react-redux'
 
-export default class CreateContact extends Component {
+
+export class CreateContact extends Component {
   constructor() {
     super()
     this.state = {
      name: '',
-     contactType: '',
-     contactInformation: '',
      frequency: '',
      priority: '',
-     notes: ''
+     notes: '', 
+     disabled: true
     }
+  }
+
+  handleChange = (e) => {
+    const { name, value } = e.target
+    this.setState({
+      [name]: value
+    }, () => this.enableButton())
+  }
+
+  enableButton = () => {
+    const { name, frequency, priority } = this.state
+    if (name !== '' && frequency !== '' && priority !== '') {
+      this.setState({
+        disabled: false
+      })
+    }
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    const { name, frequency, priority } = this.state
+    this.props.addContact(name, frequency, priority, this.props.token)
   }
   
   render() {
-    const { name, contactType, contactInformation, frequency, priority, notes } = this.state
+    const { name, frequency, priority, notes } = this.state
     return (
       <form>
         <div className="new-contact-header">New Contact</div>
@@ -49,3 +74,15 @@ export default class CreateContact extends Component {
     )
   }
 }
+
+export const mapStateToProps = (state) => ({
+  token: state.user.token, 
+  error: state.errored, 
+  loading: state.loading
+})
+
+export const mapDispatchToProps = (dispatch) => ({
+  addContact: (name, frequency, priority, token) => dispatch(addContact(name, frequency, priority, token))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CreateContact)
