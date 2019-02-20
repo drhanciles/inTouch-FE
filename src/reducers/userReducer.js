@@ -1,4 +1,4 @@
-export const userReducer = (state={}, action) => {
+export const userReducer = (state={contacts: []}, action) => {
   switch (action.type) {
       case 'SIGN_IN_USER':
         return {
@@ -11,6 +11,13 @@ export const userReducer = (state={}, action) => {
         return {
           contacts:[...state.contacts, {id: action.id, name: action.name}]
         }
+      case 'UPDATE_CONTACT': 
+        return state.contacts.map(contact => {
+          if (contact.id !== action.id) {
+            return contact
+          }
+          return Object.assign({}, contact, action.contact)
+        })
       default: 
         return state
   }

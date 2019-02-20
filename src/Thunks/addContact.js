@@ -8,13 +8,13 @@ export const addContact = (name, frequency, priority, token) => {
       dispatch(isLoading(true))
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: `mutation CreateContact($contactInput: ContactInput!){ createContact(input: $contactInput){ ok contact { id, name } } }`,
-                              variables: `{contactInput: name: "${name}", frequency: "${frequecny}", priority: "${priority}"}`
+        body: JSON.stringify({query: `mutation CreateContact($contactInput: CreateContactInput!){ createContact(input: $contactInput){ ok contact { id, name } } }`,
+        variables: `{"contactInput": {"name": "${name}", "frequency": "${frequecny}", "priority": "${priority}"}}`
         }),
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Authorization': `JWT ${token}`
         }, 
-        autorization: `JWT ${token}`
       })
       if(!response.ok) {
         dispatch(isLoading(false))
