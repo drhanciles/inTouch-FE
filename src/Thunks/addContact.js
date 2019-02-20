@@ -14,7 +14,7 @@ export const addContact = (name, frequency, priority, token) => {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `JWT ${token}`
-        }, 
+        },
       })
       if(!response.ok) {
         dispatch(isLoading(false))
@@ -22,7 +22,7 @@ export const addContact = (name, frequency, priority, token) => {
       }
       dispatch(isLoading(false))
       const data = await response.json()
-      dispatch(createContact(contact))
+      console.log(data)
     } catch(error) {
       dispatch(hasErrored(true))
     } 

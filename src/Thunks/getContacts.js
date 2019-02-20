@@ -1,9 +1,9 @@
-import { hasErrored, isLoading, getAllContactsContact } from '../actions/index.js'
+import { hasErrored, isLoading, getAllContacts } from '../actions/index.js'
 require('isomorphic-fetch');
 
 const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlJhamFhIiwiZXhwIjoxNTUwNjk5NDQzLCJvcmlnSWF0IjoxNTUwNjk5MTQzfQ.znAlaQbTXs8-Y5vU7HlVaoiVsSwLDsc-VkNwhLRtDxY"
 
-export const getAllContacts = (token) => {
+export const getContacts = (token) => {
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {
@@ -14,7 +14,7 @@ export const getAllContacts = (token) => {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `JWT ${token}`
-        }, 
+        },
       })
       if(!response.ok) {
         dispatch(isLoading(false))
@@ -22,7 +22,7 @@ export const getAllContacts = (token) => {
       }
       dispatch(isLoading(false))
       const data = await response.json()
-      dispatch(getAllContacts(contacts))
+      console.log(data)
     } catch(error) {
       dispatch(hasErrored(true))
     } 
