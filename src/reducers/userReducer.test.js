@@ -60,4 +60,24 @@ describe('userReducer', () => {
 
     expect(result).toEqual(expected)
   })
+  
+  it('should update state with a all contacts when the action type is GET_ALL_CONTACTS', () => {
+    const contact =   {
+        name: 'Derek', 
+        lastContacted: '2019-01-17'
+      }
+      
+    const mockData = [ contact, contact ]
+                 
+    const action = {
+      type: 'GET_ALL_CONTACTS', 
+      contacts: mockData
+    }
+
+    const expected = { contacts: action.contacts }
+
+    const result = userReducer({}, action)
+
+    expect(result).toEqual(expected)
+  })
 })

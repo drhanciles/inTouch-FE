@@ -13,7 +13,7 @@ export const userReducer = (state={}, action) => {
         }
       case 'GET_ALL_CONTACTS':
         return {
-          contacts:[...state.contacts, {name: 'Derek', lastContacted: '2019-01-17' }, {name: 'Rajaa', lastContacted: '2019-01-18' }]
+          contacts: action.contacts
         }
       default: 
         return state
