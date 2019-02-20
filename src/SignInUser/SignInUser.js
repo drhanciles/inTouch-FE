@@ -4,7 +4,7 @@ import { authenticateUser } from '../Thunks/authenticateUser.js'
 import { isLoading, hasErrored, signInUser } from '../actions/index.js'
 import { connect } from 'react-redux'
 
-export default class SignInUser extends Component {
+export class SignInUser extends Component {
   constructor() {
     super()
     this.state = {
@@ -30,6 +30,16 @@ export default class SignInUser extends Component {
     }
   }
   
+  handleSubmit = (e) => {
+    e.preventDefault()
+    const { userName, password } = this.state
+    this.setState({
+      userName: '', 
+      password: '',
+      disabled: true
+    })
+  }
+  
   render() {
     const { userName, password, disabled } = this.state
     return (
@@ -43,7 +53,8 @@ export default class SignInUser extends Component {
 }
 
 export const mapDispatchToProps = (dispatch) => ({
-  signIn: (userName, password) => dispatch(signInUser(userName, password))
+  signIn: (userName, password) => dispatch(authenticateUser(userName, password))
 })
 
 export default connect(null, mapDispatchToProps)(SignInUser)
+
