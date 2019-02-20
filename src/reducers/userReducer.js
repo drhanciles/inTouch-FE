@@ -15,6 +15,19 @@ export const userReducer = (state={}, action) => {
         return {
           contacts: action.contacts
         }
+      // case 'CREATE_CONTACT': 
+      //   return {
+      //     contacts:[...contacts, {id: action.id, name: action.name}]
+      //   }
+      // case 'UPDATE_CONTACT': 
+      //   return contacts.map(contact => {
+      //     if (contact.id !== action.id) {
+      //       return contact
+      //     }
+      //     return Object.assign({}, contact, action.contact)
+      //   })
+        case 'UPDATE_REMINDERS': 
+          return action.reminder
       default: 
         return state
   }
