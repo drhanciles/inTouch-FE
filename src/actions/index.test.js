@@ -116,4 +116,32 @@ describe('actions', () => {
 
     expect(result).toEqual(expectedAction)
   })
+  it('should return a type of UPDATE_REMINDERS', () => {
+    const reminder = {
+      "id": "1",
+      "name": "Mom",
+      "contact_details": [
+        {
+          "label": "phone",
+          "value": "123-456-7890",
+          "preferred": true
+        }
+      ],
+      "occasions": [
+        {
+          "description": "birthday",
+          "date": "1970-02-28"
+        }
+      ]
+      }
+
+      const expectedAction = {
+        type: 'UPDATE_REMINDERS', 
+        reminder
+      }
+
+      const result = actions.updateReminders(reminder)
+
+      expect(result).toEqual(expectedAction)
+  })
 })
