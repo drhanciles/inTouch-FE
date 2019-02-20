@@ -18,6 +18,8 @@ export const userReducer = (state={contacts: []}, action) => {
           }
           return Object.assign({}, contact, action.contact)
         })
+        case 'UPDATE_REMINDERS': 
+          return action.reminder
       default: 
         return state
   }
