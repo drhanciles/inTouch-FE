@@ -25,7 +25,7 @@ export class FormContainer extends Component {
                         </main>
     let newUserForm =  <main className="new-user-form-container">
                           <CreateUser />
-                          <p onClick={ this.toggleForm }className="new-user-user-type-selection">Back To Sign In</p> 
+                          <p onClick={ this.toggleForm }className="sign-up-user-type-selection">Back To Sign In</p> 
                         </main>                
     let formToRender = this.state.newUserSelected ? newUserForm : exhistingUser
 
