@@ -23,14 +23,19 @@ export const createContact = (contact) => ({
     contact 
 })
 
-export const updateContact = (contact) => ({
-  type: 'UPDATE_CONTACT', 
-  contact
-})
-
 export const getAllContacts = (contacts) => ({
   type: 'GET_ALL_CONTACTS', 
   contacts
+})
+
+export const getCurrentContact = (contact) => ({
+  type: 'GET_CURRENT_CONTACT', 
+  contact
+})
+
+export const updateContact = (contact) => ({
+  type: 'UPDATE_CONTACT', 
+  contact
 })
 
 export const setSelection = (selection) => ({
