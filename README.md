@@ -21,29 +21,20 @@ Overall, this is a simple ... that can be expanded for your purposes.
 ## Known Issues
 
 ## Running Tests
-Screen Shot 2019-02-21 at 12.35.29 PM.png
-75ef280  6 minutes ago
+
 
 ## Screenshots
 * ### New User Registration
-  ![](images/Screen%Shot%2019-02-21%at%12.35.49%PM.png)
+  ![User Registration](images/Screen%Shot%2019-02-21%at%12.35.49%PM.png)
 * ### Login
-  ![Login]()
-* ### New User Dashboard
-  ![New User Dashboard]()
-* ### Add Contact
-  ![Add Contact]()
-* ### User Dashboard
-  ![User Dashboard]()
-* ### Done Function
-  ![Done Function]()
-* ### Remind Me Tomorrow Function
-  ![Remind Me Tomorrow Function]()
-* ### Update Notes Function
-  ![Update Notes Function]()
-* ### All Contacts Index Page
-  ![All Contacts Page]()
-* ### A Contact Show Page
+  ![Login](images/Screen%Shot%2019-02-21%at%12.35.29%PM.png)
+* ### Home Page
+  ![Home Page](images/Screen%Shot%2019-02-21%at%12.36.28%PM.png)
+* ### Add New Contact
+  ![Add Contact](images/Screen%Shot%2019-02-21%at%12.36.49%PM.png)
+* ### All Contacts
+  ![All Contacts Page](images/Screen%Shot%2019-02-21%at%12.36.10%PM.png)
+* ### Current Contact
   ![A Contact Show Page]()
 * ### Logout
   ![Logout]()
