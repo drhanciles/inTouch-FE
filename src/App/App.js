@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-// import AllContacts from '../AllContacts/AllContacts.js'
-// import CurrentView from '../CurrentView/CurrentView.js'
-import CurrentContact from '../CurrentContact/CurrentContact.js'
+import CurrentView from '../CurrentView/CurrentView'
 
 
 export class App extends Component {
@@ -12,7 +10,7 @@ export class App extends Component {
         <header>
           <h1>inTouch.</h1>
         </header>
-        <CurrentContact/>
+        <CurrentView />
       </div>
     );
   }

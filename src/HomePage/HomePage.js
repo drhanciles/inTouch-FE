@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './HomePage.css'; 
 
 
-export default class HomePage extends Component {
+export class HomePage extends Component {
   constructor() {
     super()
     this.state = {
@@ -20,7 +20,7 @@ export default class HomePage extends Component {
       <main>
         <header>
           <h1>inTouch.</h1>
-          <article className="dropdown-container">
+          <article className="menu-container">
             <h3>Menu 
               <span role="container for settings selection icon" className="icon-container">
                 <i className="icon">{arrowIcon}</i>
