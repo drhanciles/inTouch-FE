@@ -62,7 +62,7 @@ export class CreateUser extends Component {
           <input onChange={ this.handleChange } className="new-user-email" name="email" value={email} type="text" required placeholder="Email"/>
           <input onChange={ this.handleChange } className="new-user-password" name="password" value={password} type="password" required placeholder="Password"/>
           <input onChange={ this.handleChange } className="new-user-password-confirmation" name="confirmation" value={confirmation} type="password" required placeholder="Confirmation"/>
-        <button className="new-account-button" disabled={disabled}>Create Account</button>
+        <button className="new-account-button" disabled={disabled}>Sign Up</button>
       </form>
     )
   }

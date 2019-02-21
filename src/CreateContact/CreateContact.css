@@ -1,19 +1,53 @@
+.menu-bar {
+  margin-left: 620px;
+}
+
+nav {
+  display: flex; 
+  flex-direction: column; 
+}
+
+ul {
+  justify-content: space-between; 
+  height: 80px; 
+  width: 85px;
+  padding: 10px; 
+  background-color: #5B609F; 
+  align-items: center; 
+  border-radius: 25px; 
+}
+
+li {
+  display: flex; 
+  flex-direction: row; 
+  font-family:'Open Sans', sans-serif;
+  font-size: 14px; 
+  font-weight: 800; 
+  color: #F2F3F9; 
+  list-style: none; 
+  cursor: pointer; 
+}
+
 .new-contact-header {
-  margin-top: 3em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   color: #191C69;
   text-align: center;
+  margin-left: 50px;
 }
 
 .article {
-  margin-top: 1em;
-  margin-left: 5%;
+  margin-top: 0.3em;
   width: 90%;
-  height: 800;
+  height: 340px;
   border-radius: 20px;
   border: 2px solid #191C69;
+  margin-left: 65px;
+}
+
+form {
+  margin-right: 65px;
 }
 
 input {
@@ -30,38 +64,34 @@ input {
 }
 
 .name {
-  height: 200;
+  height: 50px;
   width: 20px;
-  margin-top: 1em;
   margin-left: 20px;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .priority {
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-left: 30px;
-  margin-bottom: 1em;
-  height: 200;
+  margin-bottom: 0.3;
+  height: 150;
   width: 200px;
 }
 
 .priority-selection {
-  height: 200;
-  width: 200px;
-  
+  height: 30px;
+  width: 200px
 }
 
 .frequency {
   display: flex;
-  margin-top: 1em;
   margin-left: 20px;
-  margin-bottom: 1em;
 }
 
 .frequency-input {
   margin-top: 0.2em;
   height: 40px;
-  width: 30px;
+  width: 50px;
   text-align: center;
 }
 
@@ -80,9 +110,9 @@ p {
 }
 
 label {
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-left: 30px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -90,10 +120,9 @@ label {
 }
 
 .notes {
-  width: 500px;
+  width: 535px;
   height: 100px;
   margin-left: 10%;
-  margin-bottom: 2em;
   border-radius: 20px;
   background-color: #ABAECF;
 }
@@ -101,6 +130,7 @@ label {
 .save-contact {
   text-align: center;
   margin-top: 1em;
+  margin-left: 65px;
 }
 
 button {

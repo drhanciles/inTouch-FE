@@ -43,35 +43,47 @@ export class CreateContact extends Component {
   render() {
     const { name, frequency, priority, notes } = this.state
     return (
-      <form onSubmit={ this.handleSubmit }>
-        <div className="new-contact-header">New Contact</div>
-        <div className="article">
-          <div className="name">
-            <input onChange={ this.handleChange } className="new-contact-name" name="name" value={name} type="text" required placeholder="Name"/>
-          </div>
-          <div className="priority">
-            <select className="priority-selection" value={priority} name="priority" required onChange={ this.handleChange }> 
-              <option value={1}>1 - least important</option>
-              <option value={2}>2</option>
-              <option value={3}>3</option>
-              <option value={4}>4</option>
-              <option value={5}>5 - most important</option>
-            </select>
-          </div>
-          <div className="frequency"> 
-            <p>Contact every</p>
-            <input onChange={ this.handleChange }className="frequency-input" name="frequency" value={frequency} type="number" required  placeholder="7"/> 
-            <p>days</p>
-          </div>
-          <label className="notes-label">Notes:</label>
-          <div className="notes">
-            <text-area onChange={ this.handleChange } value={notes} rows="5" className="note-field" placeholder="Take your notes here."/>  
-          </div>          
+      <div className="create-contact-page">
+        <div className='menu-bar'>
+          <nav role="navigation">
+            <ul>
+              <li>Add Contact</li>
+              <li>All Contacts</li>
+              <li>Home</li>
+              <li>Sign Out</li>
+            </ul>
+          </nav>
         </div>
-        <div className="save-contact">
-          <button className='save-contact-btn'>Save Contact</button>
-        </div>
-      </form>
+        <form onSubmit={ this.handleSubmit }>
+          <div className="new-contact-header">New Contact</div>
+          <div className="article">
+            <div className="name">
+              <input onChange={ this.handleChange } className="new-contact-name" name="name" value={name} type="text" required placeholder="Name"/>
+            </div>
+            <div className="priority">
+              <select className="priority-selection" value={priority} name="priority" required onChange={ this.handleChange }> 
+                <option value={1}>1 - most important</option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5 - least important</option>
+              </select>
+            </div>
+            <div className="frequency"> 
+              <p>Contact every</p>
+              <input onChange={ this.handleChange }className="frequency-input" name="frequency" value={frequency} type="number" required  placeholder="7"/> 
+              <p>days</p>
+            </div>
+            <label className="notes-label">Notes:</label>
+            <div className="notes">
+              <text-area onChange={ this.handleChange } value={notes} rows="5" className="note-field" placeholder="Take your notes here."/>  
+            </div>          
+          </div>
+          <div className="save-contact">
+            <button className='save-contact-btn'>Save Contact</button>
+          </div>
+        </form>
+      </div>
     )
   }
 }
