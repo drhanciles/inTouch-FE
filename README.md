@@ -21,10 +21,12 @@ Overall, this is a simple ... that can be expanded for your purposes.
 ## Known Issues
 
 ## Running Tests
+Screen Shot 2019-02-21 at 12.35.29 PM.png
+75ef280  6 minutes ago
 
 ## Screenshots
 * ### New User Registration
-  ![New User Registration](images/Screen%Shot%22019-02-21%2at%212.35.49%2PM.png)
+  ![](images/Screen%Shot%2019-02-21%at%12.35.49%PM.png)
 * ### Login
   ![Login]()
 * ### New User Dashboard
