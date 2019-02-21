@@ -2,16 +2,16 @@
 
 * [Description](#description)
 * [Setup](#Setup)
-* [How to use InTouch](#How to use InTouch)
-* [User Interactions](#User Interactions)
-	* [Registration](#Registration)
+* [How to use InTouch](#How-to-use-InTouch)
+* [User Interactions](#User-Interactions)
+  * [Registration](#Registration)
   * [Login](#Login)
   * [Home](#Home)
-  * [Add New Contact](#Add New Contact)
-  * [All Contacts](#All Contacts)
-* [Tech Stack](#Tech Stack)
-* [Core Contributors](#Core Contributors)
-* [How to Contribute](#How to Contribute)
+  * [Add New Contact](#Add-New-Contact)
+  * [All Contacts](#All-Contacts)
+* [Tech Stack](#Tech-Stack)
+* [Core Contributors](#Core-Contributors)
+* [How to Contribute](#How-to-Contribute)
 
 ## Description
 
