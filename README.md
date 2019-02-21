@@ -19,12 +19,6 @@ Checkout the InTouch Backend application
 1. Install Dependencies: `npm install`
 1. To see the app in action locally: `npm run dev`
 
-## How to Use
-This app obtains/submits data through the [inTouch API] () ([repo](https://github.com/ryan-mcneil/inTouch-BE).
-A user can register/login and will have the ability to ...
-
-Overall, this is a simple ... that can be expanded for your purposes.
-
 ## Known Issues
 
 ## Running Tests
