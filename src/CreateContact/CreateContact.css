@@ -1,18 +1,46 @@
+.menu-bar {
+  margin-left: 620px;
+}
+
+nav {
+  display: flex; 
+  flex-direction: column; 
+}
+
+ul {
+  justify-content: space-between; 
+  height: 80px; 
+  width: 85px;
+  padding: 10px; 
+  background-color: #5B609F; 
+  align-items: center; 
+  border-radius: 25px; 
+}
+
+li {
+  display: flex; 
+  flex-direction: row; 
+  font-family:'Open Sans', sans-serif;
+  font-size: 14px; 
+  font-weight: 800; 
+  color: #F2F3F9; 
+  list-style: none; 
+  cursor: pointer; 
+}
+
 .new-contact-header {
-  margin-top: 2em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   color: #191C69;
   text-align: center;
-  margin-right: 50px;
-  margin-bottom: 1em;
+  margin-left: 50px;
 }
 
 .article {
-  margin-top: 1em;
+  margin-top: 0.3em;
   width: 90%;
-  height: 370px;
+  height: 340px;
   border-radius: 20px;
   border: 2px solid #191C69;
   margin-left: 65px;
@@ -24,7 +52,6 @@ form {
 
 input {
   line-height: 1rem; 
-  margin-top: 1em;
   background: transparent;
   text-align: left;
   margin-left: 10px;
@@ -44,9 +71,9 @@ input {
 }
 
 .priority {
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-left: 30px;
-  margin-bottom: 0.5;
+  margin-bottom: 0.3;
   height: 150;
   width: 200px;
 }
@@ -58,9 +85,7 @@ input {
 
 .frequency {
   display: flex;
-  margin-top: 0.8em;
   margin-left: 20px;
-  margin-bottom: 0;
 }
 
 .frequency-input {
@@ -85,9 +110,9 @@ p {
 }
 
 label {
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-left: 30px;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
