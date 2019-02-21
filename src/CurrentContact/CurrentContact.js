@@ -15,39 +15,45 @@ export class CurrentContact extends Component {
   
   render() {
     return (
-      <article className="current-contact-card">
-        <header>
-          <h1>Contact Name</h1>
-          <div role="container for contact buttons icons in the header of the contact card" className="contact-icons-container">
-            <p>Edit</p>
-            <p>Close</p>
-          </div>
-        </header>
-        <main>
-          <section className="contact-details-container">
-            <h3>Contact Details</h3>
-            <div role="container for contact information"className="contact-type-container">
-              <h5 className="contact-label">Email - </h5>
-              <h5 className="contact-information">yaboy@ymail.com</h5>
+      <article> 
+        <div className="current-contact-card">
+          <header>
+            <div className="contact-name">Rajaa B</div>
+            <div role="container for icons edit and close" className="contact-icons-container">
+              <p className="edit-icon">Edit</p>
+              <p className="close-icon">Close</p>
             </div>
-            <div role="container for contact's frequency selection"className="frequency-container">
-                <h5 className="frequency-label">Frequency - </h5>
-                <h5 className="frequency-information"> Monthly</h5>
-          </div>
-          <div role="container for contact's priority selection"className="priority-container">
-                <h5 className="priority-label">Priority - </h5>
-                <h5 className="frequency-information">Monthly</h5>
-          </div>
-          <div role="container for the notes saved to the contact's" className="notes-container">
-                <h5 className="priority-label">Notes</h5>
+          </header>
+          <main>
+            <div className="contact-details-container">
+              <div className="contact-details-label">Contact Details</div>
+              <div className="contact-details">
+                <div class="contact-email">
+                  <div className="email-label">Email - </div>
+                  <div className="email-information">yaboy@ymail.com</div>
+                </div>
+                <div class="frequency">
+                  <div className="frequency-label">Frequency - </div>
+                  <div className="frequency-information"> Monthly</div>
+                </div>
+                <div class="priority">
+                  <div className="priority-label">Priority - </div>
+                  <div className="frequency-information">Monthly</div>
+                </div>
+              </div>
+            </div>
+            <div className="notes-and-occasions-container">
+              <div className="notes-container">
+                <div className="notes-label">Notes</div>
                 <p className="contact-note">loves sushi den take them there sometime</p>
-          </div>
-          </section>
-          <section classNames="saved-occasions-container">
-            <h3>Occasions</h3>
-            <p className="saved-occasion">Birthday - 04/27 </p>
-          </section>
-        </main>
+              </div>
+              <div classNames="saved-occasions-container">
+                <div class="occasions-label">Occasions</div>
+                <p className="saved-occasion">Birthday - 04/27 </p>
+              </div>
+            </div>
+          </main>
+        </div>
       </article>
     )
   }
