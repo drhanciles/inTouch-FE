@@ -36,7 +36,7 @@ export class CurrentContact extends Component {
   checkNull = (obj) => {
     let updates = Object.keys(obj)
     let objectToSend = updates.reduce((data, element) => {
-      if(updates[element] !== '' ) {
+      if(obj[element] !== '' ) {
         data[element] = obj[element] 
       }
       return data
