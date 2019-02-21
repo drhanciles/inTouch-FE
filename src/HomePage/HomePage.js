@@ -18,8 +18,7 @@ export default class HomePage extends Component {
     const homeIcon = './icons/home.svg'
     return (
       <main>
-        <header>
-          <h1>inTouch.</h1>
+        <div className='menu-bar'>
           <article className="dropdown-container">
             <h3>Menu 
               <span role="container for settings selection icon" className="icon-container">
@@ -51,48 +50,30 @@ export default class HomePage extends Component {
               </ul>
             </nav>
           </article>
-        </header>
-        <article className="message-container">
-          <h2 className="reachout-message-intro">Hello Ye,</h2>
-          <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
-        </article>
-        <article className="message-buttons-container">
-          <button className="done-button">Done</button>
-          <button className="reminder-button">Remind Me Tomorrow</button>
-        </article>
-        <section className="occasions-container"> 
-        <h3>Upcoming Occasions:</h3>
-          <section className="occasions-week">
-            <article className="occasion">
-              <p className="date-container">02/16/19</p>
-              <p className="occasaion-reminder-content">Celebrate Gina's Birthday</p>
-            </article>
-            <article className="occasion">
-              <p className="date-container">02/16/19</p>
-              <p className="occasaion-reminder-content">Celebrate Gina's Birthday</p>
-            </article>
-            <article className="occasion">
-              <p className="date-container">02/16/19</p>
-              <p className="occasaion-reminder-content">Celebrate Gina's Birthday</p>
-            </article>
-            <article className="occasion">
-              <p className="date-container">02/16/19</p>
-              <p className="occasaion-reminder-content">Celebrate Gina's Birthday</p>
-            </article>
-            <article className="occasion">
-              <p className="date-container">02/16/19</p>
-              <p className="occasaion-reminder-content">Celebrate Gina's Birthday</p>
-            </article>
-            <article className="occasion">
-              <p className="date-container">02/16/19</p>
-              <p className="occasaion-reminder-content">Celebrate Gina's Birthday</p>
-            </article>
-            <article className="occasion">
-              <p className="date-container">02/16/19</p>
-              <p className="occasaion-reminder-content">Celebrate Gina's Birthday</p>
-            </article>
-          </section>
-        </section>
+        </div>
+        <div className="message-container">
+          <div className="reachout-message-intro">Hello Rajaa,</div>
+          <div className="reachout-message-content">Have You Called Mom Today?</div>
+        </div>
+        <div className="buttons-container">
+          <div className="done-button">Done</div>
+          <div className="reminder-button">Remind Me Tomorrow</div>
+        </div>
+        <div className="occasions-label">Upcoming Occasions:</div>
+        <div className="occasions-container"> 
+          <div className="occasion">-
+            <div className="date-container">02/16/19</div>
+            <div className="occasaion-reminder-content">Celebrate Gina's Birthday</div>
+          </div>
+          <div className="occasion">
+            <div className="date-container">02/16/19</div>
+            <div className="occasaion-reminder-content">Celebrate Gina's Birthday</div>
+          </div>
+          <div className="occasion">
+            <div className="date-container">02/16/19</div>
+            <div className="occasaion-reminder-content">Celebrate Gina's Birthday</div>
+          </div>
+        </div>
       </main>
     )
   }
