@@ -106,7 +106,6 @@ li {
   font-weight: 400; 
   font-size: 1rem;
   color: #F2F3F9;
-  margin-left: 
 }
 
 h3 {
@@ -121,13 +120,13 @@ h3 {
   padding: 4px; 
   background-color: #5B609F;
   border-radius: 5px; 
-  margin-bottom: 0.2em;
+  margin-bottom: 0.05em;
 }
 
 .date-container {
   font-family:'Open Sans', sans-serif;
   font-weight: 900; 
-  font-size: 1rem; 
+  font-size: 1.1rem; 
   width: 70px;
   margin-left: 5px;
   margin-right: 20px;
@@ -138,6 +137,6 @@ h3 {
 .occasion-content {
   font-family:'Open Sans', sans-serif;
   font-weight: 900; 
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #F2F3F9; 
 }
