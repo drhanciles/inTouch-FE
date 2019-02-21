@@ -23,10 +23,8 @@ Overall, this is a simple ... that can be expanded for your purposes.
 ## Running Tests
 
 ## Screenshots
-* ### Welcome Page
-  ![Welcome]()
 * ### New User Registration
-  ![New User Registration]()
+  ![New User Registration](images/Screen%2Shot%22019-02-21%2at%212.35.49%2PM.png)
 * ### Login
   ![Login]()
 * ### New User Dashboard
