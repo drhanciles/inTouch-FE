@@ -1,13 +1,10 @@
-.new-user-form-container {
-  margin-top: 2em;
+.form-container {
+  margin-top: 4em;
   margin-left: 35%;
   margin-bottom: 2em;
-}
-
-.sign-in-form-container {
-  margin-top: 6em;
-  margin-left: 35%;
-  margin-bottom: 2em;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
 }
 
 .new-account-button, 
@@ -16,13 +13,7 @@
   margin-left: 7%;
 }
 
-.sign-in-user-type-selection {
-  margin-top: 0;
-  margin-left: 16%;
+.user-type-selection {
+  margin-left: 13%; 
+  cursor: pointer; 
 }
-
-.sign-up-user-type-selection {
-  margin-top: 0;
-  margin-left: 13%;
-}
-

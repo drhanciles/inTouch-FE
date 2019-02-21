@@ -10,7 +10,7 @@ export const CurrentView = (props) => {
   let renderedContent = props.token ? <CurrentContact /> : <FormContainer />
   return (
     <main>
-      {renderedContent}
+      { renderedContent }
     </main>
   )
 }
