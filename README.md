@@ -18,11 +18,11 @@ Checkout the InTouch Backend application
 1. Change into the directory
 1. Install Dependencies: `npm install`
 1. To see the app in action locally: `npm run dev`
+1. To run the test suite: `npm run test`
 
-## Known Issues
-
-## Running Tests
-
+## How to use InTouch
+User can create an account. Once the user is logged in they will be able to store a contacts, specify how frequent they would like to stay in touch with that contact, and choose an prioroty level for that contact. The user will be sent reminders based on the specified frequency. The user is also able to edit the contact and store special occasions along with additional reminder notes for the contact.
+`
 ## User Interactions
 
 * ### Registration
@@ -44,15 +44,12 @@ Checkout the InTouch Backend application
 * ### All Contacts
 
   ![](images/Screen%20Shot%202019-02-21%20at%2012.36.10%20PM.png)
-
+  
 ## How to Contribute
 To contribute, see the setup instructions.
-* Please describe all changes in the Pull Request (to `Master`), and all relative issue cards/actions.
+* Please describe all changes in the Pull Request (to `Master`)
 * Please use the Pull Request Template as the baseline for communication - feel free to add more!
 * Please update the `README` if anything is affected.
-* Deployment is not from the Master branch, but rather the `gh-pages` branch.
-
-#### Core Unfinished Features
 
 ## Core Contributors
 * [Derek](https://github.com/Dhanciles)
@@ -64,8 +61,4 @@ To contribute, see the setup instructions.
 * [React](https://reactjs.org/)
 * [Redux](https://redux.js.org/)
 * [Jest](https://jestjs.io/)
-* [Enzym](https://airbnb.io/enzyme/)
-
-## Turing Project Details:
-* [Assignment](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_spec)
-* [Rubric](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_rubric)
+* [Enzyme](https://airbnb.io/enzyme/)
