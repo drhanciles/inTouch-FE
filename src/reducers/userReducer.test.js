@@ -1,4 +1,4 @@
-import {userReducer} from './userReducer'
+import { userReducer } from './userReducer'
 
 describe('userReducer', () => {
   it('should return the initial state', () => {
