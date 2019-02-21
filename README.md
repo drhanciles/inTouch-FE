@@ -23,24 +23,25 @@ Overall, this is a simple ... that can be expanded for your purposes.
 ## Running Tests
 
 ## Screenshots
+* #### Registration
 
   ![](images/Screen%20Shot%202019-02-21%20at%2012.35.49%20PM.png)
   
 * ### Login
 
-  ![](images/Screen%Shot%2019-02-21%at%12.35.29%PM.png)
+  ![](images/Screen%20Shot%202019-02-21%20at%2012.35.29%20PM.png)
   
 * ### Home Page
 
-  ![](images/Screen%Shot%2019-02-21%at%12.36.28%PM.png)
+  ![](images/Screen%20Shot%202019-02-21%20at%2012.36.28%20PM.png)
   
 * ### Add New Contact
 
-  ![](images/Screen%Shot%2019-02-21%at%12.36.49%PM.png)
+  ![](images/Screen%20Shot%202019-02-21%20at%2012.36.49%20PM.png)
   
 * ### All Contacts
 
-  ![](images/Screen%Shot%2019-02-21%at%12.36.10%PM.png)
+  ![](images/Screen%20Shot%202019-02-21%20at%2012.36.10%20PM.png)
   
 * ### Current Contact
 
