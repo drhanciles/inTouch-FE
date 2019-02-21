@@ -3,56 +3,51 @@ import './HomePage.css';
 
 
 export class HomePage extends Component {
-  constructor() {
+  constructor({user, handleSelection, selection}) {
     super()
     this.state = {
       messageSelected: false
     }
   }
 
+  updateSelection = (selection) => {
+    this.props.handleSelection(selection)
+  }
+
   render() {
-    const arrowIcon = './icons/down-arrow.svg'
-    const addContactIcon = './icons/add-contact.svg'
-    const allContactsIcon = './icons/all-contacts.svg'
-    const logoutIcon = './icons/logout-gear.svg'
-    const homeIcon = './icons/home.svg'
+    const {user, selection} = this.props
     return (
 
-      <div className="home-page">
-        <div className='menu-bar'>
+      <main className="home-page">
           <nav role="navigation">
             <ul>
-              <li>Add Contact</li>
-              <li>All Contacts</li>
-              <li>Home</li>
-              <li>Sign Out</li>
+              <li selection="add-contact" onClick={() => this.updateSelection(selection)}>Add Contact</li>
+              <li onClick={() => this.updateSelection(selection)} selection="all-contacts">All Contacts</li>
+              <li onClick={() => this.updateSelection(selection)} selection="home">Home</li>
+              <li onClick={() => this.updateSelection(selection)} selection="sign-out">Sign Out</li>
             </ul>
-          </nav>
-        </div>
-        <div className="message-container">
-          <div className="reachout-message-intro">Hello Rajaa,</div>
-          <div className="reachout-message-content">Have You Called Mom Today?</div>
-        </div>
-        <div className="buttons-container">
+        </nav>
+        <article className="message-container">
+          <h2 className="reachout-message-intro">Hello,</h2>
+          <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
+        </article>
+        <article className="message-buttons-container">
           <button className="done-button">Done</button>
           <button className="reminder-button">Remind Me Tomorrow</button>
-        </div>
-        <div className="occasions-label">Upcoming Occasions:</div>
-        <div className="occasions-container"> 
-          <div className="occasion">
-            <div className="date-container">01/03/19</div>
-            <div className="occasaion-reminder-content">Celebrate Graduation with family dinner</div>
-          </div>
-          <div className="occasion">
-            <div className="date-container">18/04/19</div>
-            <div className="occasaion-reminder-content"> Mom's Birthday</div>
-          </div>
-          <div className="occasion">
-            <div className="date-container">05/12/19</div>
-            <div className="occasaion-content">Mother's Day dinner at Mama Mia</div>
-          </div>
-        </div>
-      </div>
-    )
+        </article>
+      </main>    
+      )
   }
 }
+
+export const mapStateToProps = (state) => ({
+  user: state.user,
+  selection: state.selection
+})
+
+export const mapDispatchToProps = (dispatch) => ({
+  handleSelection: (selection) => dispatch(setSelection(selection))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
+
