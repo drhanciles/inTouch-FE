@@ -1,0 +1,75 @@
+.contact-header {
+  display: flex;
+  width: 90%;
+  margin-left: 25px;
+  border-bottom: 2px solid #191C69;
+}
+.current-contact-card {
+  margin-top: 5em;
+  margin-left: 5%;
+  width: 90%;
+  height: 800;
+  border-radius: 20px;
+  border: 2px solid #191C69;
+  line-height: 1rem; 
+}
+
+.contact-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200; 
+  font-size: 2rem;
+  color: #191C69; 
+  margin-top: 1em;
+  margin-right: 450px;
+}
+
+.contact-icons-container {
+  margin-top: 1.2em;
+  display: flex;
+}
+
+.edit-icon, 
+.close-icon {
+  margin-right: 20px;
+}
+
+main {
+  display: flex;
+}
+
+.contact-details-container,
+.notes-and-occasions-container {
+  margin-left: 50px;
+  margin-right: 150px;
+  margin-top: 2em;
+  font-family: 'Oswald', sans-serif;
+  color: #191C69;
+}
+
+.contact-details-label {
+  margin-bottom: 1.5em;
+}
+
+.contact-details {
+  margin-bottom: 2em;
+}
+
+.contact-email, 
+.contact-frequency,
+.contact-priority {
+  display: flex;
+  margin-bottom: 1em;
+  font-weight: 100px; 
+  font-size: 1rem;
+}
+
+.email-label,
+.email-information,
+.frequency-label,
+.requency-information,
+.priority-label, 
+.frequency-information {
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
