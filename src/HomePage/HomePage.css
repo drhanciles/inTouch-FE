@@ -45,103 +45,99 @@ li {
   text-decoration: underline solid #191C69; 
 }
 
-.reachout-message-intro {
+.reachout-message-intro,  
+.reachout-message-content {
   color: #5B609F;
   font-family: 'Oswald', sans-serif;
   font-weight: 300; 
   font-size: 2rem;
 }
 
-.reachout-message-content {
-  color: #5B609F; 
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300; 
-  font-size: 2rem;
-}
-
-.message-buttons-container {
+.buttons-container {
   display: flex; 
   justify-content: space-between; 
-  padding: 5px; 
+}
+
+.done-button, 
+.reminder-button {
+  height: 35px; 
+  width: 200px; 
+  background-color: #191C69; 
+  margin-top: 15px; 
+  border-radius: 25px; 
+  cursor: pointer;
+  color: #F2F3F9;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400; 
+  font-size: 1rem;
+  text-align: center;
 }
 
 .done-button {
-  height: 40px; 
-  width: 150px; 
-  background-color: #191C69; 
-  padding: 5px; 
-  margin-top: 15px; 
-  border-radius: 25px; 
-  cursor: pointer;
-  color: #F2F3F9;
-  font-family:'Open Sans', sans-serif;
-  font-weight: 400; 
-  font-size: 1rem; 
-}
-
-.done-button:hover {
-  background-color: #ABAECF; 
-  color: #5B609F; 
-  cursor: pointer;
-}
-
+  margin-left: 100px
+  }
+  
 .reminder-button {
-  height: 40px; 
-  width: 175px; 
-  background-color: #191C69; 
-  padding: 5px; 
-  margin-top: 15px; 
-  border-radius: 25px; 
-  cursor: pointer;
-  color: #F2F3F9;
-  font-family:'Open Sans', sans-serif;
-  font-weight: 400; 
-  font-size: 1rem; 
+  margin-right: 250px;
 }
 
+.done-button:hover,
 .reminder-button:hover {
   background-color: #ABAECF; 
   color: #5B609F; 
   cursor: pointer;
 }
 
+.occasions-label {
+  margin-left: 100px;
+  margin-top: 1.5em;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 700; 
+  font-size: 1.1rem;
+  color: #191C69;
+}
+
 .occasions-container {
-  height: 300px; 
-  width: 600px; 
-  background-color: #ABAECF; 
-  border-radius: 25px; 
-  border: 3px solid #191C69;  
+  height: 200px; 
+  width: 500px; 
+  margin-left: 100px;
+  margin-top: 0.5em;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400; 
+  font-size: 1rem;
+  color: #F2F3F9;
+  margin-left: 
 }
 
 h3 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 400; 
-  font-size: 1rem; 
-}
-
-.occasion-week {
-  display: flex; 
-  flex-direction: column;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .occasion {
   display: flex;
   flex-direction: row; 
   padding: 4px; 
+  background-color: #5B609F;
+  border-radius: 5px; 
+  margin-bottom: 0.2em;
 }
 
 .date-container {
-  border-right: 2px solid #F2F3F9; 
   font-family:'Open Sans', sans-serif;
   font-weight: 900; 
   font-size: 1rem; 
-  color: #F2F3F9; 
+  width: 70px;
+  margin-left: 5px;
+  margin-right: 20px;
+  width: 80px;
+  border-right: 1px solid white;
 }
 
-.occasion-reminder-content {
+.occasion-content {
   font-family:'Open Sans', sans-serif;
-  font-weight: 800; 
+  font-weight: 900; 
   font-size: 1rem;
   color: #F2F3F9; 
 }
-

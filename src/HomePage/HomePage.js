@@ -17,7 +17,7 @@ export default class HomePage extends Component {
     const logoutIcon = './icons/logout-gear.svg'
     const homeIcon = './icons/home.svg'
     return (
-      <main>
+      <div className="home-page">
         <div className='menu-bar'>
           <article className="dropdown-container">
             <h3>Menu 
@@ -56,25 +56,25 @@ export default class HomePage extends Component {
           <div className="reachout-message-content">Have You Called Mom Today?</div>
         </div>
         <div className="buttons-container">
-          <div className="done-button">Done</div>
-          <div className="reminder-button">Remind Me Tomorrow</div>
+          <button className="done-button">Done</button>
+          <button className="reminder-button">Remind Me Tomorrow</button>
         </div>
         <div className="occasions-label">Upcoming Occasions:</div>
         <div className="occasions-container"> 
-          <div className="occasion">-
-            <div className="date-container">02/16/19</div>
-            <div className="occasaion-reminder-content">Celebrate Gina's Birthday</div>
+          <div className="occasion">
+            <div className="date-container">01/03/19</div>
+            <div className="occasaion-reminder-content">Celebrate Graduation with family dinner</div>
           </div>
           <div className="occasion">
-            <div className="date-container">02/16/19</div>
-            <div className="occasaion-reminder-content">Celebrate Gina's Birthday</div>
+            <div className="date-container">18/04/19</div>
+            <div className="occasaion-reminder-content"> Mom's Birthday</div>
           </div>
           <div className="occasion">
-            <div className="date-container">02/16/19</div>
-            <div className="occasaion-reminder-content">Celebrate Gina's Birthday</div>
+            <div className="date-container">05/12/19</div>
+            <div className="occasaion-content">Mother's Day dinner at Mama Mia</div>
           </div>
         </div>
-      </main>
+      </div>
     )
   }
 }
