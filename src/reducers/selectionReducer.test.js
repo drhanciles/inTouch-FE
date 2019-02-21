@@ -8,4 +8,16 @@ describe('selectionReducer', () => {
 
     expect(result).toEqual(expected)
   })
+  it('should update state with a selection when a selection is given', () => {
+    const expected = 'all-contacts'
+
+    const action = {
+      type: 'SET_SELECTION', 
+      selection: 'all-contacts'
+    }
+
+    const result = selectionReducer('', action)
+
+    expect(result).toEqual(expected)
+  })
 })
