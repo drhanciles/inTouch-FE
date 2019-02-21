@@ -6,10 +6,17 @@ export const addContact = (name, frequency, priority, token) => {
   return async (dispatch) => {
     try {
       dispatch(isLoading(true))
+      const variables = {
+        contactInput: {
+          name, 
+          frequency: parseInt(frequency), 
+          priority: parseInt(priority)
+        }
+      }
       const response = await fetch(url, {
         method: 'POST',
         body: JSON.stringify({query: `mutation CreateContact($contactInput: CreateContactInput!){ createContact(input: $contactInput){ ok contact { id, name } } }`,
-        variables: `{"contactInput": {"name": "${name}", "frequency": "${frequency}", "priority": "${priority}"}}`
+        variables: variables
         }),
         headers: {
           'Content-Type': 'application/json',
