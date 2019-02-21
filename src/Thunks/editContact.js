@@ -3,6 +3,7 @@ require('isomorphic-fetch');
 
 export const editContact = (obj, token) => {
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
+  const variables = obj
   return async (dispatch) => {
     try {
       dispatch(isLoading(true))
