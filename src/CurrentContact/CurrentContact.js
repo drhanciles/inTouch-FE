@@ -8,7 +8,10 @@ export class CurrentContact extends Component {
   constructor() {
     super()
     this.state = {
-      disabled: true
+      disabled: true, 
+      priority: '', 
+      contactInformation: '', 
+      frequency: ''
     }
   }
 
@@ -17,20 +20,28 @@ export class CurrentContact extends Component {
   }
 
   handleChange = (e) => {
-    const { target, value } = e.target
+    const { name, value } = e.target
     this.setState({
       [name]: value
     })
   }
+
+  toggleDisabled = (e) => {
+    e.preventDefault()
+    this.setState({
+      disabled: !this.state.disabled
+    })
+  }
   
   render() {
+    const { disabled, priority, contactInformation, frequency } = this.state
     return (
       <article> 
         <div className="current-contact-card">
           <header className="contact-header">
             <div className="contact-name">Rajaa B</div>
             <div role="container for icons edit and close" className="contact-icons-container">
-              <p className="edit-icon">Edit</p>
+              <p onClick={this.toggleDisabled} className="edit-icon">Edit</p>
               <p className="close-icon">Close</p>
             </div>
           </header>
@@ -39,16 +50,23 @@ export class CurrentContact extends Component {
               <div className="contact-details-label">Contact Details</div>
               <div className="contact-details">
                 <div className="contact-email">
-                  <div className="email-label">Email: </div>
-                  <div className="email-information">yaboy@ymail.com</div>
+                  <label className="email-label">Email: </label>
+                  <input onChange={ this.handleChange } className="email-information contact-edit-input" disabled={disabled} type="text" name="contactInformation" placeholder="yaboy@ymail.com" value={ contactInformation }/>
                 </div>
                 <div className="contact-frequency">
                   <label className="frequency-label">Frequency: </label>
-                  <input onChange={ this.handleChange } className="frequency-information contact-edit-input" disabled="true" type="number" name="frequency" placeholder="3 Days"/>
+                  <input onChange={ this.handleChange } className="frequency-information contact-edit-input" disabled={disabled} type="number" name="frequency"  value={frequency} placeholder="3 Days"/>
                 </div>
                 <div className="contact-priority">
                   <div className="priority-label">Priority: </div>
                   <div className="priority-information">Monthly</div>
+                  <select className="priority-selection" value={priority} name="priority" disabled={disabled} required onChange={ this.handleChange }> 
+                        <option value={1}>1 - least important</option>
+                        <option value={2}>2</option>
+                        <option value={3}>3</option>
+                        <option value={4}>4</option>
+                        <option value={5}>5 - most important</option>
+                  </select>
                 </div>
               </div>
             </div>
