@@ -17,7 +17,7 @@ export class CurrentContact extends Component {
     return (
       <article> 
         <div className="current-contact-card">
-          <header>
+          <header class="contact-header">
             <div className="contact-name">Rajaa B</div>
             <div role="container for icons edit and close" className="contact-icons-container">
               <p className="edit-icon">Edit</p>
@@ -29,16 +29,16 @@ export class CurrentContact extends Component {
               <div className="contact-details-label">Contact Details</div>
               <div className="contact-details">
                 <div class="contact-email">
-                  <div className="email-label">Email - </div>
+                  <div className="email-label">Email: </div>
                   <div className="email-information">yaboy@ymail.com</div>
                 </div>
-                <div class="frequency">
-                  <div className="frequency-label">Frequency - </div>
-                  <div className="frequency-information"> Monthly</div>
-                </div>
-                <div class="priority">
-                  <div className="priority-label">Priority - </div>
+                <div class="contact-frequency">
+                  <div className="frequency-label">Frequency: </div>
                   <div className="frequency-information">Monthly</div>
+                </div>
+                <div class="contact-priority">
+                  <div className="priority-label">Priority: </div>
+                  <div className="priority-information">Monthly</div>
                 </div>
               </div>
             </div>
