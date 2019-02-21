@@ -24,7 +24,7 @@ Overall, this is a simple ... that can be expanded for your purposes.
 
 ## Screenshots
 
-  ![](images/Screen%Shot%2019-02-21%at%12.35.49%PM.png)
+  ![](images/Screen%20Shot%202019-02-21%20at%2012.35.49%20PM.png)
   
 * ### Login
 
