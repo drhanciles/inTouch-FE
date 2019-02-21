@@ -32,9 +32,27 @@ export class CurrentContact extends Component {
       disabled: !this.state.disabled
     })
   }
+
+  checkNull = (obj) => {
+    let updates = Object.keys(obj)
+    let objectToSend = updates.reduce((data, element) => {
+      if(updates[element] !== '' ) {
+        data[element] = obj[element] 
+      }
+      return data
+    }, {})
+    return objectToSend
+  }
+
+  sendChanges = (e) => {
+    e.preventDefault()
+    let changesToContact = this.checkNull(this.state)
+    console.log(changesToContact)
+  }
   
   render() {
     const { disabled, priority, contactInformation, frequency } = this.state
+    let iconText = disabled ? 'Close' : 'Save Changes'
     return (
       <article> 
         <div className="current-contact-card">
@@ -42,7 +60,7 @@ export class CurrentContact extends Component {
             <div className="contact-name">Rajaa B</div>
             <div role="container for icons edit and close" className="contact-icons-container">
               <p onClick={this.toggleDisabled} className="edit-icon">Edit</p>
-              <p className="close-icon">Close</p>
+              <p  onClick={this.sendChanges} className="close-icon">{iconText}</p>
             </div>
           </header>
           <main>
