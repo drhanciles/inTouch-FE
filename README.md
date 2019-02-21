@@ -22,21 +22,33 @@ Overall, this is a simple ... that can be expanded for your purposes.
 
 ## Running Tests
 
-
 ## Screenshots
 * ### New User Registration
-  ![User Registration](images/Screen%Shot%2019-02-21%at%12.35.49%PM.png)
+
+  ![](images/Screen%Shot%2019-02-21%at%12.35.49%PM.png)
+  
 * ### Login
+
   ![Login](images/Screen%Shot%2019-02-21%at%12.35.29%PM.png)
+  
 * ### Home Page
+
   ![Home Page](images/Screen%Shot%2019-02-21%at%12.36.28%PM.png)
+  
 * ### Add New Contact
+
   ![Add Contact](images/Screen%Shot%2019-02-21%at%12.36.49%PM.png)
+  
 * ### All Contacts
+
   ![All Contacts Page](images/Screen%Shot%2019-02-21%at%12.36.10%PM.png)
+  
 * ### Current Contact
+
   ![A Contact Show Page]()
+  
 * ### Logout
+
   ![Logout]()
 
 
