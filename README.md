@@ -1,5 +1,18 @@
 # inTouch Front-End
 
+* [Description](#description)
+* [Setup](#Setup)
+* [How to use InTouch](#How to use InTouch)
+* [User Interactions](#User Interactions)
+	* [Registration](#Registration)
+  * [Login](#Login)
+  * [Home](#Home)
+  * [Add New Contact](#Add New Contact)
+  * [All Contacts](#All Contacts)
+* [Tech Stack](#Tech Stack)
+* [Core Contributors](#Core Contributors)
+* [How to Contribute](#How to Contribute)
+
 ## Description
 
 If you're like most people, it's getting harder and harder to create and nurture deep, meaningful relationships as we transfer our social lives to digital media. If you're like most people, you want to do something about it.
@@ -22,7 +35,7 @@ Checkout the InTouch Backend application
 
 ## How to use InTouch
 User can create an account. Once the user is logged in they will be able to store a contacts, specify how frequent they would like to stay in touch with that contact, and choose an prioroty level for that contact. The user will be sent reminders based on the specified frequency. The user is also able to edit the contact and store special occasions along with additional reminder notes for the contact.
-`
+
 ## User Interactions
 
 * ### Registration
@@ -44,21 +57,22 @@ User can create an account. Once the user is logged in they will be able to stor
 * ### All Contacts
 
   ![](images/Screen%20Shot%202019-02-21%20at%2012.36.10%20PM.png)
-  
-## How to Contribute
-To contribute, see the setup instructions.
-* Please describe all changes in the Pull Request (to `Master`)
-* Please use the Pull Request Template as the baseline for communication - feel free to add more!
-* Please update the `README` if anything is affected.
+
+## Tech Stack
+* [Electron](https://electronjs.org/)
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Redux Thunk](https://github.com/reduxjs/redux-thunk)
+* [Jest](https://jestjs.io/)
+* [Enzyme](https://airbnb.io/enzyme/)
+* [CircleCI](https://circleci.com/)
 
 ## Core Contributors
 * [Derek](https://github.com/Dhanciles)
 * [Rajaa](https://github.com/RajaaBoulassouak)
 
-## Technical
-
-* [Electron](https://electronjs.org/)
-* [React](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [Jest](https://jestjs.io/)
-* [Enzyme](https://airbnb.io/enzyme/)
+## How to Contribute
+To contribute, see the setup instructions.
+* Please describe all changes in the Pull Request (to `Master`)
+* Please use the Pull Request Template as the baseline for communication - feel free to add more!
+* Please update the `README` if anything is affected.
