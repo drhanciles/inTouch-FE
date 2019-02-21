@@ -1,19 +1,25 @@
 .new-contact-header {
-  margin-top: 3em;
+  margin-top: 2em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   color: #191C69;
   text-align: center;
+  margin-right: 50px;
+  margin-bottom: 1em;
 }
 
 .article {
   margin-top: 1em;
-  margin-left: 5%;
+  margin: auto 0;
   width: 90%;
-  height: 800;
+  height: 370px;
   border-radius: 20px;
   border: 2px solid #191C69;
+}
+
+form {
+  margin-right: 65px;
 }
 
 input {
@@ -30,38 +36,36 @@ input {
 }
 
 .name {
-  height: 200;
+  height: 50px;
   width: 20px;
-  margin-top: 1em;
   margin-left: 20px;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
 .priority {
   margin-top: 1em;
   margin-left: 30px;
-  margin-bottom: 1em;
-  height: 200;
+  margin-bottom: 0.5;
+  height: 150;
   width: 200px;
 }
 
 .priority-selection {
-  height: 200;
-  width: 200px;
-  
+  height: 30px;
+  width: 200px
 }
 
 .frequency {
   display: flex;
-  margin-top: 1em;
+  margin-top: 0.8em;
   margin-left: 20px;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .frequency-input {
   margin-top: 0.2em;
   height: 40px;
-  width: 30px;
+  width: 50px;
   text-align: center;
 }
 
@@ -82,7 +86,7 @@ p {
 label {
   margin-top: 1em;
   margin-left: 30px;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -90,10 +94,9 @@ label {
 }
 
 .notes {
-  width: 500px;
+  width: 445px;
   height: 100px;
   margin-left: 10%;
-  margin-bottom: 2em;
   border-radius: 20px;
   background-color: #ABAECF;
 }
@@ -101,6 +104,7 @@ label {
 .save-contact {
   text-align: center;
   margin-top: 1em;
+  margin-right: 50px;
 }
 
 button {

@@ -51,11 +51,11 @@ export class CreateContact extends Component {
           </div>
           <div className="priority">
             <select className="priority-selection" value={priority} name="priority" required onChange={ this.handleChange }> 
-              <option value={1}>1 - least important</option>
+              <option value={1}>1 - most important</option>
               <option value={2}>2</option>
               <option value={3}>3</option>
               <option value={4}>4</option>
-              <option value={5}>5 - most important</option>
+              <option value={5}>5 - least important</option>
             </select>
           </div>
           <div className="frequency"> 
