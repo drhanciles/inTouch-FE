@@ -1,15 +1,21 @@
 # inTouch Front-End
 
+## Description
 
-## Intro
+If you're like most people, it's getting harder and harder to create and nurture deep, meaningful relationships as we transfer our social lives to digital media. If you're like most people, you want to do something about it.
 
-* [Deployed App]()
+**InTouch** is a minimalist app designed to help you stay connected with people you care about. It's not a social media network or an automated communications system. You don't set it and forget it. It's more like a friend who reminds you to reach out to your loved ones now and then in meaningful ways.
+
+This is the **official Frontend application for InTouch.**
+
+Checkout the InTouch Backend application
 * [Deployed API on Heroku](https://in-touch-dev.herokuapp.com/api/v1/data/)
 * [Deployed API on AWS](http://intouch-be-dev.us-west-2.elasticbeanstalk.com/api/v1/data/)
 * [API Repo](https://github.com/ryan-mcneil/inTouch-BE)
 
 ## Setup
-1. Fork or clone this repo: `git clone git@github.com:Dhanciles/inTouch-FE.git <name of your choice>`
+1. Clone this repo: `git clone git@github.com:Dhanciles/inTouch-FE.git <name of your choice>`
+1. Change into the directory
 1. Install Dependencies: `npm install`
 1. To see the app in action locally: `npm run dev`
 
