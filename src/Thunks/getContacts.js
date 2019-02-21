@@ -11,7 +11,7 @@ export const getContacts = () => {
       dispatch(isLoading(true))
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: `query { contacts { id name lastContacted} }`}),
+        body: JSON.stringify({query: `query { contacts { id name lastContacted } }`}),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `JWT ${token}`
