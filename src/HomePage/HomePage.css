@@ -1,6 +1,20 @@
 .menu-bar {
   margin-left: 620px;
 }
+  
+header {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 8px; 
+}
+
+h1 {
+  color: #191C69; 
+  font-family:'Ubuntu', sans-serif;
+  font-style: italic; 
+  font-weight: 800; 
+
+}
 
 nav {
   display: flex; 

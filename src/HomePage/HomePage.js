@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './HomePage.css'; 
 
 
-export default class HomePage extends Component {
+export class HomePage extends Component {
   constructor() {
     super()
     this.state = {
@@ -17,6 +17,7 @@ export default class HomePage extends Component {
     const logoutIcon = './icons/logout-gear.svg'
     const homeIcon = './icons/home.svg'
     return (
+
       <div className="home-page">
         <div className='menu-bar'>
           <nav role="navigation">
