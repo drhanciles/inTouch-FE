@@ -13,7 +13,7 @@ export class FormContainer extends Component {
   toggleForm = (e) => {
     e.preventDefault()
     this.setState({
-      newUserSelected: true
+      newUserSelected: !this.state.newUserSelected
     })
   }
 
@@ -26,6 +26,7 @@ export class FormContainer extends Component {
                         </main>
     let newUserForm =  <main className="form-container">
                           <CreateUser />
+                          <p onClick={ this.toggleForm }className="user-type-selection">Back To Sign In</p> 
                         </main>                
     let formToRender = this.state.newUserSelected ? newUserForm : exhistingUser
 
