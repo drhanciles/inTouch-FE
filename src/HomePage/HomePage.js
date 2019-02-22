@@ -1,5 +1,8 @@
 import React, { Component } from 'react'; 
 import './HomePage.css'; 
+import { setSelection } from '../actions/index.js'; 
+import { connect } from 'react-redux'; 
+
 
 
 export class HomePage extends Component {
@@ -22,9 +25,9 @@ export class HomePage extends Component {
           <nav role="navigation">
             <ul>
               <li selection="add-contact" onClick={() => this.updateSelection(selection)}>Add Contact</li>
-              <li onClick={() => this.updateSelection(selection)} selection="all-contacts">All Contacts</li>
-              <li onClick={() => this.updateSelection(selection)} selection="home">Home</li>
-              <li onClick={() => this.updateSelection(selection)} selection="sign-out">Sign Out</li>
+              <li selection="all-contacts" onClick={() => this.updateSelection(selection)} >All Contacts</li>
+              <li selection="home" onClick={() => this.updateSelection(selection)}>Home</li>
+              <li selection="sign-out" onClick={() => this.updateSelection(selection)} >Sign Out</li>
             </ul>
         </nav>
         <article className="message-container">
