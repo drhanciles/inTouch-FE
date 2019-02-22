@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import CreateContact from '../CreateContact/CreateContact';
 import CurrentContact from '../CurrentContact/CurrentContact';
 import { FormContainer } from '../FormContainer/FormContainer';
-import HomePage from '../HomePage/HomePage.js';
-import AllContacts from '../AllContacts/AllContacts'
+import HomePage from '../HomePage/HomePage';
+import AllContacts from '../AllContacts/AllContacts'; 
 import { connect } from 'react-redux';
 
 export class CurrentView extends Component {
