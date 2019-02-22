@@ -1,0 +1,42 @@
+header {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 8px; 
+}
+
+h1 {
+  color: #191C69; 
+  font-family:'Ubuntu', sans-serif;
+  font-style: italic; 
+  font-weight: 800; 
+
+}
+
+nav {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
+  margin-bottom: 1.5em;
+}
+
+ul {
+  justify-content: space-between; 
+  height: 95px; 
+  width: 85px;
+  padding: 10px; 
+  background-color: #5B609F; 
+  align-items: center; 
+  border-radius: 25px; 
+}
+
+li {
+  display: flex; 
+  flex-direction: row; 
+  margin-top: 0.3em;
+  font-family:'Open Sans', sans-serif;
+  font-size: 14px; 
+  font-weight: 800; 
+  color: #F2F3F9; 
+  list-style: none; 
+  cursor: pointer; 
+}

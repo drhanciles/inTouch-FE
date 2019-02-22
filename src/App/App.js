@@ -3,6 +3,7 @@ import './App.css';
 import CurrentView from '../CurrentView/CurrentView'; 
 import { FormContainer } from '../FormContainer/FormContainer';
 import HomePage from '../HomePage/HomePage.js';
+import Header from '../Header/Header'; 
 import { connect } from 'react-redux';
 
 export class App extends Component {
@@ -10,33 +11,27 @@ export class App extends Component {
     super()
   }
 
- componentToRender = (forms) => {
+ componentToRender = () => {
   if (!this.props.token) {
     return (
       <div className="app">
-      <header>
-        <h1>inTouch.</h1>
-      </header>
-      <FormContainer />
-    </div>
+        <Header />
+        <FormContainer />
+      </div>
     )
   } 
   if (this.props.token && this.props.selection) {
     return (        
       <div className="app">
-      <header>
-        <h1>inTouch.</h1>
-      </header>
-      <CurrentView />
+        <Header />      
+        <CurrentView />
     </div>
     
     )
   } else {
     return (
       <div className="app">
-      <header>
-        <h1>inTouch.</h1>
-      </header>
+        <Header />
         <HomePage />
       </div>
       )

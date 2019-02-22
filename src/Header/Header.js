@@ -1,16 +1,22 @@
 import React, { Component } from 'react'; 
 import  { connect } from 'react-redux'; 
+import { setSelection } from '../actions/index.js'; 
 
 export class Header extends Component {
   constructor() {
     super()
   }
+
+  updateSelection = (selection) => {
+    this.props.handleSelection(selection)
+  }
+
+
   render() {
     const notLoggedIn = (
                       <header>
                         <h1>inTouch.</h1>
                       </header> 
-
                         )
     const loggedIn =  (
                       <header>
@@ -26,7 +32,7 @@ export class Header extends Component {
                       </header> 
                       )
 
-    const headerToRender = this.props.user ? loggedIn : notLoggedIn
+    const headerToRender = this.props.user.token ? loggedIn : notLoggedIn
 
     return (
       headerToRender
@@ -41,4 +47,6 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   handleSelection: (selection) => dispatch(setSelection(selection))
 })
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)
 
