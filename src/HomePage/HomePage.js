@@ -3,8 +3,6 @@ import './HomePage.css';
 import { setSelection } from '../actions/index.js'; 
 import { connect } from 'react-redux'; 
 
-
-
 export class HomePage extends Component {
   constructor({user, handleSelection, selection}) {
     super()
@@ -18,16 +16,16 @@ export class HomePage extends Component {
   }
 
   render() {
-    const {user, selection} = this.props
+    const { user } = this.props
     return (
 
       <main className="home-page">
           <nav role="navigation">
             <ul>
-              <li selection="add-contact" onClick={() => this.updateSelection(selection)}>Add Contact</li>
-              <li selection="all-contacts" onClick={() => this.updateSelection(selection)} >All Contacts</li>
-              <li selection="home" onClick={() => this.updateSelection(selection)}>Home</li>
-              <li selection="sign-out" onClick={() => this.updateSelection(selection)} >Sign Out</li>
+              <li onClick={() => this.updateSelection('add-contact')}>Add Contact</li>
+              <li onClick={() => this.updateSelection('all-contacts')} >All Contacts</li>
+              <li onClick={() => this.updateSelection('home')}>Home</li>
+              <li onClick={() => this.updateSelection('sign-out')}>Sign Out</li>
             </ul>
         </nav>
         <article className="message-container">

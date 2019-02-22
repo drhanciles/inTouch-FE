@@ -12,27 +12,41 @@ export class CurrentView extends Component {
 }
 
 updateView = (selection) => {
+  debugger; 
   switch(selection) {
     case 'home': 
-      return <HomePage />
-    case 'add-conact': 
-      return <CreateContact />
+      return (
+        <main>
+          <HomePage />
+        </main>
+      )
+    case 'add-contact': 
+      return (
+        <main>
+          <CreateContact />  
+        </main>
+      )
     case 'all-contacts': 
-      return <AllContacts />
+      return (
+        <main>
+          <AllContacts />
+        </main>
+      )
     case 'sign-out':
-      return <FormContainer />
+      return (
+        <main>
+          <FormContainer />
+        </main>
+      )
     default: 
-      return new Error('Unknow selection:' + selection)
+      return new Error('Unknown selection:' + selection)
   }
-
 }
 
 render() {
     let renderedContent = this.updateView(this.props.selection)
     return (
-      <main>
-        { renderedContent }
-      </main>
+         renderedContent 
     )
   }
 
