@@ -12,7 +12,6 @@ export class CurrentView extends Component {
 }
 
 updateView = (selection) => {
-  const { selection } = this.props
   switch(selection) {
     case 'home': 
       return <HomePage />
@@ -22,12 +21,14 @@ updateView = (selection) => {
       return <AllContacts />
     case 'sign-out':
       return <FormContainer />
+    default: 
+      return new Error('Unknow selection:' + selection)
   }
 
 }
 
 render() {
-    let renderedContent = this.props.token ? <CurrentContact /> : <FormContainer />
+    let renderedContent = this.updateView(this.props.selection)
     return (
       <main>
         { renderedContent }
