@@ -52,3 +52,7 @@ export const updateReminders = (reminder) => ({
   type: 'UPDATE_REMINDERS', 
   reminder
 })
+
+export const getSuggestions = (suggestions) => ({
+  type: 'GET_SUGGETIONS'
+})
