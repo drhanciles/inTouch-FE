@@ -1,7 +1,8 @@
 import React, { Component } from 'react'; 
 import './HomePage.css'; 
 import { connect } from 'react-redux'; 
-import { getContacts } from '../Thunks/getContacts.js'
+import { getContacts } from '../Thunks/getContacts.js';
+import { suggestedContacts } from '../Thunks/suggestedContacts.js';
 
 export class HomePage extends Component {
   constructor() {
@@ -9,8 +10,9 @@ export class HomePage extends Component {
   }
 
   componentDidMount() {
-    const { getAllContacts, token } = this.props
+    const { getAllContacts, getSuggestedContacts, token } = this.props
     getAllContacts(token)
+    suggestedContacts(token)
   }
 
   render() {
@@ -52,7 +54,8 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatachToProps = (dispatch) => ({
-  getAllContacts: (token) => (dispatch(getContacts(token)))
+  getAllContacts: (token) => (dispatch(getContacts(token))), 
+  getSuggestedContacts: (token) => (dispatch(suggestedContacts(token)))
 })
 
 export default connect(mapStateToProps, mapDispatachToProps)(HomePage)

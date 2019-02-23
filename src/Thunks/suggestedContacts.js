@@ -1,7 +1,7 @@
 import { hasErrored, isLoading, getSuggestions } from '../actions/index.js'; 
 require('isomorphic-fetch'); 
 
-const suggestedContacts = (token) => {
+export const suggestedContacts = (token) => {
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {
