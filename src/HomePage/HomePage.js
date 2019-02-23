@@ -1,10 +1,16 @@
 import React, { Component } from 'react'; 
 import './HomePage.css'; 
 import { connect } from 'react-redux'; 
+import { getContacts } from '../Thunks/getContacts.js'
 
 export class HomePage extends Component {
-  constructor({user, handleSelection, selection}) {
+  constructor() {
     super()
+  }
+
+  componentDidMount() {
+    const { getAllContacts, token } = this.props
+    getAllContacts(token)
   }
 
   render() {
@@ -42,7 +48,12 @@ export class HomePage extends Component {
 
 export const mapStateToProps = (state) => ({
   user: state.user,
+  token: state.user.token
 })
 
-export default connect(mapStateToProps)(HomePage)
+export const mapDispatachToProps = (dispatch) => ({
+  getAllContacts: (token) => (dispatch(getContacts(token)))
+})
+
+export default connect(mapStateToProps, mapDispatachToProps)(HomePage)
 
