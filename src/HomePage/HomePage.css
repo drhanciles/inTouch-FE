@@ -1,5 +1,6 @@
-.menu-bar {
-  margin-left: 620px;
+.home-page {
+  display: flex; 
+  flex-direction: column; 
 }
 
 .message-container {
