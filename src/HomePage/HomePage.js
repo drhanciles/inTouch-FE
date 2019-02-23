@@ -5,18 +5,14 @@ import { connect } from 'react-redux';
 export class HomePage extends Component {
   constructor({user, handleSelection, selection}) {
     super()
-    this.state = {
-      messageSelected: false
-    }
   }
-
 
   render() {
     const { user } = this.props
     return (
       <main className="home-page">
         <div className="message-container">
-          <h2 className="reachout-message-intro">Hello Rajaa,</h2>
+          <h2 className="reachout-message-intro">Hello {user.name},</h2>
           <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
         </div>
         <div className="buttons-container">
