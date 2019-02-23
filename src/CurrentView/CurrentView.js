@@ -26,6 +26,12 @@ updateView = (selection) => {
           <CreateContact />  
         </main>
       )
+    case 'edit-contact': 
+        return (
+          <main>
+            <CurrentContact />
+          </main>
+        )
     case 'all-contacts': 
       return (
         <main>
