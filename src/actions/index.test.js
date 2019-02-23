@@ -108,11 +108,11 @@ describe('actions', () => {
   })
   
   it('should return a type of SET_SELECTION', () => {
-    const selection = 'add contact'
+    const selection = 'add-contact'
 
     const expectedAction = {
       type: 'SET_SELECTION', 
-      selection: 'add contact'
+      selection: 'add-contact'
     }
 
     const result = actions.setSelection(selection)

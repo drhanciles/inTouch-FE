@@ -29,16 +29,6 @@ export class AllContacts extends Component {
     })
     return(
       <div className="all-contacts">
-        <div className='menu-bar'>
-          <nav role="navigation">
-            <ul>
-              <li>Add Contact</li>
-              <li>All Contacts</li>
-              <li>Home</li>
-              <li>Sign Out</li>
-            </ul>
-          </nav>
-        </div>
         <div className="all-contacts-header">Contacts</div>
         <div className="contacts-container">
           <div className="contacts"> {renderedContacts} </div>
@@ -47,10 +37,6 @@ export class AllContacts extends Component {
     )
   }
 }
-
-// export const mapStateToProps = (state) => ({
-//   token: (userName, password) => dispatch(authenticateUser(userName, password))
-// })
 
 export const mapDispatchToProps = (dispatch) => ({
   getContactsList: () => dispatch(getContacts())

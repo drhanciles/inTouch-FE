@@ -1,37 +1,23 @@
 import React, { Component } from 'react'; 
 import './HomePage.css'; 
-
+import { connect } from 'react-redux'; 
 
 export class HomePage extends Component {
-  constructor() {
+  constructor({user, handleSelection, selection}) {
     super()
     this.state = {
       messageSelected: false
     }
   }
 
-  render() {
-    const arrowIcon = './icons/down-arrow.svg'
-    const addContactIcon = './icons/add-contact.svg'
-    const allContactsIcon = './icons/all-contacts.svg'
-    const logoutIcon = './icons/logout-gear.svg'
-    const homeIcon = './icons/home.svg'
-    return (
 
-      <div className="home-page">
-        <div className='menu-bar'>
-          <nav role="navigation">
-            <ul>
-              <li>Add Contact</li>
-              <li>All Contacts</li>
-              <li>Home</li>
-              <li>Sign Out</li>
-            </ul>
-          </nav>
-        </div>
+  render() {
+    const { user } = this.props
+    return (
+      <main className="home-page">
         <div className="message-container">
-          <div className="reachout-message-intro">Hello Rajaa,</div>
-          <div className="reachout-message-content">Have You Called Mom Today?</div>
+          <h2 className="reachout-message-intro">Hello Rajaa,</h2>
+          <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
         </div>
         <div className="buttons-container">
           <button className="done-button">Done</button>
@@ -52,7 +38,15 @@ export class HomePage extends Component {
             <div className="occasaion-content">Mother's Day dinner at Mama Mia</div>
           </div>
         </div>
-      </div>
-    )
+      </main>
+  )
   }
 }
+          
+
+export const mapStateToProps = (state) => ({
+  user: state.user,
+})
+
+export default connect(mapStateToProps)(HomePage)
+

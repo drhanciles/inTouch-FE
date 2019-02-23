@@ -44,16 +44,6 @@ export class CreateContact extends Component {
     const { name, frequency, priority, notes } = this.state
     return (
       <div className="create-contact-page">
-        <div className='menu-bar'>
-          <nav role="navigation">
-            <ul>
-              <li>Add Contact</li>
-              <li>All Contacts</li>
-              <li>Home</li>
-              <li>Sign Out</li>
-            </ul>
-          </nav>
-        </div>
         <form onSubmit={ this.handleSubmit }>
           <div className="new-contact-header">New Contact</div>
           <div className="article">
