@@ -140,8 +140,8 @@ describe('actions', () => {
 
     expect(result).toEqual(expectedAction)
   })
-  it('should return a type of UPDATE_REMINDERS', () => {
-    const reminder = {
+  it('should return a type of GET_SUGGESTIONS', () => {
+    const suggestions = {
       "id": "1",
       "name": "Mom",
       "contact_details": [
@@ -160,11 +160,11 @@ describe('actions', () => {
       }
 
       const expectedAction = {
-        type: 'UPDATE_REMINDERS', 
-        reminder
+        type: 'GET_SUGGESTIONS', 
+        suggestions
       }
 
-      const result = actions.updateReminders(reminder)
+      const result = actions.getSuggestions(suggestions)
 
       expect(result).toEqual(expectedAction)
   })
