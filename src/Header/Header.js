@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import  { connect } from 'react-redux'; 
 import { setSelection } from '../actions/index.js'; 
+import './Header.css'; 
 
 export class Header extends Component {
   constructor() {
