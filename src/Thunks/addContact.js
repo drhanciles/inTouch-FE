@@ -1,21 +1,23 @@
-import { hasErrored, isLoading } from '../actions/index.js'
+import { hasErrored, isLoading, createContact } from '../actions/index.js'
 require('isomorphic-fetch');
 
-export const addContact = (name, frequency, priority, token) => {
+export const addContact = (name, frequency, priority, notes, token) => {
+  debugger; 
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {
       dispatch(isLoading(true))
       const variables = {
-        contactInput: {
-          name, 
+        input: {
+          name: name, 
           frequency: parseInt(frequency), 
-          priority: parseInt(priority)
+          priority: parseInt(priority), 
+          notes: notes
         }
       }
       const response = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify({query: `mutation CreateContact($contactInput: CreateContactInput!){ createContact(input: $contactInput){ ok contact { id, name } } }`,
+        body: JSON.stringify({query: `mutation CreateContact($input: CreateContactInput!){ createContact(input: $input){ ok contact { id, name } } }`,
         variables: variables
         }),
         headers: {
