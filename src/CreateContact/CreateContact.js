@@ -38,6 +38,7 @@ export class CreateContact extends Component {
     const { name, frequency, priority } = this.state
     console.log(priority)
     this.props.addContact(name, frequency, priority, this.props.token)
+    alert(`${name} has been saved!`)
   }
   
   render() {
@@ -66,7 +67,7 @@ export class CreateContact extends Component {
             </div>
             <label className="notes-label">Notes:</label>
             <div className="notes">
-              <text-area onChange={ this.handleChange } value={notes} rows="5" className="note-field" placeholder="Take your notes here."/>  
+              <textarea onChange={ this.handleChange } value={notes} rows="5" name="notes" className="note-field" placeholder="Take your notes here."/>  
             </div>          
           </div>
           <div className="save-contact">

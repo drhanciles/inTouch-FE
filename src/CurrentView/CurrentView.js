@@ -12,7 +12,6 @@ export class CurrentView extends Component {
 }
 
 updateView = (selection) => {
-  debugger; 
   switch(selection) {
     case 'home': 
       return (
