@@ -26,7 +26,7 @@ export class CreateContact extends Component {
 
   enableButton = () => {
     const { name, priority, frequency, notes } = this.state
-    if (name !== '' && frequency !== '' && priority !== '' && notes !== '') {
+    if (name !== '' && frequency !== '' && priority !== '') {
       this.setState({
         disabled: false
       })
@@ -52,6 +52,7 @@ export class CreateContact extends Component {
             </div>
             <div className="priority">
               <select className="priority-selection" value={priority} name="priority" required onChange={ this.handleChange }> 
+                <option value="" disabled selected>Select a priority level</option>
                 <option value={1}>1 - most important</option>
                 <option value={2}>2</option>
                 <option value={3}>3</option>
@@ -61,7 +62,7 @@ export class CreateContact extends Component {
             </div>
             <div className="frequency"> 
               <p>Contact every</p>
-              <input onChange={ this.handleChange } className="frequency-input" name="frequency" value={frequency} type="number" required  placeholder="7"/> 
+              <input onChange={ this.handleChange } className="frequency-input" name="frequency" value={frequency} type="number" min="1" required  placeholder="0"/> 
               <p>days</p>
             </div>
             <label className="notes-label">Notes:</label>
