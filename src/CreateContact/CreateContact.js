@@ -65,7 +65,7 @@ export class CreateContact extends Component {
             </div>
             <label className="notes-label">Notes:</label>
             <div className="notes">
-              <input onChange={ this.handleChange } className="note-field" name="notes" value={notes} placeholder="Take your notes here."/>  
+              <textarea onChange={ this.handleChange } value={notes} rows="5" name="notes" className="note-field" placeholder="Take your notes here."/>  
             </div>          
           </div>
           <div className="save-contact">
