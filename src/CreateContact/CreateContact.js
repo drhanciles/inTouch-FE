@@ -37,6 +37,7 @@ export class CreateContact extends Component {
     e.preventDefault()
     const { name, priority, frequency, notes } = this.state
     this.props.newContact(name, priority, frequency, notes, this.props.token)
+    alert(`${name} has been saved!`)
   }
   
   render() {

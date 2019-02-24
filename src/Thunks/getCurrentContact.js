@@ -2,10 +2,7 @@ import { hasErrored, isLoading } from '../actions/index.js'
 require('isomorphic-fetch');
 
 
-export const getCurrentContact = () => {
-  const id = 4
-  const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlJhamFhIiwiZXhwIjoxNTUwNjk5NDQzLCJvcmlnSWF0IjoxNTUwNjk5MTQzfQ.znAlaQbTXs8-Y5vU7HlVaoiVsSwLDsc-VkNwhLRtDxY"
-
+export const getCurrentContact = (token, id) => {
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {

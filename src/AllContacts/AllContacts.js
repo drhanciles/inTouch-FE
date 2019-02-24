@@ -5,17 +5,17 @@ import { isLoading, hasErrored, getAllContacts } from '../actions/index.js'
 import { connect } from 'react-redux'
 
 export class AllContacts extends Component {
-  constructor() {
+  constructor(props) {
     super()
   }
   
-  componentDidMount() {
-    this.props.getContactsList()
-  }
+  // componentDidMount() {
+  //   this.props.getContactsList()
+  // }
   
   render() {
-    let allContacts = [{name: 'Derek Hanciles', lastContacted: '2019-01-17'}, {name: 'Rajaa Boulassouak', lastContacted: '2019-01-18'}, {name: 'William Fischer', lastContacted: '2019-01-19'}, {name: 'Ryan McNeil', lastContacted: '2019-01-19'}]
-    let renderedContacts = allContacts.map(contact => {
+    const { contacts } = this.props
+    let renderedContacts = contacts.map(contact => {
       return (
         <div className="contact"> 
           <div className="name-container">
@@ -38,8 +38,12 @@ export class AllContacts extends Component {
   }
 }
 
+export const mapStateToProps = (state) => ({
+  contacts: state.contacts
+})
+
 export const mapDispatchToProps = (dispatch) => ({
   getContactsList: () => dispatch(getContacts())
 })
 
-export default connect(null, mapDispatchToProps)(AllContacts)
+export default connect(mapStateToProps, mapDispatchToProps)(AllContacts)

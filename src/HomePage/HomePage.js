@@ -1,28 +1,76 @@
 import React, { Component } from 'react'; 
 import './HomePage.css'; 
 import { connect } from 'react-redux'; 
+import { getContacts } from '../Thunks/getContacts.js';
+import { suggestedContacts } from '../Thunks/suggestedContacts.js';
 
 export class HomePage extends Component {
-  constructor({user, handleSelection, selection}) {
+  constructor() {
     super()
     this.state = {
-      messageSelected: false
+      doneButtonClicked: false, 
+      reminderButtonClicked: false
     }
   }
 
+  componentDidMount() {
+    const { getAllContacts, getSuggestedContacts, token } = this.props
+    getAllContacts(token)
+    suggestedContacts(token)
+  }
+
+  completedReachOut = () => {
+    const { user } = this.props
+    this.setState({
+      doneButtonClicked: true
+    })
+  }
+
+  remindUserTomorrow = () => {
+    const { user } = this.props
+    this.setState({
+      reminderButtonClicked: true
+    })
+  }
 
   render() {
     const { user } = this.props
+    const { doneButtonClicked, reminderButtonClicked } = this.state
+    let content
+    const noButtonsSelected = (
+                              <article>
+                                <article className="message-container">
+                                  <h2 className="reachout-message-intro">Hello {user.name},</h2>
+                                  <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
+                                </article>
+                                <div className="buttons-container">
+                                  <button onClick={ () => this.completedReachOut() } className="done-button">Done</button>
+                                  <button onClick={ () => this.remindUserTomorrow() } className="reminder-button">Remind Me Tomorrow</button>
+                                </div>
+                              </article>
+                            )
+    const doneSelected = (
+                            <article className="message-container">
+                              <h2 className="reachout-message-content">{user.name} you are all caught up, come back tomorrow for your next contact to stay in touch with!</h2>
+                            </article>
+                          )
+    const reminderSelected = (
+                              <article className="message-container">
+                                <h2 className="reachout-message-content">{user.name} no worries come back tomorrow when you have time.</h2>
+                              </article>
+                             )
+
+    if (doneButtonClicked) {
+      content = doneSelected
+    } else if (reminderButtonClicked) {
+      content = reminderSelected
+    } else {
+      content = noButtonsSelected
+    }
+
     return (
       <main className="home-page">
-        <div className="message-container">
-          <h2 className="reachout-message-intro">Hello Rajaa,</h2>
-          <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
-        </div>
-        <div className="buttons-container">
-          <button className="done-button">Done</button>
-          <button className="reminder-button">Remind Me Tomorrow</button>
-        </div>
+        {content}
         <div className="occasions-label">Upcoming Occasions:</div>
         <div className="occasions-container"> 
           <div className="occasion">
@@ -46,7 +94,13 @@ export class HomePage extends Component {
 
 export const mapStateToProps = (state) => ({
   user: state.user,
+  token: state.user.token
 })
 
-export default connect(mapStateToProps)(HomePage)
+export const mapDispatachToProps = (dispatch) => ({
+  getAllContacts: (token) => (dispatch(getContacts(token))), 
+  getSuggestedContacts: (token) => (dispatch(suggestedContacts(token)))
+})
+
+export default connect(mapStateToProps, mapDispatachToProps)(HomePage)
 
