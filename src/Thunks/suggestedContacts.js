@@ -20,6 +20,7 @@ export const suggestedContacts = (token) => {
       }
       dispatch(isLoading(false))
       const data = await response.json()
+      console.log(data)
       dispatch(getSuggestions(data.contactSuggestions))
     } catch(error) {
       dispatch(hasErrored(true))

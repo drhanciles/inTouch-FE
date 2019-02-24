@@ -7,12 +7,23 @@ import { suggestedContacts } from '../Thunks/suggestedContacts.js';
 export class HomePage extends Component {
   constructor() {
     super()
+    this.state = {
+      doneButtonClicked: false
+    }
   }
 
   componentDidMount() {
     const { getAllContacts, getSuggestedContacts, token } = this.props
     getAllContacts(token)
     suggestedContacts(token)
+  }
+
+  completedReachOut = (e) => {
+    const { user } = this.props
+    e.preventDefault()
+    return (
+      <h2 className="reachout-message-content">{user.name} you are all caught up, come back tomorrow for your next contact to stay in touch with!</h2>
+    )
   }
 
   render() {
