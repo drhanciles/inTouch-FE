@@ -24,11 +24,6 @@ export class HomePage extends Component {
     this.setState({
       doneButtonClicked: true
     })
-    return (
-      <article className="message-container">
-        <h2 className="reachout-message-content">{user.name} you are all caught up, come back tomorrow for your next contact to stay in touch with!</h2>
-      </article>
-    )
   }
 
   remindUserTomorrow = () => {
@@ -36,12 +31,6 @@ export class HomePage extends Component {
     this.setState({
       reminderButtonClicked: true
     })
-    return (
-      <article className="message-container">
-        <h2 className="reachout-message-content">{user.name} no worries come back tomorrow when you have time.</h2>
-      </article>
-    )
-
   }
 
   render() {
@@ -55,13 +44,22 @@ export class HomePage extends Component {
                                   <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
                                 </article>
                                 <div className="buttons-container">
-                                  <button onClick={ this.completedReachOut } className="done-button">Done</button>
-                                  <button onClick={ this.remindUserTomorrow } className="reminder-button">Remind Me Tomorrow</button>
+                                  <button onClick={ () => this.completedReachOut() } className="done-button">Done</button>
+                                  <button onClick={ () => this.remindUserTomorrow() } className="reminder-button">Remind Me Tomorrow</button>
                                 </div>
                               </article>
                             )
-    const doneSelected = this.completedReachOut()
-    const reminderSelected = this.remindUserTomorrow()
+    const doneSelected = (
+                            <article className="message-container">
+                              <h2 className="reachout-message-content">{user.name} you are all caught up, come back tomorrow for your next contact to stay in touch with!</h2>
+                            </article>
+                          )
+    const reminderSelected = (
+                              <article className="message-container">
+                                <h2 className="reachout-message-content">{user.name} no worries come back tomorrow when you have time.</h2>
+                              </article>
+                             )
+
     if (doneButtonClicked) {
       content = doneSelected
     } else if (reminderButtonClicked) {
