@@ -8,7 +8,8 @@ export class HomePage extends Component {
   constructor() {
     super()
     this.state = {
-      doneButtonClicked: false
+      doneButtonClicked: false, 
+      reminderButtonClicked: false
     }
   }
 
@@ -19,11 +20,20 @@ export class HomePage extends Component {
   }
 
   completedReachOut = (e) => {
-    const { user } = this.props
     e.preventDefault()
+    const { user } = this.props
     return (
       <h2 className="reachout-message-content">{user.name} you are all caught up, come back tomorrow for your next contact to stay in touch with!</h2>
     )
+  }
+
+  remindUserTomorrow = (e) => {
+    e.preventDefault()
+    const { user } = this.props
+    return (
+      <h2 className="reachout-message-content">{user.name} no worries come back tomorrow when you have time.</h2>
+    )
+
   }
 
   render() {
@@ -35,8 +45,8 @@ export class HomePage extends Component {
           <h2 className="reachout-message-content">Have You Called Mom Today?</h2>
         </div>
         <div className="buttons-container">
-          <button className="done-button">Done</button>
-          <button className="reminder-button">Remind Me Tomorrow</button>
+          <button onClick={ this.completedReachOut } className="done-button">Done</button>
+          <button onClick={ this.remindUserTomorrow } className="reminder-button">Remind Me Tomorrow</button>
         </div>
         <div className="occasions-label">Upcoming Occasions:</div>
         <div className="occasions-container"> 
