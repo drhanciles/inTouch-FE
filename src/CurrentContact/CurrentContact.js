@@ -53,13 +53,13 @@ export class CurrentContact extends Component {
   render() {
     const { disabled, priority, contactInformation, frequency } = this.state
     const { contact } = this.props
-    debugger
+    console.log(contact)
     let iconText = disabled ? 'Close' : 'Save Changes'
     return (
       <article>
         <div className="current-contact-card">
           <header className="contact-header">
-            <div className="contact-name">Rajaa B</div>
+            <div className="contact-name">{contact.name}</div>
             <div role="container for icons edit and close" className="contact-icons-container">
               <p onClick={this.toggleDisabled} className="edit-icon">Edit</p>
               <p  onClick={this.sendChanges} className="close-icon">{iconText}</p>
@@ -71,16 +71,16 @@ export class CurrentContact extends Component {
               <div className="contact-details">
                 <div className="contact-email">
                   <label className="email-label">Email: </label>
-                  <input onChange={ this.handleChange } className="email-information contact-edit-input" disabled={disabled} type="text" name="contactInformation" placeholder="yaboy@ymail.com" value={ contactInformation }/>
+                  <input onChange={ this.handleChange } className="email-information contact-edit-input" disabled={disabled} type="text" name="contactInformation" placeholder="Enter An Email" value={ contactInformation }/>
                 </div>
                 <div className="contact-frequency">
                   <label className="frequency-label">Frequency: </label>
-                  <input onChange={ this.handleChange } className="frequency-information contact-edit-input" disabled={disabled} type="number" name="frequency"  value={frequency} placeholder="3 Days"/>
+                  <input onChange={ this.handleChange } className="frequency-information contact-edit-input" disabled={disabled} type="number" name="frequency"  value={frequency} placeholder={contact.frequency}/>
                 </div>
                 <div className="contact-priority">
                   <div className="priority-label">Priority: </div>
-                  <div className="priority-information">Monthly</div>
                   <select className="priority-selection" value={priority} name="priority" disabled={disabled} required onChange={ this.handleChange }>
+                        <option value={contact.priority}>{contact.priority}</option>
                         <option value={1}>1 - least important</option>
                         <option value={2}>2</option>
                         <option value={3}>3</option>
@@ -93,7 +93,7 @@ export class CurrentContact extends Component {
             <div className="notes-and-occasions-container">
               <div className="notes-container">
                 <div className="notes-label">Notes</div>
-                <p className="contact-note">loves sushi den take them there sometime</p>
+                <p className="contact-note">{contact.notes}</p>
               </div>
               <div className="saved-occasions-container">
                 <div className="occasions-label">Occasions</div>
@@ -114,7 +114,6 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   currentContact: () => dispatch(getCurrentContact())
-  // getCurrentContact: () => dispatch(getContact())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CurrentContact)

@@ -11,7 +11,6 @@ export class AllContacts extends Component {
   }
 
   componentDidMount() {
-    debugger;
     const { getContactsList, token } = this.props
     getContactsList(token)
   }
