@@ -10,6 +10,7 @@ export class AllContacts extends Component {
     super()
   }
 
+
   componentDidMount() {
     const { getContactsList, token } = this.props
     getContactsList(token)
@@ -18,14 +19,8 @@ export class AllContacts extends Component {
   handleSelection = (e, id) => {
     const token = this.props.token
     this.props.getCurrentContact(token, id)
-    // console.log(a);
     this.props.handleSelection('edit-contact')
   }
-
-  // TODO: Function to get single contact by ID
-  // Get token
-  // this.props.getCurrentContact(userName, password) [import thunk]
-  // switch views
 
   render() {
     const { contacts } = this.props

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import  { connect } from 'react-redux'; 
 import { setSelection } from '../actions/index.js'; 
+import { signOutUser } from '../actions/index.js'
 import './Header.css'; 
 
 export class Header extends Component {
@@ -28,7 +29,7 @@ export class Header extends Component {
                               <li onClick={() => this.updateSelection('all-contacts')} >All Contacts</li>
                               <li onClick={() => this.updateSelection('edit-contact')} >Edit Contact</li>
                               <li onClick={() => this.updateSelection('home')}>Home</li>
-                              <li onClick={() => this.updateSelection('sign-out')}>Sign Out</li>
+                              <li onClick={() => this.props.logOut()}>Sign Out</li>
                             </ul>
                         </nav>
                       </header> 
@@ -47,7 +48,8 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  handleSelection: (selection) => dispatch(setSelection(selection))
+  handleSelection: (selection) => dispatch(setSelection(selection)), 
+  logOut: () => dispatch(signOutUser())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)
