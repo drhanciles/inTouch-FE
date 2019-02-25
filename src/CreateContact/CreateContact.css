@@ -119,12 +119,17 @@ label {
   color: #191C69;
 }
 
-.notes {
+.note-field {
   width: 535px;
   height: 100px;
   margin-left: 10%;
-  border-radius: 20px;
   background-color: #ABAECF;
+}
+
+.note-field::placeholder {
+  color: #191C69; 
+  font-size: 1rem;
+  margin-left: 10px;
 }
 
 .save-contact {

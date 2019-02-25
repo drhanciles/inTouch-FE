@@ -10,8 +10,8 @@ export class CreateContact extends Component {
     super()
     this.state = {
      name: '',
-     frequency: '',
      priority: '',
+     frequency: '',
      notes: '', 
      disabled: true
     }
@@ -25,7 +25,7 @@ export class CreateContact extends Component {
   }
 
   enableButton = () => {
-    const { name, frequency, priority } = this.state
+    const { name, priority, frequency, notes } = this.state
     if (name !== '' && frequency !== '' && priority !== '') {
       this.setState({
         disabled: false
@@ -35,14 +35,13 @@ export class CreateContact extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    const { name, frequency, priority } = this.state
-    console.log(priority)
-    this.props.addContact(name, frequency, priority, this.props.token)
+    const { name, priority, frequency, notes } = this.state
+    this.props.newContact(name, priority, frequency, notes, this.props.token)
     alert(`${name} has been saved!`)
   }
   
   render() {
-    const { name, frequency, priority, notes } = this.state
+    const { name, priority, frequency, notes } = this.state
     return (
       <div className="create-contact-page">
         <form onSubmit={ this.handleSubmit }>
@@ -53,6 +52,7 @@ export class CreateContact extends Component {
             </div>
             <div className="priority">
               <select className="priority-selection" value={priority} name="priority" required onChange={ this.handleChange }> 
+                <option value="" disabled selected>Select a priority level</option>
                 <option value={1}>1 - most important</option>
                 <option value={2}>2</option>
                 <option value={3}>3</option>
@@ -62,7 +62,7 @@ export class CreateContact extends Component {
             </div>
             <div className="frequency"> 
               <p>Contact every</p>
-              <input onChange={ this.handleChange }className="frequency-input" name="frequency" value={frequency} type="number" required  placeholder="7"/> 
+              <input onChange={ this.handleChange } className="frequency-input" name="frequency" value={frequency} type="number" min="1" required  placeholder="0"/> 
               <p>days</p>
             </div>
             <label className="notes-label">Notes:</label>
@@ -71,7 +71,7 @@ export class CreateContact extends Component {
             </div>          
           </div>
           <div className="save-contact">
-            <button className='save-contact-btn'>Save Contact</button>
+            <button className="save-contact-btn">Save Contact</button>
           </div>
         </form>
       </div>
@@ -86,7 +86,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  addContact: (name, frequency, priority, token) => dispatch(addContact(name, frequency, priority, token))
+  newContact: (name, priority, frequency, notes, token) => dispatch(addContact(name, priority, frequency, notes, token))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateContact)
