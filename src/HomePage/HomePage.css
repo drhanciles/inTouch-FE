@@ -10,12 +10,6 @@
   margin-left: 100px;
 }
 
-.message-container:hover {
-  color: #191C69; 
-  cursor: pointer;  
-  text-decoration: underline solid #191C69; 
-}
-
 .reachout-message-intro,  
 .reachout-message-content {
   color: #5B609F;

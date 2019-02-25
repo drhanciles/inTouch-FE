@@ -1,12 +1,10 @@
 export const contactsReducer = (state=[], action) => {
   switch (action.type) {
     case 'CREATE_CONTACT':
-      return action.cantact
+      return action.contact
     case 'GET_ALL_CONTACTS':
       return action.contacts
-    case 'GET_CURRENT_CONTACT': 
-      return action.contact
-    default: 
+    default:
       return state
   }
 }

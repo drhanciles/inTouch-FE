@@ -4,6 +4,7 @@
   margin-left: 25px;
   border-bottom: 2px solid #191C69;
 }
+
 .current-contact-card {
   margin-top: 5em;
   margin-left: 5%;
@@ -39,7 +40,7 @@ main {
 
 .contact-details-container,
 .notes-and-occasions-container {
-  margin-left: 50px;
+  margin-left: 40px;
   margin-right: 150px;
   margin-top: 2em;
   font-family: 'Oswald', sans-serif;
@@ -71,5 +72,5 @@ main {
 .frequency-information {
   margin-left: 10px;
   margin-right: 10px;
-  
 }
+
