@@ -27,7 +27,6 @@ export class Header extends Component {
                             <ul>
                               <li onClick={() => this.updateSelection('add-contact')}>Add Contact</li>
                               <li onClick={() => this.updateSelection('all-contacts')} >All Contacts</li>
-                              <li onClick={() => this.updateSelection('edit-contact')} >Edit Contact</li>
                               <li onClick={() => this.updateSelection('home')}>Home</li>
                               <li onClick={() => this.props.logOut()}>Sign Out</li>
                             </ul>
