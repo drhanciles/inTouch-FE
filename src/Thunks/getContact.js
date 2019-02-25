@@ -1,8 +1,8 @@
-import { hasErrored, isLoading } from '../actions/index.js'
+import { hasErrored, isLoading, getCurrentContact } from '../actions/index.js'
 require('isomorphic-fetch');
 
 
-export const getCurrentContact = (token, id) => {
+export const getContact = (token, id) => {
   const url = 'https://in-touch-dev.herokuapp.com/api/v1/data/'
   return async (dispatch) => {
     try {
@@ -21,9 +21,10 @@ export const getCurrentContact = (token, id) => {
       }
       dispatch(isLoading(false))
       const data = await response.json()
-      console.log(data)
+      const a = dispatch(getCurrentContact(data.data.contact))
+      console.log(a)
     } catch(error) {
       dispatch(hasErrored(true))
-    } 
+    }
   }
 }

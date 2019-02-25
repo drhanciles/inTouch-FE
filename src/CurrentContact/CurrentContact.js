@@ -1,23 +1,23 @@
-import React, { Component } from 'react'; 
-import './CurrentContact.css'; 
-import { getCurrentContact } from '../Thunks/getCurrentContact.js'
-import { isLoading, hasErrored } from '../actions/index.js'
+import React, { Component } from 'react';
+import './CurrentContact.css';
+import { getContact } from '../Thunks/getContact.js'
+import { isLoading, hasErrored, getCurrentContact } from '../actions/index.js'
 import { connect } from 'react-redux'
 
 export class CurrentContact extends Component {
   constructor() {
     super()
     this.state = {
-      disabled: true, 
-      priority: '', 
-      contactInformation: '', 
+      disabled: true,
+      priority: '',
+      contactInformation: '',
       frequency: ''
     }
   }
 
-  componentDidMount() {
-    this.props.getSingleContact()
-  }
+  // componentDidMount() {
+  //   debugger;
+  // }
 
   handleChange = (e) => {
     const { name, value } = e.target
@@ -37,7 +37,7 @@ export class CurrentContact extends Component {
     let updates = Object.keys(obj)
     let objectToSend = updates.reduce((data, element) => {
       if(obj[element] !== '' ) {
-        data[element] = obj[element] 
+        data[element] = obj[element]
       }
       return data
     }, {})
@@ -49,12 +49,14 @@ export class CurrentContact extends Component {
     let changesToContact = this.checkNull(this.state)
     console.log(changesToContact)
   }
-  
+
   render() {
     const { disabled, priority, contactInformation, frequency } = this.state
+    const { contact } = this.props
+    debugger
     let iconText = disabled ? 'Close' : 'Save Changes'
     return (
-      <article> 
+      <article>
         <div className="current-contact-card">
           <header className="contact-header">
             <div className="contact-name">Rajaa B</div>
@@ -78,7 +80,7 @@ export class CurrentContact extends Component {
                 <div className="contact-priority">
                   <div className="priority-label">Priority: </div>
                   <div className="priority-information">Monthly</div>
-                  <select className="priority-selection" value={priority} name="priority" disabled={disabled} required onChange={ this.handleChange }> 
+                  <select className="priority-selection" value={priority} name="priority" disabled={disabled} required onChange={ this.handleChange }>
                         <option value={1}>1 - least important</option>
                         <option value={2}>2</option>
                         <option value={3}>3</option>
@@ -106,11 +108,13 @@ export class CurrentContact extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  user: state.user
+  user: state.user,
+  contact: state.contact
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  getSingleContact: () => dispatch(getCurrentContact())
+  currentContact: () => dispatch(getCurrentContact())
+  // getCurrentContact: () => dispatch(getContact())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CurrentContact)

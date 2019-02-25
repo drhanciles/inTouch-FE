@@ -1,6 +1,6 @@
-import React, { Component } from 'react'; 
-import './HomePage.css'; 
-import { connect } from 'react-redux'; 
+import React, { Component } from 'react';
+import './HomePage.css';
+import { connect } from 'react-redux';
 import { getContacts } from '../Thunks/getContacts.js';
 import { suggestedContacts } from '../Thunks/suggestedContacts.js';
 
@@ -8,7 +8,7 @@ export class HomePage extends Component {
   constructor() {
     super()
     this.state = {
-      doneButtonClicked: false, 
+      doneButtonClicked: false,
       reminderButtonClicked: false
     }
   }
@@ -72,25 +72,25 @@ export class HomePage extends Component {
       <main className="home-page">
         {content}
         <div className="occasions-label">Upcoming Occasions:</div>
-        <div className="occasions-container"> 
+        <div className="occasions-container">
           <div className="occasion">
             <div className="date-container">01/03/19</div>
             <div className="occasaion-reminder-content">Celebrate Graduation with family dinner</div>
           </div>
           <div className="occasion">
             <div className="date-container">18/04/19</div>
-            <div className="occasaion-reminder-content"> Mom's Birthday</div>
+            <div className="occasaion-reminder-content"> Moms Birthday</div>
           </div>
           <div className="occasion">
             <div className="date-container">05/12/19</div>
-            <div className="occasaion-content">Mother's Day dinner at Mama Mia</div>
+            <div className="occasaion-content">Mothers Day dinner at Mama Mia</div>
           </div>
         </div>
       </main>
   )
   }
 }
-          
+
 
 export const mapStateToProps = (state) => ({
   user: state.user,
@@ -98,9 +98,8 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatachToProps = (dispatch) => ({
-  getAllContacts: (token) => (dispatch(getContacts(token))), 
+  getAllContacts: (token) => (dispatch(getContacts(token))),
   getSuggestedContacts: (token) => (dispatch(suggestedContacts(token)))
 })
 
 export default connect(mapStateToProps, mapDispatachToProps)(HomePage)
-

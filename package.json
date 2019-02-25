@@ -28,7 +28,7 @@
     "react-devtools": "react-devtools",
     "preelectron-pack": "npm run build",
     "electron-pack": "build --win --macos -c.extraMetadata.main=build/Main.js",
-    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .", 
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
     "dev": "nf start"
   },
   "build": {
