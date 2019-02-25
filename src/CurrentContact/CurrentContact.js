@@ -11,13 +11,11 @@ export class CurrentContact extends Component {
       disabled: true,
       priority: '',
       contactInformation: '',
-      frequency: ''
+      frequency: '', 
+      occasions: '', 
+      notes: ''
     }
   }
-
-  // componentDidMount() {
-  //   debugger;
-  // }
 
   handleChange = (e) => {
     const { name, value } = e.target
@@ -47,11 +45,10 @@ export class CurrentContact extends Component {
   sendChanges = (e) => {
     e.preventDefault()
     let changesToContact = this.checkNull(this.state)
-    console.log(changesToContact)
   }
 
   render() {
-    const { disabled, priority, contactInformation, frequency } = this.state
+    const { disabled, priority, contactInformation, frequency, notes, occasions } = this.state
     const { contact } = this.props
     console.log(contact)
     let iconText = disabled ? 'Close' : 'Save Changes'
@@ -70,8 +67,8 @@ export class CurrentContact extends Component {
               <div className="contact-details-label">Contact Details</div>
               <div className="contact-details">
                 <div className="contact-email">
-                  <label className="email-label">Email: </label>
-                  <input onChange={ this.handleChange } className="email-information contact-edit-input" disabled={disabled} type="text" name="contactInformation" placeholder="Enter An Email" value={ contactInformation }/>
+                  <label className="email-label">Phone Number: </label>
+                  <input onChange={ this.handleChange } className="email-information contact-edit-input" disabled={disabled} type="text" name="contactInformation" placeholder="Enter Phone Number" value={ contactInformation }/>
                 </div>
                 <div className="contact-frequency">
                   <label className="frequency-label">Frequency: </label>
@@ -92,12 +89,13 @@ export class CurrentContact extends Component {
             </div>
             <div className="notes-and-occasions-container">
               <div className="notes-container">
-                <div className="notes-label">Notes</div>
-                <p className="contact-note">{contact.notes}</p>
+                <label className="notes-label">Notes</label>
+                <input onChange={ this.handleChange } className="contact-note" disabled={disabled} type="text" name="notes"  value={notes} placeholder={contact.notes}/>
               </div>
               <div className="saved-occasions-container">
-                <div className="occasions-label">Occasions</div>
-                <p className="saved-occasion">Birthday - 04/27 </p>
+                <label className="occasions-label">Occasions</label>
+                <input onChange={ this.handleChange } className="saved-occasions" disabled={disabled} type="text" name="occasion"  value={occasions} placeholder={contact.occasions}/>
+
               </div>
             </div>
           </main>
